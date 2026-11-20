@@ -1,4 +1,4 @@
-# VuongEdu: AI Learning Assistant
+# EduVie: AI Learning Assistant
 
 A personal learning assistant for Vietnamese high-school subjects. Students ask questions about their textbooks and get
 answers with page citations, practise with generated quizzes, see which topics they are weak in, and get a study plan
@@ -63,7 +63,7 @@ Full Vietnamese documentation: [`docs/README_vi.md`](docs/README_vi.md) and [`CA
 
 ## Author
 
-Built by **Phan Ngoc Vuong** ([@VuongPhan-09](https://github.com/VuongPhan-09)) as a personal project, 2026.
+Built by **Do Tien Thanh** as a personal project, 2026.
 
 ## License
 
