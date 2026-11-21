@@ -1,0 +1,386 @@
+{
+  "_mon": "Hoá học 12",
+  "_nguon": "Soạn theo SGK Hoá học 12 — Kết nối tri thức với cuộc sống",
+  "_so_cau": 50,
+
+  "cau_hoi": [
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 1: Ester – Lipid", "chu_de": "Ester và lipid", "do_kho": "easy",
+      "cau_hoi": "Ester được tạo thành từ phản ứng giữa những chất nào?",
+      "lua_chon": ["Acid và base", "Carboxylic acid và alcohol", "Alcohol và nước", "Hai alcohol"],
+      "dap_an": 1,
+      "giai_thich": "Phản ứng ester hoá: carboxylic acid tác dụng với alcohol, có xúc tác acid, tạo ester và nước."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 1: Ester – Lipid", "chu_de": "Ester và lipid", "do_kho": "easy",
+      "cau_hoi": "Công thức tổng quát của ester no, đơn chức, mạch hở là:",
+      "lua_chon": ["CnH2nO2", "CnH2n+2O", "CnH2nO", "CnH2n-2O2"],
+      "dap_an": 0,
+      "giai_thich": "Ester no, đơn chức, mạch hở có công thức CnH2nO2 với n ≥ 2, ví dụ CH3COOCH3 là C3H6O2."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 1: Ester – Lipid", "chu_de": "Ester và lipid", "do_kho": "medium",
+      "cau_hoi": "Phản ứng thuỷ phân ester trong môi trường kiềm gọi là gì?",
+      "lua_chon": ["Ester hoá", "Xà phòng hoá", "Hydrogen hoá", "Trùng hợp"],
+      "dap_an": 1,
+      "giai_thich": "Thuỷ phân ester trong dung dịch kiềm gọi là phản ứng xà phòng hoá, tạo muối của carboxylic acid và alcohol. Phản ứng này một chiều."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 1: Ester – Lipid", "chu_de": "Ester và lipid", "do_kho": "medium",
+      "cau_hoi": "Chất béo là trieste của glycerol với:",
+      "lua_chon": ["Carboxylic acid bất kì", "Acid béo", "Amino acid", "Acid vô cơ"],
+      "dap_an": 1,
+      "giai_thich": "Chất béo (triglyceride) là trieste của glycerol với các acid béo — những carboxylic acid đơn chức, mạch dài, không phân nhánh."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 1: Ester – Lipid", "chu_de": "Xà phòng và chất giặt rửa", "do_kho": "medium",
+      "cau_hoi": "Thành phần chính của xà phòng là gì?",
+      "lua_chon": ["Muối sodium hoặc potassium của acid béo", "Glycerol", "Ester của glycerol", "Acid béo tự do"],
+      "dap_an": 0,
+      "giai_thich": "Xà phòng là muối sodium hoặc potassium của các acid béo, thu được khi xà phòng hoá chất béo bằng NaOH hoặc KOH."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 1: Ester – Lipid", "chu_de": "Xà phòng và chất giặt rửa", "do_kho": "medium",
+      "cau_hoi": "Vì sao xà phòng giặt kém hiệu quả trong nước cứng?",
+      "lua_chon": ["Vì nước cứng có pH cao", "Vì ion Ca2+ và Mg2+ tạo kết tủa với gốc acid béo", "Vì nước cứng không hoà tan xà phòng", "Vì nước cứng làm xà phòng phân huỷ"],
+      "dap_an": 1,
+      "giai_thich": "Trong nước cứng, ion Ca2+ và Mg2+ kết hợp với anion acid béo tạo muối không tan, làm giảm tác dụng giặt rửa và bám lên vải."
+    },
+
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 2: Carbohydrate", "chu_de": "Glucose và fructose", "do_kho": "easy",
+      "cau_hoi": "Công thức phân tử của glucose là:",
+      "lua_chon": ["C6H12O6", "C12H22O11", "C6H10O5", "C5H10O5"],
+      "dap_an": 0,
+      "giai_thich": "Glucose có công thức phân tử C6H12O6, là monosaccharide."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 2: Carbohydrate", "chu_de": "Glucose và fructose", "do_kho": "medium",
+      "cau_hoi": "Thuốc thử nào dùng để nhận biết glucose nhờ phản ứng tráng bạc?",
+      "lua_chon": ["Dung dịch NaOH", "Dung dịch AgNO3 trong NH3", "Dung dịch HCl", "Nước brom"],
+      "dap_an": 1,
+      "giai_thich": "Glucose có nhóm chức aldehyde nên khử được phức bạc amoniac, tạo lớp bạc bám lên thành ống nghiệm — phản ứng tráng bạc."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 2: Carbohydrate", "chu_de": "Glucose và fructose", "do_kho": "medium",
+      "cau_hoi": "Glucose và fructose có mối quan hệ gì với nhau?",
+      "lua_chon": ["Là đồng phân của nhau", "Là đồng đẳng của nhau", "Cùng một chất", "Không liên quan"],
+      "dap_an": 0,
+      "giai_thich": "Cả hai cùng có công thức phân tử C6H12O6 nhưng khác nhau về cấu tạo: glucose có nhóm aldehyde, fructose có nhóm ketone. Chúng là đồng phân."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 2: Carbohydrate", "chu_de": "Saccharose và maltose", "do_kho": "easy",
+      "cau_hoi": "Saccharose được tạo thành từ hai đơn vị nào?",
+      "lua_chon": ["Hai glucose", "Glucose và fructose", "Hai fructose", "Glucose và galactose"],
+      "dap_an": 1,
+      "giai_thich": "Saccharose là disaccharide gồm một gốc glucose và một gốc fructose liên kết qua nguyên tử oxygen."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 2: Carbohydrate", "chu_de": "Saccharose và maltose", "do_kho": "medium",
+      "cau_hoi": "Vì sao saccharose KHÔNG tham gia phản ứng tráng bạc?",
+      "lua_chon": ["Vì phân tử quá lớn", "Vì không còn nhóm –OH hemiacetal tự do", "Vì không tan trong nước", "Vì có tính acid"],
+      "dap_an": 1,
+      "giai_thich": "Trong saccharose, cả hai nhóm –OH hemiacetal đều tham gia liên kết nên không còn nhóm aldehyde tự do, do đó không tráng bạc được."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 2: Carbohydrate", "chu_de": "Tinh bột và cellulose", "do_kho": "easy",
+      "cau_hoi": "Thuốc thử nào nhận biết tinh bột?",
+      "lua_chon": ["Dung dịch iodine", "Dung dịch NaOH", "Quỳ tím", "Nước vôi trong"],
+      "dap_an": 0,
+      "giai_thich": "Tinh bột tác dụng với dung dịch iodine cho màu xanh tím đặc trưng, do cấu trúc xoắn của amylose giữ phân tử iodine."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 2: Carbohydrate", "chu_de": "Tinh bột và cellulose", "do_kho": "medium",
+      "cau_hoi": "Tinh bột và cellulose khác nhau chủ yếu ở điểm nào?",
+      "lua_chon": ["Công thức phân tử", "Kiểu liên kết glycoside giữa các gốc glucose", "Số nguyên tử carbon", "Màu sắc"],
+      "dap_an": 1,
+      "giai_thich": "Cả hai đều có công thức (C6H10O5)n nhưng tinh bột có liên kết α-glycoside, cellulose có liên kết β-glycoside, nên tính chất khác nhau."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 2: Carbohydrate", "chu_de": "Tinh bột và cellulose", "do_kho": "medium",
+      "cau_hoi": "Vì sao con người không tiêu hoá được cellulose?",
+      "lua_chon": ["Vì cellulose không tan", "Vì cơ thể người không có enzyme phân cắt liên kết β-glycoside", "Vì cellulose độc", "Vì cellulose quá cứng"],
+      "dap_an": 1,
+      "giai_thich": "Người thiếu enzyme cellulase để thuỷ phân liên kết β-glycoside, nên cellulose đi qua ruột mà không bị tiêu hoá, đóng vai trò chất xơ."
+    },
+
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 3: Hợp chất chứa nitrogen", "chu_de": "Amine", "do_kho": "easy",
+      "cau_hoi": "Amine được tạo thành khi thay thế nguyên tử hydrogen trong phân tử nào?",
+      "lua_chon": ["H2O", "NH3", "CH4", "HCl"],
+      "dap_an": 1,
+      "giai_thich": "Amine là dẫn xuất của ammonia NH3, trong đó một hoặc nhiều nguyên tử hydrogen được thay bằng gốc hydrocarbon."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 3: Hợp chất chứa nitrogen", "chu_de": "Amine", "do_kho": "medium",
+      "cau_hoi": "Dung dịch methylamine làm quỳ tím chuyển màu gì?",
+      "lua_chon": ["Đỏ", "Xanh", "Không đổi màu", "Mất màu"],
+      "dap_an": 1,
+      "giai_thich": "Methylamine có tính base nên làm quỳ tím hoá xanh. Nguyên tử nitrogen còn cặp electron tự do nên nhận được proton."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 3: Hợp chất chứa nitrogen", "chu_de": "Amine", "do_kho": "medium",
+      "cau_hoi": "Aniline (C6H5NH2) có tính base yếu hơn methylamine vì:",
+      "lua_chon": ["Phân tử lớn hơn", "Vòng benzene hút electron làm giảm mật độ electron trên nitrogen", "Aniline không tan trong nước", "Aniline có nhiều carbon hơn"],
+      "dap_an": 1,
+      "giai_thich": "Cặp electron tự do của nitrogen trong aniline liên hợp với vòng benzene, làm giảm khả năng nhận proton nên tính base yếu hơn amine no."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 3: Hợp chất chứa nitrogen", "chu_de": "Amino acid và peptide", "do_kho": "easy",
+      "cau_hoi": "Phân tử amino acid chứa đồng thời hai nhóm chức nào?",
+      "lua_chon": ["–OH và –COOH", "–NH2 và –COOH", "–NH2 và –OH", "–CHO và –COOH"],
+      "dap_an": 1,
+      "giai_thich": "Amino acid chứa nhóm amino –NH2 (tính base) và nhóm carboxyl –COOH (tính acid), nên có tính lưỡng tính."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 3: Hợp chất chứa nitrogen", "chu_de": "Amino acid và peptide", "do_kho": "medium",
+      "cau_hoi": "Liên kết peptide được hình thành giữa những nhóm nào?",
+      "lua_chon": ["Hai nhóm –COOH", "Nhóm –COOH của amino acid này với nhóm –NH2 của amino acid kia", "Hai nhóm –NH2", "Nhóm –OH và –NH2"],
+      "dap_an": 1,
+      "giai_thich": "Liên kết peptide –CO–NH– hình thành khi nhóm carboxyl của amino acid này phản ứng với nhóm amino của amino acid kia, tách ra một phân tử nước."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 3: Hợp chất chứa nitrogen", "chu_de": "Amino acid và peptide", "do_kho": "hard",
+      "cau_hoi": "Từ ba amino acid khác nhau có thể tạo ra tối đa bao nhiêu tripeptide chứa đủ cả ba gốc?",
+      "lua_chon": ["3", "6", "9", "27"],
+      "dap_an": 1,
+      "giai_thich": "Số cách sắp xếp ba gốc khác nhau theo thứ tự là $3! = 6$. Thứ tự các gốc khác nhau cho tripeptide khác nhau."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 3: Hợp chất chứa nitrogen", "chu_de": "Protein và enzyme", "do_kho": "medium",
+      "cau_hoi": "Hiện tượng protein bị đông tụ khi đun nóng gọi là gì?",
+      "lua_chon": ["Thuỷ phân", "Biến tính", "Trùng ngưng", "Xà phòng hoá"],
+      "dap_an": 1,
+      "giai_thich": "Khi đun nóng hoặc gặp acid, base, kim loại nặng, protein bị biến tính: cấu trúc không gian thay đổi, protein đông tụ và mất hoạt tính sinh học."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 3: Hợp chất chứa nitrogen", "chu_de": "Protein và enzyme", "do_kho": "medium",
+      "cau_hoi": "Enzyme có vai trò gì trong cơ thể?",
+      "lua_chon": ["Cung cấp năng lượng", "Xúc tác sinh học cho các phản ứng", "Vận chuyển oxygen", "Tạo nên khung xương"],
+      "dap_an": 1,
+      "giai_thich": "Enzyme là chất xúc tác sinh học, có bản chất protein, làm tăng tốc độ phản ứng trong cơ thể và có tính chọn lọc cao."
+    },
+
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 4: Polymer", "chu_de": "Đại cương về polymer", "do_kho": "easy",
+      "cau_hoi": "Polymer được tạo thành từ nhiều đơn vị nhỏ lặp lại gọi là gì?",
+      "lua_chon": ["Nguyên tử", "Mắt xích", "Ion", "Phân tử nước"],
+      "dap_an": 1,
+      "giai_thich": "Polymer gồm nhiều mắt xích (đơn vị cấu trúc lặp lại) liên kết với nhau, bắt nguồn từ các monomer."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 4: Polymer", "chu_de": "Đại cương về polymer", "do_kho": "medium",
+      "cau_hoi": "Phản ứng trùng hợp khác phản ứng trùng ngưng ở điểm nào?",
+      "lua_chon": ["Trùng hợp không giải phóng phân tử nhỏ, trùng ngưng có", "Trùng hợp cần nhiệt độ cao hơn", "Trùng hợp tạo polymer mạch thẳng", "Không khác nhau"],
+      "dap_an": 0,
+      "giai_thich": "Trùng hợp: các monomer có liên kết bội kết hợp lại, không tách phân tử nhỏ. Trùng ngưng: giải phóng phân tử nhỏ như H2O."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 4: Polymer", "chu_de": "Đại cương về polymer", "do_kho": "medium",
+      "cau_hoi": "Monomer dùng để điều chế polyethylene (PE) là:",
+      "lua_chon": ["CH2=CH2", "CH2=CHCl", "CH2=CH–CH3", "CH≡CH"],
+      "dap_an": 0,
+      "giai_thich": "Polyethylene được điều chế bằng phản ứng trùng hợp ethylene CH2=CH2."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 4: Polymer", "chu_de": "Vật liệu polymer", "do_kho": "medium",
+      "cau_hoi": "Tơ nào sau đây là tơ tổng hợp?",
+      "lua_chon": ["Tơ tằm", "Tơ visco", "Tơ nylon-6,6", "Bông"],
+      "dap_an": 2,
+      "giai_thich": "Nylon-6,6 là tơ tổng hợp, điều chế bằng trùng ngưng. Tơ tằm và bông là tơ thiên nhiên, tơ visco là tơ bán tổng hợp."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 4: Polymer", "chu_de": "Vật liệu polymer", "do_kho": "medium",
+      "cau_hoi": "Cao su buna được điều chế từ monomer nào?",
+      "lua_chon": ["Ethylene", "Buta-1,3-diene", "Styrene", "Vinyl chloride"],
+      "dap_an": 1,
+      "giai_thich": "Cao su buna là sản phẩm trùng hợp buta-1,3-diene CH2=CH–CH=CH2."
+    },
+
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 5: Pin điện và điện phân", "chu_de": "Thế điện cực và nguồn điện hoá học", "do_kho": "easy",
+      "cau_hoi": "Trong pin điện hoá, quá trình oxi hoá xảy ra ở điện cực nào?",
+      "lua_chon": ["Cathode", "Anode", "Cả hai", "Không điện cực nào"],
+      "dap_an": 1,
+      "giai_thich": "Theo quy ước, anode là nơi xảy ra quá trình oxi hoá, cathode là nơi xảy ra quá trình khử."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 5: Pin điện và điện phân", "chu_de": "Thế điện cực và nguồn điện hoá học", "do_kho": "medium",
+      "cau_hoi": "Sức điện động chuẩn của pin được tính bằng:",
+      "lua_chon": ["$E^\\circ_{cathode} + E^\\circ_{anode}$", "$E^\\circ_{cathode} - E^\\circ_{anode}$", "$E^\\circ_{anode} - E^\\circ_{cathode}$", "$E^\\circ_{cathode} \\cdot E^\\circ_{anode}$"],
+      "dap_an": 1,
+      "giai_thich": "$E^\\circ_{pin} = E^\\circ_{cathode} - E^\\circ_{anode}$, luôn là số dương với pin hoạt động tự phát."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 5: Pin điện và điện phân", "chu_de": "Thế điện cực và nguồn điện hoá học", "do_kho": "medium",
+      "cau_hoi": "Trong pin Daniell (Zn–Cu), kim loại nào đóng vai trò anode?",
+      "lua_chon": ["Zn", "Cu", "Cả hai", "Tuỳ nồng độ"],
+      "dap_an": 0,
+      "giai_thich": "Zn có thế điện cực chuẩn âm hơn Cu nên bị oxi hoá, đóng vai trò anode. Cu2+ bị khử ở cathode."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 5: Pin điện và điện phân", "chu_de": "Điện phân", "do_kho": "medium",
+      "cau_hoi": "Trong bình điện phân, cathode nối với cực nào của nguồn điện?",
+      "lua_chon": ["Cực dương", "Cực âm", "Không nối", "Tuỳ chất điện phân"],
+      "dap_an": 1,
+      "giai_thich": "Trong điện phân, cathode nối với cực âm của nguồn, là nơi xảy ra quá trình khử."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 5: Pin điện và điện phân", "chu_de": "Điện phân", "do_kho": "hard",
+      "cau_hoi": "Điện phân dung dịch NaCl có màng ngăn thu được sản phẩm nào ở cathode?",
+      "lua_chon": ["Na", "H2", "Cl2", "O2"],
+      "dap_an": 1,
+      "giai_thich": "Ion Na+ không bị khử trong dung dịch nước; thay vào đó nước bị khử tạo khí H2 và ion OH− ở cathode."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 5: Pin điện và điện phân", "chu_de": "Điện phân", "do_kho": "medium",
+      "cau_hoi": "Ứng dụng nào sau đây KHÔNG dựa trên điện phân?",
+      "lua_chon": ["Mạ điện", "Tinh luyện kim loại", "Điều chế nhôm", "Sản xuất pin khô"],
+      "dap_an": 3,
+      "giai_thich": "Pin khô là nguồn điện hoá học biến hoá năng thành điện năng, ngược với điện phân là dùng điện năng để gây phản ứng."
+    },
+
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 6: Đại cương về kim loại", "chu_de": "Cấu tạo và liên kết trong tinh thể kim loại", "do_kho": "easy",
+      "cau_hoi": "Liên kết kim loại được hình thành nhờ yếu tố nào?",
+      "lua_chon": ["Cặp electron dùng chung", "Lực hút tĩnh điện giữa ion dương và các electron tự do", "Lực hút giữa hai ion trái dấu", "Liên kết hydrogen"],
+      "dap_an": 1,
+      "giai_thich": "Trong tinh thể kim loại, các ion dương ở nút mạng được giữ bởi lực hút với các electron tự do chuyển động trong toàn khối."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 6: Đại cương về kim loại", "chu_de": "Tính chất vật lí và tính chất hoá học của kim loại", "do_kho": "easy",
+      "cau_hoi": "Tính chất hoá học đặc trưng của kim loại là gì?",
+      "lua_chon": ["Tính khử", "Tính oxi hoá", "Tính acid", "Tính base"],
+      "dap_an": 0,
+      "giai_thich": "Kim loại dễ nhường electron để tạo ion dương, nên tính chất hoá học đặc trưng là tính khử."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 6: Đại cương về kim loại", "chu_de": "Tính chất vật lí và tính chất hoá học của kim loại", "do_kho": "medium",
+      "cau_hoi": "Kim loại nào sau đây KHÔNG tác dụng với dung dịch HCl?",
+      "lua_chon": ["Zn", "Fe", "Cu", "Mg"],
+      "dap_an": 2,
+      "giai_thich": "Cu đứng sau hydrogen trong dãy hoạt động hoá học nên không đẩy được hydrogen ra khỏi dung dịch acid HCl loãng."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 6: Đại cương về kim loại", "chu_de": "Tính chất vật lí và tính chất hoá học của kim loại", "do_kho": "medium",
+      "cau_hoi": "Tính chất vật lí chung của kim loại là do yếu tố nào quyết định?",
+      "lua_chon": ["Khối lượng nguyên tử", "Các electron tự do", "Số lớp electron", "Bán kính nguyên tử"],
+      "dap_an": 1,
+      "giai_thich": "Các electron tự do gây ra tính dẻo, dẫn điện, dẫn nhiệt và ánh kim — những tính chất vật lí chung của kim loại."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 6: Đại cương về kim loại", "chu_de": "Kim loại trong tự nhiên và phương pháp tách kim loại", "do_kho": "medium",
+      "cau_hoi": "Phương pháp nào dùng để điều chế nhôm từ Al2O3?",
+      "lua_chon": ["Nhiệt luyện bằng CO", "Thuỷ luyện", "Điện phân nóng chảy", "Điện phân dung dịch"],
+      "dap_an": 2,
+      "giai_thich": "Nhôm là kim loại hoạt động mạnh nên phải điện phân nóng chảy Al2O3 (có cryolite làm chất trợ chảy) mới tách được."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 6: Đại cương về kim loại", "chu_de": "Kim loại trong tự nhiên và phương pháp tách kim loại", "do_kho": "medium",
+      "cau_hoi": "Phương pháp nhiệt luyện dùng để điều chế kim loại nào?",
+      "lua_chon": ["Kim loại hoạt động mạnh như Na, K", "Kim loại trung bình như Fe, Zn", "Chỉ kim loại quý", "Mọi kim loại"],
+      "dap_an": 1,
+      "giai_thich": "Nhiệt luyện dùng chất khử như CO, C, H2 để khử oxide của kim loại hoạt động trung bình như Fe, Zn, Pb."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 6: Đại cương về kim loại", "chu_de": "Hợp kim", "do_kho": "easy",
+      "cau_hoi": "Thép là hợp kim của sắt với nguyên tố nào là chủ yếu?",
+      "lua_chon": ["Carbon", "Đồng", "Nhôm", "Kẽm"],
+      "dap_an": 0,
+      "giai_thich": "Thép là hợp kim của sắt và carbon, trong đó hàm lượng carbon dưới 2%."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 6: Đại cương về kim loại", "chu_de": "Hợp kim", "do_kho": "medium",
+      "cau_hoi": "So với kim loại nguyên chất, hợp kim thường có đặc điểm gì?",
+      "lua_chon": ["Mềm hơn và dễ nóng chảy hơn", "Cứng hơn và bền hơn", "Dẫn điện tốt hơn", "Nhẹ hơn"],
+      "dap_an": 1,
+      "giai_thich": "Hợp kim thường cứng và bền hơn kim loại nguyên chất do cấu trúc mạng bị thay đổi, nhưng dẫn điện kém hơn."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 6: Đại cương về kim loại", "chu_de": "Sự ăn mòn kim loại", "do_kho": "medium",
+      "cau_hoi": "Ăn mòn điện hoá học xảy ra khi có đủ điều kiện nào?",
+      "lua_chon": ["Chỉ cần kim loại tiếp xúc không khí", "Hai điện cực khác bản chất, tiếp xúc nhau và cùng trong dung dịch chất điện li", "Kim loại ở nhiệt độ cao", "Kim loại tiếp xúc với phi kim"],
+      "dap_an": 1,
+      "giai_thich": "Ăn mòn điện hoá cần ba điều kiện: hai điện cực khác bản chất, tiếp xúc trực tiếp hoặc qua dây dẫn, và cùng nhúng trong dung dịch chất điện li."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 6: Đại cương về kim loại", "chu_de": "Sự ăn mòn kim loại", "do_kho": "medium",
+      "cau_hoi": "Phương pháp bảo vệ điện hoá (dùng kim loại hi sinh) để chống ăn mòn vỏ tàu thép thường gắn kim loại nào?",
+      "lua_chon": ["Cu", "Ag", "Zn", "Sn"],
+      "dap_an": 2,
+      "giai_thich": "Zn hoạt động mạnh hơn Fe nên bị ăn mòn trước, đóng vai trò anode hi sinh, bảo vệ vỏ tàu bằng thép."
+    },
+
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 7: Nguyên tố nhóm IA và IIA", "chu_de": "Nguyên tố nhóm IA", "do_kho": "easy",
+      "cau_hoi": "Nguyên tử kim loại nhóm IA có bao nhiêu electron ở lớp ngoài cùng?",
+      "lua_chon": ["1", "2", "3", "7"],
+      "dap_an": 0,
+      "giai_thich": "Kim loại kiềm nhóm IA có cấu hình electron lớp ngoài cùng là ns1, tức một electron."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 7: Nguyên tố nhóm IA và IIA", "chu_de": "Nguyên tố nhóm IA", "do_kho": "medium",
+      "cau_hoi": "Từ Li đến Cs trong nhóm IA, nhiệt độ nóng chảy biến đổi thế nào?",
+      "lua_chon": ["Tăng dần", "Giảm dần", "Không đổi", "Tăng rồi giảm"],
+      "dap_an": 1,
+      "giai_thich": "Bán kính nguyên tử tăng dần nên liên kết kim loại yếu dần, nhiệt độ nóng chảy và nhiệt độ sôi giảm từ Li đến Cs."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 7: Nguyên tố nhóm IA và IIA", "chu_de": "Nguyên tố nhóm IA", "do_kho": "medium",
+      "cau_hoi": "Vì sao kim loại kiềm được bảo quản bằng cách ngâm trong dầu hoả?",
+      "lua_chon": ["Để giữ độ bóng", "Để tránh phản ứng với oxygen và hơi nước trong không khí", "Để dễ cắt", "Để tránh bị nóng chảy"],
+      "dap_an": 1,
+      "giai_thich": "Kim loại kiềm rất hoạt động, phản ứng mạnh với oxygen và nước, nên phải ngâm trong dầu hoả để cách li với không khí ẩm."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 7: Nguyên tố nhóm IA và IIA", "chu_de": "Nguyên tố nhóm IIA", "do_kho": "medium",
+      "cau_hoi": "Nước cứng là nước chứa nhiều ion nào?",
+      "lua_chon": ["Na+ và K+", "Ca2+ và Mg2+", "Cl− và SO42−", "H+ và OH−"],
+      "dap_an": 1,
+      "giai_thich": "Nước cứng chứa nhiều cation Ca2+ và Mg2+, gây đóng cặn trong nồi hơi và làm giảm tác dụng của xà phòng."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 7: Nguyên tố nhóm IA và IIA", "chu_de": "Nguyên tố nhóm IIA", "do_kho": "medium",
+      "cau_hoi": "Chất nào sau đây dùng làm mềm nước cứng tạm thời đơn giản nhất?",
+      "lua_chon": ["Đun sôi", "Thêm HCl", "Thêm NaCl", "Lọc qua cát"],
+      "dap_an": 0,
+      "giai_thich": "Nước cứng tạm thời chứa muối hydrogencarbonate; đun sôi làm chúng phân huỷ thành kết tủa carbonate, nước trở nên mềm."
+    },
+
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 8: Kim loại chuyển tiếp và phức chất", "chu_de": "Đại cương về kim loại chuyển tiếp dãy thứ nhất", "do_kho": "medium",
+      "cau_hoi": "Đặc điểm nào sau đây KHÔNG phải của kim loại chuyển tiếp?",
+      "lua_chon": ["Có nhiều trạng thái oxi hoá", "Hợp chất thường có màu", "Có khả năng tạo phức chất", "Luôn có một trạng thái oxi hoá duy nhất"],
+      "dap_an": 3,
+      "giai_thich": "Kim loại chuyển tiếp đặc trưng bởi nhiều trạng thái oxi hoá khác nhau, ví dụ sắt có Fe2+ và Fe3+."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 8: Kim loại chuyển tiếp và phức chất", "chu_de": "Sơ lược về phức chất", "do_kho": "medium",
+      "cau_hoi": "Trong phức chất, phối tử liên kết với nguyên tử trung tâm bằng loại liên kết nào?",
+      "lua_chon": ["Liên kết ion", "Liên kết cho nhận", "Liên kết hydrogen", "Liên kết kim loại"],
+      "dap_an": 1,
+      "giai_thich": "Phối tử có cặp electron tự do, cho vào orbital trống của nguyên tử trung tâm, tạo liên kết cho nhận (phối trí)."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 8: Kim loại chuyển tiếp và phức chất", "chu_de": "Một số tính chất và ứng dụng của phức chất", "do_kho": "medium",
+      "cau_hoi": "Phức chất nào đóng vai trò vận chuyển oxygen trong máu người?",
+      "lua_chon": ["Chlorophyll", "Hemoglobin", "Vitamin B12", "Insulin"],
+      "dap_an": 1,
+      "giai_thich": "Hemoglobin là phức chất của sắt, có khả năng kết hợp thuận nghịch với oxygen để vận chuyển trong máu."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 2: Carbohydrate", "chu_de": "Glucose và fructose", "do_kho": "hard",
+      "cau_hoi": "Lên men hoàn toàn 18 gam glucose (M = 180 g/mol) thu được bao nhiêu gam ethanol? (hiệu suất 100%, M ethanol = 46)",
+      "lua_chon": ["4,6 g", "9,2 g", "18 g", "46 g"],
+      "dap_an": 1,
+      "giai_thich": "$n_{glucose} = \\dfrac{18}{180} = 0{,}1$ mol. Phương trình: C6H12O6 → 2C2H5OH + 2CO2, nên $n_{ethanol} = 0{,}2$ mol, khối lượng $= 0{,}2 \\cdot 46 = 9{,}2$ g."
+    },
+    {
+      "mon": "Hoá học 12", "chuong": "Chương 1: Ester – Lipid", "chu_de": "Ester và lipid", "do_kho": "hard",
+      "cau_hoi": "Xà phòng hoá hoàn toàn 8,8 gam ethyl acetate (M = 88) bằng NaOH vừa đủ. Khối lượng muối thu được là bao nhiêu? (M của CH3COONa = 82)",
+      "lua_chon": ["4,1 g", "8,2 g", "8,8 g", "16,4 g"],
+      "dap_an": 1,
+      "giai_thich": "$n = \\dfrac{8{,}8}{88} = 0{,}1$ mol. CH3COOC2H5 + NaOH → CH3COONa + C2H5OH, nên $n_{muối} = 0{,}1$ mol, khối lượng $= 0{,}1 \\cdot 82 = 8{,}2$ g."
+    }
+  ]
+}

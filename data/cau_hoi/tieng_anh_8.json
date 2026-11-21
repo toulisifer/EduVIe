@@ -1,0 +1,368 @@
+{
+  "_mon": "Tiếng Anh 8",
+  "_nguon": "Soạn theo SGK Tiếng Anh 8 — Global Success",
+  "_so_cau": 50,
+
+  "cau_hoi": [
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Communities (Unit 1–3)", "chu_de": "Unit 1: Leisure time", "do_kho": "easy",
+      "cau_hoi": "Choose the best answer: My cousin is very keen ___ making crafts.",
+      "lua_chon": ["in", "on", "at", "for"],
+      "dap_an": 1,
+      "giai_thich": "Cụm \"be keen on + V-ing\" nghĩa là rất thích làm gì. Đây là cụm cố định, không dùng giới từ khác."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Communities (Unit 1–3)", "chu_de": "Unit 1: Leisure time", "do_kho": "easy",
+      "cau_hoi": "Which word means \"an activity you do for pleasure in your free time\"?",
+      "lua_chon": ["homework", "hobby", "housework", "duty"],
+      "dap_an": 1,
+      "giai_thich": "\"Hobby\" là sở thích — hoạt động làm vì thích trong thời gian rảnh. Ba từ còn lại là việc bắt buộc."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Communities (Unit 1–3)", "chu_de": "Unit 1: Leisure time", "do_kho": "medium",
+      "cau_hoi": "Choose the correct sentence to express dislike.",
+      "lua_chon": ["I'm fond of doing DIY.", "I can't stand doing DIY.", "I'm into doing DIY.", "I'm crazy about doing DIY."],
+      "dap_an": 1,
+      "giai_thich": "\"Can't stand\" nghĩa là không chịu nổi, diễn tả sự ghét. Ba lựa chọn kia đều diễn tả sự yêu thích."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Communities (Unit 1–3)", "chu_de": "Unit 1: Leisure time", "do_kho": "medium",
+      "cau_hoi": "Complete: She enjoys ___ to music after school.",
+      "lua_chon": ["listen", "to listen", "listening", "listened"],
+      "dap_an": 2,
+      "giai_thich": "Động từ \"enjoy\" luôn đi với V-ing, không đi với to-infinitive."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Communities (Unit 1–3)", "chu_de": "Unit 1: Leisure time", "do_kho": "medium",
+      "cau_hoi": "Which verb can be followed by BOTH a to-infinitive and a gerund with little change in meaning?",
+      "lua_chon": ["enjoy", "like", "avoid", "mind"],
+      "dap_an": 1,
+      "giai_thich": "\"Like\" dùng được cả \"like to do\" và \"like doing\". Enjoy, avoid, mind chỉ đi với V-ing."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Communities (Unit 1–3)", "chu_de": "Unit 2: Life in the countryside", "do_kho": "easy",
+      "cau_hoi": "Choose the word that does NOT belong to the countryside topic.",
+      "lua_chon": ["buffalo", "paddy field", "skyscraper", "harvest"],
+      "dap_an": 2,
+      "giai_thich": "\"Skyscraper\" (nhà chọc trời) thuộc về thành phố. Ba từ còn lại gắn với nông thôn."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Communities (Unit 1–3)", "chu_de": "Unit 2: Life in the countryside", "do_kho": "medium",
+      "cau_hoi": "Complete the comparison: Life in the countryside is ___ than life in the city.",
+      "lua_chon": ["peaceful", "more peaceful", "most peaceful", "peacefuller"],
+      "dap_an": 1,
+      "giai_thich": "\"Peaceful\" là tính từ dài (3 âm tiết) nên so sánh hơn dùng \"more peaceful\", không thêm đuôi -er."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Communities (Unit 1–3)", "chu_de": "Unit 2: Life in the countryside", "do_kho": "medium",
+      "cau_hoi": "Choose the correct comparative form: The air here is ___ than in the city.",
+      "lua_chon": ["fresher", "more fresh", "freshest", "most fresh"],
+      "dap_an": 0,
+      "giai_thich": "\"Fresh\" là tính từ ngắn một âm tiết, so sánh hơn thêm đuôi -er: fresher."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Communities (Unit 1–3)", "chu_de": "Unit 2: Life in the countryside", "do_kho": "medium",
+      "cau_hoi": "What does \"to pick fruit\" mean?",
+      "lua_chon": ["to buy fruit", "to collect fruit from trees", "to sell fruit", "to plant fruit trees"],
+      "dap_an": 1,
+      "giai_thich": "\"Pick fruit\" nghĩa là hái quả từ trên cây xuống."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Communities (Unit 1–3)", "chu_de": "Unit 3: Teenagers", "do_kho": "easy",
+      "cau_hoi": "Choose the best answer: Teenagers should learn some ___ skills such as cooking and washing.",
+      "lua_chon": ["life", "live", "living", "lively"],
+      "dap_an": 0,
+      "giai_thich": "\"Life skills\" là cụm danh từ ghép cố định, nghĩa là kĩ năng sống."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Communities (Unit 1–3)", "chu_de": "Unit 3: Teenagers", "do_kho": "medium",
+      "cau_hoi": "Complete: My parents don't allow me ___ out late at night.",
+      "lua_chon": ["go", "going", "to go", "went"],
+      "dap_an": 2,
+      "giai_thich": "Cấu trúc \"allow somebody to do something\" — sau tân ngữ dùng to-infinitive."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Communities (Unit 1–3)", "chu_de": "Unit 3: Teenagers", "do_kho": "medium",
+      "cau_hoi": "Which sentence uses the correct form after \"should\"?",
+      "lua_chon": ["You should to study harder.", "You should studying harder.", "You should study harder.", "You should studied harder."],
+      "dap_an": 2,
+      "giai_thich": "Sau động từ khuyết thiếu \"should\" luôn dùng động từ nguyên thể không \"to\"."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Communities (Unit 1–3)", "chu_de": "Unit 3: Teenagers", "do_kho": "medium",
+      "cau_hoi": "Choose the word with a different stress pattern.",
+      "lua_chon": ["teenager", "important", "family", "beautiful"],
+      "dap_an": 1,
+      "giai_thich": "\"Important\" trọng âm rơi vào âm tiết thứ hai (im-POR-tant). Ba từ còn lại trọng âm ở âm tiết đầu."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Communities (Unit 1–3)", "chu_de": "Review 1", "do_kho": "medium",
+      "cau_hoi": "Choose the correct answer: She is interested ___ learning Japanese.",
+      "lua_chon": ["on", "at", "in", "for"],
+      "dap_an": 2,
+      "giai_thich": "Cụm cố định \"be interested in + V-ing/N\" nghĩa là quan tâm, hứng thú với."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Communities (Unit 1–3)", "chu_de": "Review 1", "do_kho": "medium",
+      "cau_hoi": "Which word has the underlined part pronounced differently: br**ea**d, h**ea**d, br**ea**k, h**ea**lthy?",
+      "lua_chon": ["bread", "head", "break", "healthy"],
+      "dap_an": 2,
+      "giai_thich": "\"Break\" phát âm /eɪ/, ba từ còn lại phát âm /e/."
+    },
+
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Heritage (Unit 4–6)", "chu_de": "Unit 4: Ethnic groups of Viet Nam", "do_kho": "easy",
+      "cau_hoi": "How many ethnic groups are there in Viet Nam?",
+      "lua_chon": ["24", "44", "54", "64"],
+      "dap_an": 2,
+      "giai_thich": "Việt Nam có 54 dân tộc anh em, trong đó dân tộc Kinh chiếm đa số."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Heritage (Unit 4–6)", "chu_de": "Unit 4: Ethnic groups of Viet Nam", "do_kho": "medium",
+      "cau_hoi": "Choose the correct word: The Tay people live in stilt ___.",
+      "lua_chon": ["houses", "home", "building", "flats"],
+      "dap_an": 0,
+      "giai_thich": "\"Stilt house\" là nhà sàn. Ở đây cần số nhiều \"houses\" vì nói về nhiều người."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Heritage (Unit 4–6)", "chu_de": "Unit 4: Ethnic groups of Viet Nam", "do_kho": "medium",
+      "cau_hoi": "Complete with a superlative: The Kinh is the ___ ethnic group in Viet Nam.",
+      "lua_chon": ["larger", "largest", "more large", "most large"],
+      "dap_an": 1,
+      "giai_thich": "\"Large\" là tính từ ngắn, so sánh nhất thêm -est và có \"the\" đứng trước: the largest."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Heritage (Unit 4–6)", "chu_de": "Unit 5: Our customs and traditions", "do_kho": "easy",
+      "cau_hoi": "What does \"custom\" mean?",
+      "lua_chon": ["a new law", "a usual way of behaving in a society", "a type of food", "a kind of clothing"],
+      "dap_an": 1,
+      "giai_thich": "\"Custom\" là phong tục — cách cư xử quen thuộc của một cộng đồng."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Heritage (Unit 4–6)", "chu_de": "Unit 5: Our customs and traditions", "do_kho": "medium",
+      "cau_hoi": "Choose the correct answer: It is a tradition ___ lucky money at Tet.",
+      "lua_chon": ["give", "giving", "to give", "gave"],
+      "dap_an": 2,
+      "giai_thich": "Cấu trúc \"It is + adj/noun + to-infinitive\" — dùng to give."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Heritage (Unit 4–6)", "chu_de": "Unit 5: Our customs and traditions", "do_kho": "medium",
+      "cau_hoi": "Which modal verb expresses obligation?",
+      "lua_chon": ["may", "might", "must", "could"],
+      "dap_an": 2,
+      "giai_thich": "\"Must\" diễn tả sự bắt buộc. May, might, could diễn tả khả năng hoặc sự cho phép."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Heritage (Unit 4–6)", "chu_de": "Unit 5: Our customs and traditions", "do_kho": "medium",
+      "cau_hoi": "Complete: You ___ take off your shoes before entering a temple.",
+      "lua_chon": ["shouldn't", "should", "don't have to", "mustn't"],
+      "dap_an": 1,
+      "giai_thich": "Đây là lời khuyên về phép lịch sự khi vào chùa, nên dùng \"should\"."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Heritage (Unit 4–6)", "chu_de": "Unit 6: Lifestyles", "do_kho": "easy",
+      "cau_hoi": "Which phrase describes a healthy lifestyle?",
+      "lua_chon": ["eating fast food every day", "doing exercise regularly", "staying up late", "skipping breakfast"],
+      "dap_an": 1,
+      "giai_thich": "Tập thể dục đều đặn là thói quen lành mạnh. Ba lựa chọn còn lại đều có hại cho sức khoẻ."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Heritage (Unit 4–6)", "chu_de": "Unit 6: Lifestyles", "do_kho": "medium",
+      "cau_hoi": "Choose the correct answer: If you eat too much sugar, you ___ gain weight.",
+      "lua_chon": ["will", "would", "had", "are"],
+      "dap_an": 0,
+      "giai_thich": "Câu điều kiện loại 1: If + hiện tại đơn, mệnh đề chính dùng \"will + V\"."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Heritage (Unit 4–6)", "chu_de": "Unit 6: Lifestyles", "do_kho": "medium",
+      "cau_hoi": "What does \"to cut down on something\" mean?",
+      "lua_chon": ["to increase it", "to reduce it", "to remove it completely", "to buy more of it"],
+      "dap_an": 1,
+      "giai_thich": "\"Cut down on\" nghĩa là giảm bớt, ví dụ: cut down on sugar — giảm ăn đường."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Heritage (Unit 4–6)", "chu_de": "Review 2", "do_kho": "medium",
+      "cau_hoi": "Choose the sentence with correct word order.",
+      "lua_chon": ["She always is late for school.", "She is always late for school.", "Always she is late for school.", "She is late always for school."],
+      "dap_an": 1,
+      "giai_thich": "Trạng từ tần suất (always) đứng SAU động từ \"to be\" và TRƯỚC động từ thường."
+    },
+
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our World (Unit 7–9)", "chu_de": "Unit 7: Environmental protection", "do_kho": "easy",
+      "cau_hoi": "What are the \"3Rs\" in environmental protection?",
+      "lua_chon": ["Read, Write, Repeat", "Reduce, Reuse, Recycle", "Run, Rest, Relax", "Right, Red, Round"],
+      "dap_an": 1,
+      "giai_thich": "3Rs là Reduce (giảm thiểu), Reuse (tái sử dụng) và Recycle (tái chế)."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our World (Unit 7–9)", "chu_de": "Unit 7: Environmental protection", "do_kho": "medium",
+      "cau_hoi": "Choose the correct answer: Water pollution ___ by factory waste.",
+      "lua_chon": ["causes", "is caused", "caused", "is causing"],
+      "dap_an": 1,
+      "giai_thich": "Câu bị động: ô nhiễm nước BỊ gây ra bởi chất thải nhà máy, nên dùng \"is caused by\"."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our World (Unit 7–9)", "chu_de": "Unit 7: Environmental protection", "do_kho": "medium",
+      "cau_hoi": "Complete the complex sentence: ___ we protect the forests, many animals will lose their homes.",
+      "lua_chon": ["If", "Unless", "When", "Because"],
+      "dap_an": 1,
+      "giai_thich": "\"Unless\" = \"if not\". Câu nghĩa: nếu chúng ta KHÔNG bảo vệ rừng thì nhiều loài sẽ mất nơi ở."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our World (Unit 7–9)", "chu_de": "Unit 8: Shopping", "do_kho": "easy",
+      "cau_hoi": "Where can you buy things without leaving your house?",
+      "lua_chon": ["at a street market", "at a shopping mall", "online", "at a grocery store"],
+      "dap_an": 2,
+      "giai_thich": "Mua sắm trực tuyến (online shopping) cho phép mua hàng mà không cần ra khỏi nhà."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our World (Unit 7–9)", "chu_de": "Unit 8: Shopping", "do_kho": "medium",
+      "cau_hoi": "Choose the correct answer: These shoes are ___ expensive for me to buy.",
+      "lua_chon": ["so", "such", "too", "enough"],
+      "dap_an": 2,
+      "giai_thich": "Cấu trúc \"too + adj + for somebody + to do\" nghĩa là quá... để ai đó làm gì."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our World (Unit 7–9)", "chu_de": "Unit 8: Shopping", "do_kho": "medium",
+      "cau_hoi": "What does \"a bargain\" mean?",
+      "lua_chon": ["something very expensive", "something bought at a low price", "a shopping list", "a type of shop"],
+      "dap_an": 1,
+      "giai_thich": "\"A bargain\" là món hời — thứ mua được với giá rẻ hơn bình thường."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our World (Unit 7–9)", "chu_de": "Unit 9: Natural disasters", "do_kho": "easy",
+      "cau_hoi": "Which word describes a sudden violent shaking of the ground?",
+      "lua_chon": ["flood", "drought", "earthquake", "storm"],
+      "dap_an": 2,
+      "giai_thich": "\"Earthquake\" là động đất — hiện tượng mặt đất rung chuyển đột ngột."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our World (Unit 7–9)", "chu_de": "Unit 9: Natural disasters", "do_kho": "medium",
+      "cau_hoi": "Choose the correct past continuous form: We ___ dinner when the storm started.",
+      "lua_chon": ["have", "had", "were having", "are having"],
+      "dap_an": 2,
+      "giai_thich": "Quá khứ tiếp diễn diễn tả hành động đang xảy ra thì có hành động khác xen vào: were having."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our World (Unit 7–9)", "chu_de": "Unit 9: Natural disasters", "do_kho": "medium",
+      "cau_hoi": "Which word means \"a long period without rain\"?",
+      "lua_chon": ["flood", "drought", "tsunami", "landslide"],
+      "dap_an": 1,
+      "giai_thich": "\"Drought\" là hạn hán — thời gian dài không có mưa."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our World (Unit 7–9)", "chu_de": "Review 3", "do_kho": "medium",
+      "cau_hoi": "Choose the word with different stress: natural, disaster, dangerous, beautiful.",
+      "lua_chon": ["natural", "disaster", "dangerous", "beautiful"],
+      "dap_an": 1,
+      "giai_thich": "\"Disaster\" trọng âm ở âm tiết thứ hai (di-SAS-ter), ba từ còn lại trọng âm ở âm tiết đầu."
+    },
+
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Visions of the Future (Unit 10–12)", "chu_de": "Unit 10: Communication in the future", "do_kho": "easy",
+      "cau_hoi": "Which device is commonly used for video calls?",
+      "lua_chon": ["telegraph", "smartphone", "typewriter", "radio"],
+      "dap_an": 1,
+      "giai_thich": "Điện thoại thông minh có camera và internet nên dùng để gọi video."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Visions of the Future (Unit 10–12)", "chu_de": "Unit 10: Communication in the future", "do_kho": "medium",
+      "cau_hoi": "Choose the correct future form: In 2050, people ___ with holograms.",
+      "lua_chon": ["communicate", "communicated", "will communicate", "have communicated"],
+      "dap_an": 2,
+      "giai_thich": "Nói về dự đoán tương lai nên dùng \"will + V\"."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Visions of the Future (Unit 10–12)", "chu_de": "Unit 10: Communication in the future", "do_kho": "medium",
+      "cau_hoi": "What does \"face-to-face communication\" mean?",
+      "lua_chon": ["talking on the phone", "talking in person", "sending emails", "texting"],
+      "dap_an": 1,
+      "giai_thich": "\"Face-to-face\" nghĩa là gặp mặt trực tiếp để nói chuyện."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Visions of the Future (Unit 10–12)", "chu_de": "Unit 11: Science and technology", "do_kho": "easy",
+      "cau_hoi": "What does \"AI\" stand for?",
+      "lua_chon": ["Automatic Internet", "Artificial Intelligence", "Advanced Information", "Applied Industry"],
+      "dap_an": 1,
+      "giai_thich": "AI là viết tắt của Artificial Intelligence — trí tuệ nhân tạo."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Visions of the Future (Unit 10–12)", "chu_de": "Unit 11: Science and technology", "do_kho": "medium",
+      "cau_hoi": "Choose the correct reported speech: He said, \"I am studying English.\" → He said that he ___ English.",
+      "lua_chon": ["is studying", "was studying", "studies", "has studied"],
+      "dap_an": 1,
+      "giai_thich": "Trong câu tường thuật, thì hiện tại tiếp diễn lùi về quá khứ tiếp diễn: was studying."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Visions of the Future (Unit 10–12)", "chu_de": "Unit 11: Science and technology", "do_kho": "medium",
+      "cau_hoi": "Which word is a benefit of technology?",
+      "lua_chon": ["convenience", "addiction", "isolation", "pollution"],
+      "dap_an": 0,
+      "giai_thich": "\"Convenience\" (sự tiện lợi) là lợi ích. Ba từ còn lại là mặt trái của công nghệ."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Visions of the Future (Unit 10–12)", "chu_de": "Unit 12: Life on other planets", "do_kho": "easy",
+      "cau_hoi": "What is a \"UFO\"?",
+      "lua_chon": ["United Flight Organization", "Unidentified Flying Object", "Universal Future Office", "Under Floor Opening"],
+      "dap_an": 1,
+      "giai_thich": "UFO là Unidentified Flying Object — vật thể bay không xác định."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Visions of the Future (Unit 10–12)", "chu_de": "Unit 12: Life on other planets", "do_kho": "medium",
+      "cau_hoi": "Choose the correct answer: Scientists believe there ___ water on Mars.",
+      "lua_chon": ["is", "are", "be", "being"],
+      "dap_an": 0,
+      "giai_thich": "\"Water\" là danh từ không đếm được nên dùng động từ số ít \"is\" trong cấu trúc \"there is\"."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Visions of the Future (Unit 10–12)", "chu_de": "Unit 12: Life on other planets", "do_kho": "medium",
+      "cau_hoi": "Which planet is known as the Red Planet?",
+      "lua_chon": ["Venus", "Mars", "Jupiter", "Saturn"],
+      "dap_an": 1,
+      "giai_thich": "Sao Hoả (Mars) được gọi là Hành tinh Đỏ vì bề mặt chứa nhiều oxide sắt màu đỏ."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Visions of the Future (Unit 10–12)", "chu_de": "Review 4", "do_kho": "medium",
+      "cau_hoi": "Choose the correct passive sentence.",
+      "lua_chon": ["The robot was made by engineers.", "The robot made by engineers.", "The robot is make by engineers.", "The robot were made by engineers."],
+      "dap_an": 0,
+      "giai_thich": "Bị động quá khứ đơn số ít: was + V3 (made), theo sau là \"by + tác nhân\"."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Visions of the Future (Unit 10–12)", "chu_de": "Review 4", "do_kho": "hard",
+      "cau_hoi": "Choose the sentence closest in meaning to: \"It's too noisy for me to study here.\"",
+      "lua_chon": ["It's so noisy that I can study here.", "It isn't quiet enough for me to study here.", "It's quiet enough for me to study here.", "I can study here because it's noisy."],
+      "dap_an": 1,
+      "giai_thich": "\"Too + adj\" tương đương \"not + adj trái nghĩa + enough\". Quá ồn để học = không đủ yên tĩnh để học."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Communities (Unit 1–3)", "chu_de": "Unit 2: Life in the countryside", "do_kho": "hard",
+      "cau_hoi": "Choose the correct sentence using an adverb clause of time.",
+      "lua_chon": ["When the sun rose, the farmers started working.", "When the sun rose the farmers started working", "The farmers started working when rose the sun.", "When rose the sun, the farmers started working."],
+      "dap_an": 0,
+      "giai_thich": "Mệnh đề trạng ngữ chỉ thời gian đứng đầu câu phải có dấu phẩy ngăn cách, và giữ trật tự chủ ngữ + động từ."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our Heritage (Unit 4–6)", "chu_de": "Unit 6: Lifestyles", "do_kho": "hard",
+      "cau_hoi": "Choose the correct answer: She used ___ in the countryside when she was young.",
+      "lua_chon": ["to live", "living", "live", "lived"],
+      "dap_an": 0,
+      "giai_thich": "\"Used to + V\" diễn tả thói quen trong quá khứ nay không còn. Khác với \"be used to + V-ing\" (quen với việc gì)."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Our World (Unit 7–9)", "chu_de": "Unit 7: Environmental protection", "do_kho": "hard",
+      "cau_hoi": "Choose the best way to combine: \"We plant more trees. The air becomes cleaner.\"",
+      "lua_chon": ["We plant more trees, so the air becomes cleaner.", "We plant more trees, but the air becomes cleaner.", "We plant more trees, or the air becomes cleaner.", "We plant more trees although the air becomes cleaner."],
+      "dap_an": 0,
+      "giai_thich": "Quan hệ nguyên nhân – kết quả nên dùng \"so\". \"But\", \"or\", \"although\" diễn tả quan hệ khác."
+    },
+    {
+      "mon": "Tiếng Anh 8", "chuong": "Visions of the Future (Unit 10–12)", "chu_de": "Unit 11: Science and technology", "do_kho": "hard",
+      "cau_hoi": "Report this question: She asked, \"Where do you live?\" → She asked me where ___.",
+      "lua_chon": ["do I live", "I live", "I lived", "did I live"],
+      "dap_an": 2,
+      "giai_thich": "Câu hỏi tường thuật dùng trật tự khẳng định (chủ ngữ + động từ), và thì lùi một bậc: live → lived."
+    }
+  ]
+}

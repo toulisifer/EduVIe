@@ -1,0 +1,46 @@
+{
+  "ho_chi_minh": {
+    "commons_file": "Ho_Chi_Minh_-_1946_Portrait.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_-_1946_Portrait.jpg"
+  },
+  "curie": {
+    "commons_file": "Marie_Curie_c._1920s.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Marie_Curie_c._1920s.jpg"
+  },
+  "darwin": {
+    "commons_file": "Charles_Darwin_seated_crop.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Charles_Darwin_seated_crop.jpg"
+  },
+  "tolstoy": {
+    "commons_file": "L.N.Tolstoy_Prokudin-Gorsky.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:L.N.Tolstoy_Prokudin-Gorsky.jpg"
+  },
+  "turing": {
+    "commons_file": "Alan_Turing_Aged_16.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Alan_Turing_Aged_16.jpg"
+  },
+  "shakespeare": {
+    "commons_file": "Shakespeare.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Shakespeare.jpg"
+  },
+  "herodotus": {
+    "commons_file": "Herodotos_Met_91.8.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Herodotos_Met_91.8.jpg"
+  },
+  "humboldt": {
+    "commons_file": "Alexander_von_Humboldt-selfportrait.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Alexander_von_Humboldt-selfportrait.jpg"
+  },
+  "socrates": {
+    "commons_file": "Socrates_Louvre.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Socrates_Louvre.jpg"
+  },
+  "tesla": {
+    "commons_file": "N.Tesla.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:N.Tesla.JPG"
+  },
+  "hippocrates": {
+    "commons_file": "Hippocrates_rubens.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Hippocrates_rubens.jpg"
+  }
+}

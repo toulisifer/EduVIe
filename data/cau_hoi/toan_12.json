@@ -1,0 +1,343 @@
+{
+  "_mon": "Toán 12",
+  "_nguon": "Soạn theo SGK Toán 12 — Kết nối tri thức với cuộc sống",
+  "_ghi_chu": "Bổ sung cho 6 câu Toán 12 đã có trong ngan_hang_cau_hoi.json",
+  "_so_cau": 44,
+
+  "cau_hoi": [
+    {
+      "mon": "Toán 12", "chuong": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số", "chu_de": "Tính đơn điệu của hàm số", "do_kho": "medium",
+      "cau_hoi": "Hàm số $y = x^3 + 3x$ đồng biến trên khoảng nào?",
+      "lua_chon": ["$(-\\infty; 0)$", "$(0; +\\infty)$", "$\\mathbb{R}$", "$(-1; 1)$"],
+      "dap_an": 2,
+      "giai_thich": "$y' = 3x^2 + 3 > 0$ với mọi $x$, nên hàm số đồng biến trên toàn bộ $\\mathbb{R}$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số", "chu_de": "Tính đơn điệu của hàm số", "do_kho": "medium",
+      "cau_hoi": "Hàm số $y = -x^2 + 4x$ nghịch biến trên khoảng nào?",
+      "lua_chon": ["$(-\\infty; 2)$", "$(2; +\\infty)$", "$(0; 4)$", "$\\mathbb{R}$"],
+      "dap_an": 1,
+      "giai_thich": "$y' = -2x + 4 < 0 \\Leftrightarrow x > 2$. Vậy hàm nghịch biến trên $(2; +\\infty)$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số", "chu_de": "Tính đơn điệu của hàm số", "do_kho": "hard",
+      "cau_hoi": "Tìm $m$ để hàm số $y = x^3 - 3mx$ đồng biến trên $\\mathbb{R}$.",
+      "lua_chon": ["$m \\leq 0$", "$m \\geq 0$", "$m > 0$", "$m < 0$"],
+      "dap_an": 0,
+      "giai_thich": "$y' = 3x^2 - 3m \\geq 0$ với mọi $x$ khi $3m \\leq 3x^2$ với mọi $x$, tức $m \\leq 0$ (vì $\\min x^2 = 0$)."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số", "chu_de": "Cực trị của hàm số", "do_kho": "easy",
+      "cau_hoi": "Điều kiện cần để hàm số $y = f(x)$ đạt cực trị tại $x_0$ (hàm có đạo hàm tại đó) là gì?",
+      "lua_chon": ["$f(x_0) = 0$", "$f'(x_0) = 0$", "$f''(x_0) = 0$", "$f'(x_0) > 0$"],
+      "dap_an": 1,
+      "giai_thich": "Nếu hàm số có đạo hàm tại $x_0$ và đạt cực trị tại đó thì $f'(x_0) = 0$. Đây là điều kiện cần, chưa đủ."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số", "chu_de": "Cực trị của hàm số", "do_kho": "medium",
+      "cau_hoi": "Hàm số $y = x^4 - 2x^2$ có bao nhiêu điểm cực trị?",
+      "lua_chon": ["1", "2", "3", "4"],
+      "dap_an": 2,
+      "giai_thich": "$y' = 4x^3 - 4x = 4x(x^2 - 1) = 0 \\Rightarrow x = 0; \\pm 1$. Đạo hàm đổi dấu tại cả ba điểm nên có 3 cực trị."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số", "chu_de": "Cực trị của hàm số", "do_kho": "medium",
+      "cau_hoi": "Giá trị cực tiểu của hàm số $y = x^2 - 4x + 1$ là:",
+      "lua_chon": ["$-3$", "$1$", "$2$", "$3$"],
+      "dap_an": 0,
+      "giai_thich": "$y' = 2x - 4 = 0 \\Rightarrow x = 2$. Thay vào: $y(2) = 4 - 8 + 1 = -3$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số", "chu_de": "Giá trị lớn nhất và nhỏ nhất", "do_kho": "medium",
+      "cau_hoi": "Giá trị nhỏ nhất của hàm số $y = x^2 - 2x + 3$ trên đoạn $[0; 3]$ là:",
+      "lua_chon": ["$2$", "$3$", "$6$", "$0$"],
+      "dap_an": 0,
+      "giai_thich": "$y' = 2x - 2 = 0 \\Rightarrow x = 1 \\in [0;3]$. So sánh $y(0) = 3$, $y(1) = 2$, $y(3) = 6$ nên giá trị nhỏ nhất là 2."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số", "chu_de": "Giá trị lớn nhất và nhỏ nhất", "do_kho": "hard",
+      "cau_hoi": "Tìm giá trị lớn nhất của hàm số $y = \\dfrac{x}{x^2 + 1}$ trên $\\mathbb{R}$.",
+      "lua_chon": ["$\\dfrac{1}{4}$", "$\\dfrac{1}{2}$", "$1$", "$2$"],
+      "dap_an": 1,
+      "giai_thich": "$y' = \\dfrac{1 - x^2}{(x^2+1)^2} = 0 \\Rightarrow x = \\pm 1$. Tại $x = 1$: $y = \\dfrac{1}{2}$ là giá trị lớn nhất."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số", "chu_de": "Đường tiệm cận", "do_kho": "medium",
+      "cau_hoi": "Đồ thị hàm số $y = \\dfrac{1}{x - 2}$ có tiệm cận đứng là đường thẳng nào?",
+      "lua_chon": ["$x = 0$", "$x = 2$", "$y = 0$", "$y = 2$"],
+      "dap_an": 1,
+      "giai_thich": "Mẫu bằng 0 tại $x = 2$ và giới hạn tại đó là vô cực, nên $x = 2$ là tiệm cận đứng."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số", "chu_de": "Đường tiệm cận", "do_kho": "hard",
+      "cau_hoi": "Đồ thị hàm số $y = \\dfrac{x^2 - 1}{x - 1}$ có bao nhiêu đường tiệm cận?",
+      "lua_chon": ["0", "1", "2", "3"],
+      "dap_an": 0,
+      "giai_thich": "Rút gọn được $y = x + 1$ với $x \\neq 1$. Đây là đường thẳng nên không có tiệm cận nào, chỉ thiếu một điểm."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số", "chu_de": "Khảo sát và vẽ đồ thị hàm số", "do_kho": "medium",
+      "cau_hoi": "Đồ thị hàm số bậc ba $y = ax^3 + bx^2 + cx + d$ ($a \\neq 0$) luôn có tâm đối xứng là điểm nào?",
+      "lua_chon": ["Gốc toạ độ", "Điểm uốn", "Điểm cực đại", "Giao với trục tung"],
+      "dap_an": 1,
+      "giai_thich": "Đồ thị hàm bậc ba nhận điểm uốn (nơi $y'' = 0$) làm tâm đối xứng."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số", "chu_de": "Khảo sát và vẽ đồ thị hàm số", "do_kho": "medium",
+      "cau_hoi": "Số giao điểm của đồ thị $y = x^3 - 3x$ với trục hoành là:",
+      "lua_chon": ["1", "2", "3", "0"],
+      "dap_an": 2,
+      "giai_thich": "Giải $x^3 - 3x = 0 \\Leftrightarrow x(x^2 - 3) = 0 \\Rightarrow x = 0; \\pm\\sqrt{3}$ — ba nghiệm phân biệt."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số", "chu_de": "Ứng dụng đạo hàm vào thực tiễn", "do_kho": "hard",
+      "cau_hoi": "Một mảnh vườn hình chữ nhật có chu vi 40 m. Diện tích lớn nhất có thể đạt được là:",
+      "lua_chon": ["$80\\ m^2$", "$100\\ m^2$", "$120\\ m^2$", "$160\\ m^2$"],
+      "dap_an": 1,
+      "giai_thich": "Gọi một cạnh là $x$, cạnh kia là $20 - x$. Diện tích $S = x(20-x)$, đạt cực đại tại $x = 10$, khi đó $S = 100\\ m^2$ (hình vuông)."
+    },
+
+    {
+      "mon": "Toán 12", "chuong": "Chương 2: Vectơ và hệ trục toạ độ trong không gian", "chu_de": "Vectơ trong không gian", "do_kho": "easy",
+      "cau_hoi": "Hai vectơ bằng nhau khi nào?",
+      "lua_chon": ["Cùng độ dài", "Cùng hướng", "Cùng hướng và cùng độ dài", "Cùng phương"],
+      "dap_an": 2,
+      "giai_thich": "Hai vectơ bằng nhau khi chúng cùng hướng (cùng phương và cùng chiều) và có cùng độ dài."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 2: Vectơ và hệ trục toạ độ trong không gian", "chu_de": "Vectơ trong không gian", "do_kho": "medium",
+      "cau_hoi": "Cho hình hộp $ABCD.A'B'C'D'$. Tổng $\\vec{AB} + \\vec{AD} + \\vec{AA'}$ bằng vectơ nào?",
+      "lua_chon": ["$\\vec{AC}$", "$\\vec{AC'}$", "$\\vec{AB'}$", "$\\vec{AD'}$"],
+      "dap_an": 1,
+      "giai_thich": "Theo quy tắc hình hộp, tổng ba vectơ cạnh xuất phát từ cùng một đỉnh bằng vectơ đường chéo: $\\vec{AC'}$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 2: Vectơ và hệ trục toạ độ trong không gian", "chu_de": "Hệ trục toạ độ trong không gian", "do_kho": "easy",
+      "cau_hoi": "Trong không gian $Oxyz$, điểm $M(2; -3; 5)$ có hoành độ bằng bao nhiêu?",
+      "lua_chon": ["2", "-3", "5", "0"],
+      "dap_an": 0,
+      "giai_thich": "Toạ độ điểm viết theo thứ tự (hoành độ; tung độ; cao độ), nên hoành độ là 2."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 2: Vectơ và hệ trục toạ độ trong không gian", "chu_de": "Hệ trục toạ độ trong không gian", "do_kho": "medium",
+      "cau_hoi": "Cho $A(1; 2; 3)$ và $B(4; 6; 3)$. Độ dài đoạn $AB$ bằng:",
+      "lua_chon": ["3", "4", "5", "7"],
+      "dap_an": 2,
+      "giai_thich": "$AB = \\sqrt{(4-1)^2 + (6-2)^2 + (3-3)^2} = \\sqrt{9 + 16 + 0} = 5$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 2: Vectơ và hệ trục toạ độ trong không gian", "chu_de": "Biểu thức toạ độ của các phép toán vectơ", "do_kho": "medium",
+      "cau_hoi": "Cho $\\vec{u} = (1; 2; -1)$ và $\\vec{v} = (3; 0; 2)$. Tích vô hướng $\\vec{u} \\cdot \\vec{v}$ bằng:",
+      "lua_chon": ["1", "3", "5", "-1"],
+      "dap_an": 0,
+      "giai_thich": "$\\vec{u} \\cdot \\vec{v} = 1 \\cdot 3 + 2 \\cdot 0 + (-1) \\cdot 2 = 3 + 0 - 2 = 1$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 2: Vectơ và hệ trục toạ độ trong không gian", "chu_de": "Biểu thức toạ độ của các phép toán vectơ", "do_kho": "medium",
+      "cau_hoi": "Hai vectơ $\\vec{u}$ và $\\vec{v}$ vuông góc khi nào?",
+      "lua_chon": ["$\\vec{u} \\cdot \\vec{v} = 1$", "$\\vec{u} \\cdot \\vec{v} = 0$", "$\\vec{u} = \\vec{v}$", "$|\\vec{u}| = |\\vec{v}|$"],
+      "dap_an": 1,
+      "giai_thich": "Hai vectơ khác $\\vec{0}$ vuông góc khi và chỉ khi tích vô hướng của chúng bằng 0."
+    },
+
+    {
+      "mon": "Toán 12", "chuong": "Chương 3: Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm", "chu_de": "Khoảng biến thiên và khoảng tứ phân vị", "do_kho": "easy",
+      "cau_hoi": "Khoảng biến thiên của mẫu số liệu được tính bằng:",
+      "lua_chon": ["Giá trị lớn nhất trừ giá trị nhỏ nhất", "Trung bình cộng", "Tổng các giá trị", "Giá trị xuất hiện nhiều nhất"],
+      "dap_an": 0,
+      "giai_thich": "Khoảng biến thiên $R = x_{max} - x_{min}$, đo độ trải rộng của mẫu số liệu."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 3: Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm", "chu_de": "Khoảng biến thiên và khoảng tứ phân vị", "do_kho": "medium",
+      "cau_hoi": "Khoảng tứ phân vị được tính bằng công thức nào?",
+      "lua_chon": ["$Q_3 - Q_1$", "$Q_3 + Q_1$", "$Q_2 - Q_1$", "$Q_3 - Q_2$"],
+      "dap_an": 0,
+      "giai_thich": "$\\Delta_Q = Q_3 - Q_1$, đo độ phân tán của nửa giữa mẫu số liệu, ít chịu ảnh hưởng của giá trị bất thường."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 3: Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm", "chu_de": "Khoảng biến thiên và khoảng tứ phân vị", "do_kho": "medium",
+      "cau_hoi": "Ưu điểm của khoảng tứ phân vị so với khoảng biến thiên là gì?",
+      "lua_chon": ["Dễ tính hơn", "Ít bị ảnh hưởng bởi giá trị bất thường", "Luôn lớn hơn", "Không cần sắp xếp số liệu"],
+      "dap_an": 1,
+      "giai_thich": "Khoảng biến thiên chỉ dựa vào hai giá trị đầu cuối nên rất nhạy với giá trị bất thường; khoảng tứ phân vị bỏ qua 25% hai đầu."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 3: Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm", "chu_de": "Phương sai và độ lệch chuẩn", "do_kho": "medium",
+      "cau_hoi": "Độ lệch chuẩn được tính từ phương sai bằng cách nào?",
+      "lua_chon": ["Bình phương phương sai", "Căn bậc hai của phương sai", "Nghịch đảo phương sai", "Nhân đôi phương sai"],
+      "dap_an": 1,
+      "giai_thich": "$s = \\sqrt{s^2}$. Độ lệch chuẩn có cùng đơn vị với số liệu gốc nên dễ diễn giải hơn phương sai."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 3: Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm", "chu_de": "Phương sai và độ lệch chuẩn", "do_kho": "medium",
+      "cau_hoi": "Hai lớp có cùng điểm trung bình, lớp A có độ lệch chuẩn nhỏ hơn lớp B. Nhận xét nào đúng?",
+      "lua_chon": ["Điểm lớp A đồng đều hơn", "Điểm lớp A cao hơn", "Lớp A có nhiều học sinh hơn", "Lớp A có nhiều điểm 10 hơn"],
+      "dap_an": 0,
+      "giai_thich": "Độ lệch chuẩn nhỏ nghĩa là các giá trị tập trung gần giá trị trung bình, tức điểm số đồng đều hơn."
+    },
+
+    {
+      "mon": "Toán 12", "chuong": "Chương 4: Nguyên hàm và tích phân", "chu_de": "Nguyên hàm", "do_kho": "easy",
+      "cau_hoi": "Nguyên hàm của $f(x) = x^2$ là:",
+      "lua_chon": ["$\\dfrac{x^3}{3} + C$", "$2x + C$", "$x^3 + C$", "$\\dfrac{x^2}{2} + C$"],
+      "dap_an": 0,
+      "giai_thich": "$\\int x^n dx = \\dfrac{x^{n+1}}{n+1} + C$ với $n \\neq -1$. Với $n = 2$: $\\dfrac{x^3}{3} + C$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 4: Nguyên hàm và tích phân", "chu_de": "Nguyên hàm", "do_kho": "medium",
+      "cau_hoi": "Nguyên hàm của $f(x) = \\dfrac{1}{x}$ trên khoảng $(0; +\\infty)$ là:",
+      "lua_chon": ["$\\ln x + C$", "$\\dfrac{1}{x^2} + C$", "$-\\dfrac{1}{x^2} + C$", "$x\\ln x + C$"],
+      "dap_an": 0,
+      "giai_thich": "$\\int \\dfrac{1}{x}dx = \\ln|x| + C$. Trên khoảng dương thì viết gọn là $\\ln x + C$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 4: Nguyên hàm và tích phân", "chu_de": "Nguyên hàm", "do_kho": "medium",
+      "cau_hoi": "Nguyên hàm của $f(x) = \\cos x$ là:",
+      "lua_chon": ["$-\\sin x + C$", "$\\sin x + C$", "$\\cos x + C$", "$-\\cos x + C$"],
+      "dap_an": 1,
+      "giai_thich": "$\\int \\cos x\\,dx = \\sin x + C$, vì $(\\sin x)' = \\cos x$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 4: Nguyên hàm và tích phân", "chu_de": "Tích phân", "do_kho": "medium",
+      "cau_hoi": "Tính $\\int_{1}^{3} 2x\\,dx$.",
+      "lua_chon": ["4", "6", "8", "9"],
+      "dap_an": 2,
+      "giai_thich": "$\\int_{1}^{3} 2x\\,dx = x^2\\Big|_{1}^{3} = 9 - 1 = 8$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 4: Nguyên hàm và tích phân", "chu_de": "Tích phân", "do_kho": "medium",
+      "cau_hoi": "Nếu $\\int_{a}^{b} f(x)dx = 5$ thì $\\int_{b}^{a} f(x)dx$ bằng bao nhiêu?",
+      "lua_chon": ["5", "-5", "0", "10"],
+      "dap_an": 1,
+      "giai_thich": "Đổi cận thì tích phân đổi dấu: $\\int_{b}^{a} f(x)dx = -\\int_{a}^{b} f(x)dx = -5$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 4: Nguyên hàm và tích phân", "chu_de": "Tích phân", "do_kho": "hard",
+      "cau_hoi": "Tính $\\int_{0}^{1} (3x^2 + 2x)\\,dx$.",
+      "lua_chon": ["1", "2", "3", "5"],
+      "dap_an": 1,
+      "giai_thich": "$\\int_{0}^{1}(3x^2 + 2x)dx = (x^3 + x^2)\\Big|_{0}^{1} = (1 + 1) - 0 = 2$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 4: Nguyên hàm và tích phân", "chu_de": "Ứng dụng hình học của tích phân", "do_kho": "medium",
+      "cau_hoi": "Diện tích hình phẳng giới hạn bởi đồ thị $y = f(x) \\geq 0$, trục hoành và hai đường $x = a$, $x = b$ được tính bằng:",
+      "lua_chon": ["$\\int_{a}^{b} f(x)dx$", "$\\int_{a}^{b} f'(x)dx$", "$\\pi\\int_{a}^{b} f(x)dx$", "$\\int_{a}^{b} f^2(x)dx$"],
+      "dap_an": 0,
+      "giai_thich": "Khi $f(x) \\geq 0$ trên $[a;b]$, diện tích hình thang cong bằng $\\int_{a}^{b} f(x)dx$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 4: Nguyên hàm và tích phân", "chu_de": "Ứng dụng hình học của tích phân", "do_kho": "hard",
+      "cau_hoi": "Thể tích khối tròn xoay khi quay hình phẳng giới hạn bởi $y = f(x)$, trục hoành, $x = a$, $x = b$ quanh trục hoành là:",
+      "lua_chon": ["$\\int_{a}^{b} f(x)dx$", "$\\pi\\int_{a}^{b} f(x)dx$", "$\\pi\\int_{a}^{b} f^2(x)dx$", "$2\\pi\\int_{a}^{b} f(x)dx$"],
+      "dap_an": 2,
+      "giai_thich": "Công thức thể tích khối tròn xoay quanh trục $Ox$: $V = \\pi\\int_{a}^{b} f^2(x)\\,dx$."
+    },
+
+    {
+      "mon": "Toán 12", "chuong": "Chương 5: Phương pháp toạ độ trong không gian", "chu_de": "Phương trình mặt phẳng", "do_kho": "easy",
+      "cau_hoi": "Mặt phẳng có phương trình $2x - 3y + z - 5 = 0$ có một vectơ pháp tuyến là:",
+      "lua_chon": ["$(2; -3; 1)$", "$(2; 3; 1)$", "$(-5; 2; -3)$", "$(1; 1; 1)$"],
+      "dap_an": 0,
+      "giai_thich": "Mặt phẳng $Ax + By + Cz + D = 0$ có vectơ pháp tuyến $(A; B; C)$, ở đây là $(2; -3; 1)$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 5: Phương pháp toạ độ trong không gian", "chu_de": "Phương trình mặt phẳng", "do_kho": "medium",
+      "cau_hoi": "Khoảng cách từ điểm $M(x_0; y_0; z_0)$ đến mặt phẳng $Ax + By + Cz + D = 0$ được tính bằng:",
+      "lua_chon": ["$\\dfrac{|Ax_0 + By_0 + Cz_0 + D|}{\\sqrt{A^2+B^2+C^2}}$", "$|Ax_0 + By_0 + Cz_0 + D|$", "$\\dfrac{Ax_0 + By_0 + Cz_0}{D}$", "$\\sqrt{A^2+B^2+C^2}$"],
+      "dap_an": 0,
+      "giai_thich": "Công thức khoảng cách từ điểm đến mặt phẳng: tử là giá trị tuyệt đối khi thay toạ độ điểm vào vế trái, mẫu là độ dài vectơ pháp tuyến."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 5: Phương pháp toạ độ trong không gian", "chu_de": "Phương trình đường thẳng trong không gian", "do_kho": "medium",
+      "cau_hoi": "Đường thẳng đi qua $M(1; 2; 3)$ với vectơ chỉ phương $\\vec{u} = (2; -1; 1)$ có phương trình tham số là:",
+      "lua_chon": ["$x = 1+2t;\\ y = 2-t;\\ z = 3+t$", "$x = 2+t;\\ y = -1+2t;\\ z = 1+3t$", "$x = 1-2t;\\ y = 2+t;\\ z = 3-t$", "$x = 2t;\\ y = -t;\\ z = t$"],
+      "dap_an": 0,
+      "giai_thich": "Phương trình tham số: toạ độ điểm cộng tham số nhân vectơ chỉ phương, tức $x = 1+2t$, $y = 2-t$, $z = 3+t$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 5: Phương pháp toạ độ trong không gian", "chu_de": "Phương trình đường thẳng trong không gian", "do_kho": "medium",
+      "cau_hoi": "Hai đường thẳng song song khi hai vectơ chỉ phương của chúng có quan hệ gì?",
+      "lua_chon": ["Vuông góc", "Cùng phương", "Có tích vô hướng bằng 1", "Bằng nhau về độ dài"],
+      "dap_an": 1,
+      "giai_thich": "Hai đường thẳng song song (hoặc trùng nhau) khi hai vectơ chỉ phương cùng phương, tức tỉ lệ với nhau."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 5: Phương pháp toạ độ trong không gian", "chu_de": "Công thức tính góc trong không gian", "do_kho": "hard",
+      "cau_hoi": "Góc giữa hai mặt phẳng được xác định qua góc giữa hai đối tượng nào?",
+      "lua_chon": ["Hai vectơ pháp tuyến", "Hai vectơ chỉ phương", "Hai đường thẳng bất kì trong mặt phẳng", "Hai giao tuyến"],
+      "dap_an": 0,
+      "giai_thich": "Góc giữa hai mặt phẳng bằng góc (hoặc góc bù) giữa hai vectơ pháp tuyến của chúng, lấy giá trị trong khoảng $[0^\\circ; 90^\\circ]$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 5: Phương pháp toạ độ trong không gian", "chu_de": "Phương trình mặt cầu", "do_kho": "easy",
+      "cau_hoi": "Mặt cầu $(x-1)^2 + (y+2)^2 + z^2 = 9$ có tâm và bán kính là:",
+      "lua_chon": ["$I(1; -2; 0)$, $R = 9$", "$I(1; -2; 0)$, $R = 3$", "$I(-1; 2; 0)$, $R = 3$", "$I(1; 2; 0)$, $R = 3$"],
+      "dap_an": 1,
+      "giai_thich": "Dạng $(x-a)^2 + (y-b)^2 + (z-c)^2 = R^2$ cho tâm $I(a;b;c)$ và bán kính $R$. Ở đây $R = \\sqrt{9} = 3$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 5: Phương pháp toạ độ trong không gian", "chu_de": "Phương trình mặt cầu", "do_kho": "hard",
+      "cau_hoi": "Mặt cầu tâm $I(1; 0; 2)$ tiếp xúc với mặt phẳng $(P): 2x + y - 2z + 1 = 0$ có bán kính bằng:",
+      "lua_chon": ["$\\dfrac{1}{3}$", "$\\dfrac{2}{3}$", "1", "3"],
+      "dap_an": 0,
+      "giai_thich": "Bán kính bằng khoảng cách từ tâm đến mặt phẳng: $d = \\dfrac{|2 \\cdot 1 + 0 - 2 \\cdot 2 + 1|}{\\sqrt{4+1+4}} = \\dfrac{|-1|}{3} = \\dfrac{1}{3}$."
+    },
+
+    {
+      "mon": "Toán 12", "chuong": "Chương 6: Xác suất có điều kiện", "chu_de": "Xác suất có điều kiện", "do_kho": "easy",
+      "cau_hoi": "Hai biến cố $A$ và $B$ độc lập khi nào?",
+      "lua_chon": ["$P(A|B) = P(A)$", "$P(A|B) = P(B)$", "$P(A \\cap B) = 0$", "$P(A) + P(B) = 1$"],
+      "dap_an": 0,
+      "giai_thich": "Hai biến cố độc lập khi việc $B$ xảy ra không làm thay đổi xác suất của $A$: $P(A|B) = P(A)$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 6: Xác suất có điều kiện", "chu_de": "Xác suất có điều kiện", "do_kho": "medium",
+      "cau_hoi": "Gieo một con xúc xắc cân đối. Biết kết quả là số chẵn, xác suất để được mặt 6 chấm là:",
+      "lua_chon": ["$\\dfrac{1}{6}$", "$\\dfrac{1}{3}$", "$\\dfrac{1}{2}$", "$\\dfrac{2}{3}$"],
+      "dap_an": 1,
+      "giai_thich": "Các kết quả chẵn là {2; 4; 6}, có 3 khả năng đồng khả năng. Xác suất được mặt 6 là $\\dfrac{1}{3}$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 6: Xác suất có điều kiện", "chu_de": "Xác suất có điều kiện", "do_kho": "hard",
+      "cau_hoi": "Cho $P(A) = 0{,}6$; $P(B) = 0{,}5$ và $P(A \\cap B) = 0{,}3$. Tính $P(A|B)$.",
+      "lua_chon": ["0,3", "0,5", "0,6", "0,8"],
+      "dap_an": 2,
+      "giai_thich": "$P(A|B) = \\dfrac{P(A \\cap B)}{P(B)} = \\dfrac{0{,}3}{0{,}5} = 0{,}6$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 6: Xác suất có điều kiện", "chu_de": "Công thức xác suất toàn phần và công thức Bayes", "do_kho": "medium",
+      "cau_hoi": "Công thức xác suất toàn phần với hệ hai biến cố đối $B$ và $\\bar{B}$ là:",
+      "lua_chon": ["$P(A) = P(A|B) + P(A|\\bar{B})$", "$P(A) = P(B)P(A|B) + P(\\bar{B})P(A|\\bar{B})$", "$P(A) = P(B) \\cdot P(A|B)$", "$P(A) = \\dfrac{P(A|B)}{P(B)}$"],
+      "dap_an": 1,
+      "giai_thich": "Chia không gian mẫu theo $B$ và $\\bar{B}$, rồi cộng xác suất theo từng nhánh có trọng số."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 6: Xác suất có điều kiện", "chu_de": "Công thức xác suất toàn phần và công thức Bayes", "do_kho": "hard",
+      "cau_hoi": "Công thức Bayes cho phép tính đại lượng nào?",
+      "lua_chon": ["$P(A \\cap B)$ từ $P(A)$ và $P(B)$", "$P(B|A)$ khi đã biết $P(A|B)$, $P(A)$ và $P(B)$", "$P(A)$ từ $P(B)$", "Tổng xác suất của mọi biến cố"],
+      "dap_an": 1,
+      "giai_thich": "$P(B|A) = \\dfrac{P(A|B)P(B)}{P(A)}$ — cho phép đảo chiều điều kiện, suy ngược nguyên nhân từ kết quả quan sát được."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số", "chu_de": "Khảo sát và vẽ đồ thị hàm số", "do_kho": "hard",
+      "cau_hoi": "Đồ thị hàm số $y = \\dfrac{2x+1}{x-1}$ có tâm đối xứng là điểm nào?",
+      "lua_chon": ["$(1; 2)$", "$(2; 1)$", "$(-1; 2)$", "$(0; -1)$"],
+      "dap_an": 0,
+      "giai_thich": "Hàm phân thức bậc nhất trên bậc nhất có tâm đối xứng là giao của hai tiệm cận: $x = 1$ và $y = 2$, tức điểm $(1; 2)$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 2: Vectơ và hệ trục toạ độ trong không gian", "chu_de": "Biểu thức toạ độ của các phép toán vectơ", "do_kho": "hard",
+      "cau_hoi": "Cho $\\vec{u} = (1; -2; 2)$. Độ dài $|\\vec{u}|$ bằng:",
+      "lua_chon": ["3", "5", "7", "9"],
+      "dap_an": 0,
+      "giai_thich": "$|\\vec{u}| = \\sqrt{1^2 + (-2)^2 + 2^2} = \\sqrt{1 + 4 + 4} = \\sqrt{9} = 3$."
+    },
+    {
+      "mon": "Toán 12", "chuong": "Chương 4: Nguyên hàm và tích phân", "chu_de": "Nguyên hàm", "do_kho": "hard",
+      "cau_hoi": "Biết $F(x)$ là nguyên hàm của $f(x) = 2x$ và $F(1) = 3$. Khi đó $F(x)$ bằng:",
+      "lua_chon": ["$x^2 + 2$", "$x^2 + 3$", "$x^2 - 2$", "$2x^2 + 1$"],
+      "dap_an": 0,
+      "giai_thich": "$F(x) = x^2 + C$. Thay $F(1) = 3$: $1 + C = 3 \\Rightarrow C = 2$. Vậy $F(x) = x^2 + 2$."
+    }
+  ]
+}

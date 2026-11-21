@@ -1,0 +1,140 @@
+/* ===========================================================================
+   VuongEdu — khung chân dung cho các ô animation còn lại (11 môn ngoài Toán, Vật lí).
+   Ảnh chuyển động chậm kiểu Ken Burns, ánh sáng ấm, chữ ký hiện dần — cùng tông
+   với hai ô Galileo và Einstein sẵn có. Nếu môn nào có video thì dùng video.
+   =========================================================================== */
+
+.showcase-animation-slot.portrait-slot {
+  height: 520px;
+  border-radius: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: #0b0d12;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+
+.showcase-animation-slot.portrait-slot.aos-animate:hover {
+  border-color: rgba(212, 163, 115, 0.55);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  transform: translateY(-4px) !important;
+}
+
+.portrait-stage { position: absolute; inset: 0; overflow: hidden; }
+
+.portrait-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+  filter: grayscale(0.25) contrast(1.06) brightness(0.92);
+  transform: scale(1.06);
+  animation: portraitDrift 26s ease-in-out infinite alternate;
+  transition: filter 0.6s ease;
+}
+
+.portrait-slot:hover .portrait-media { filter: grayscale(0) contrast(1.1) brightness(1); }
+
+/* Ken Burns: trôi rất chậm để không gây phân tán khi đọc */
+@keyframes portraitDrift {
+  from { transform: scale(1.06) translate3d(0, 0, 0); }
+  to   { transform: scale(1.13) translate3d(-1.5%, -2%, 0); }
+}
+
+/* phủ tối phía dưới để chữ luôn đọc được dù ảnh sáng hay tối */
+.portrait-veil {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(255, 215, 130, 0.10) 0%, transparent 62%),
+    linear-gradient(to top, rgba(6, 8, 12, 0.94) 0%, rgba(6, 8, 12, 0.55) 34%, rgba(6, 8, 12, 0.10) 62%, transparent 100%);
+}
+
+.portrait-caption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 26px 28px 24px;
+  color: #fff;
+  text-align: left;
+  z-index: 2;
+}
+
+.portrait-name {
+  font-size: 1.42rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.6);
+}
+
+.portrait-role {
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.76);
+  max-width: 44ch;
+}
+
+.portrait-signature {
+  height: 46px;
+  margin-top: 14px;
+  opacity: 0.85;
+  filter: brightness(0) invert(1);      /* chữ ký đen -> trắng cho nền tối */
+}
+
+/* Không gắn vào .aos-animate: nếu thư viện AOS không nạp được thì chữ ký vẫn hiện. */
+.portrait-signature { animation: signatureIn 1.5s cubic-bezier(0.16, 1, 0.3, 1) both; }
+
+@keyframes signatureIn {
+  from { opacity: 0; clip-path: inset(0 100% 0 0); }
+  to   { opacity: 0.85; clip-path: inset(0 0 0 0); }
+}
+
+.portrait-quote {
+  position: absolute;
+  top: 26px; left: 28px; right: 28px;
+  color: rgba(255, 255, 255, 0.92);
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.portrait-slot:hover .portrait-quote { opacity: 1; transform: translateY(0); }
+
+.portrait-badge {
+  position: absolute;
+  top: 18px; right: 18px;
+  z-index: 3;
+  padding: 5px 11px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+@media (max-width: 820px) {
+  .showcase-animation-slot.portrait-slot { height: 360px; }
+  .portrait-caption { padding: 20px 20px 18px; }
+  .portrait-name { font-size: 1.18rem; }
+  .portrait-signature { height: 36px; }
+  .portrait-quote { font-size: 0.86rem; top: 18px; left: 20px; right: 20px; }
+}
+
+/* Tôn trọng người dùng bật "giảm chuyển động" trong hệ điều hành */
+@media (prefers-reduced-motion: reduce) {
+  .portrait-media { animation: none; transform: scale(1.04); }
+  .portrait-slot.aos-animate .portrait-signature { animation: none; }
+}

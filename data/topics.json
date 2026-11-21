@@ -1,0 +1,425 @@
+[
+  {
+    "name": "Toán 12",
+    "chapters": [
+      {
+        "name": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+        "topics": [
+          "Tính đơn điệu của hàm số",
+          "Cực trị của hàm số",
+          "Giá trị lớn nhất và nhỏ nhất",
+          "Đường tiệm cận",
+          "Khảo sát và vẽ đồ thị hàm số",
+          "Ứng dụng đạo hàm vào thực tiễn"
+        ]
+      },
+      {
+        "name": "Chương 2: Vectơ và hệ trục toạ độ trong không gian",
+        "topics": [
+          "Vectơ trong không gian",
+          "Hệ trục toạ độ trong không gian",
+          "Biểu thức toạ độ của các phép toán vectơ"
+        ]
+      },
+      {
+        "name": "Chương 3: Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+        "topics": [
+          "Khoảng biến thiên và khoảng tứ phân vị",
+          "Phương sai và độ lệch chuẩn"
+        ]
+      },
+      {
+        "name": "Chương 4: Nguyên hàm và tích phân",
+        "topics": [
+          "Nguyên hàm",
+          "Tích phân",
+          "Ứng dụng hình học của tích phân"
+        ]
+      },
+      {
+        "name": "Chương 5: Phương pháp toạ độ trong không gian",
+        "topics": [
+          "Phương trình mặt phẳng",
+          "Phương trình đường thẳng trong không gian",
+          "Công thức tính góc trong không gian",
+          "Phương trình mặt cầu"
+        ]
+      },
+      {
+        "name": "Chương 6: Xác suất có điều kiện",
+        "topics": [
+          "Xác suất có điều kiện",
+          "Công thức xác suất toàn phần và công thức Bayes"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Vật lí 12",
+    "chapters": [
+      {
+        "name": "Chương 1: Vật lí nhiệt",
+        "topics": [
+          "Cấu trúc của chất và sự chuyển thể",
+          "Nội năng và định luật I nhiệt động lực học",
+          "Nhiệt độ và thang nhiệt độ",
+          "Nhiệt dung riêng",
+          "Nhiệt nóng chảy riêng",
+          "Nhiệt hoá hơi riêng"
+        ]
+      },
+      {
+        "name": "Chương 2: Khí lí tưởng",
+        "topics": [
+          "Mô hình động học phân tử chất khí",
+          "Định luật Boyle",
+          "Định luật Charles",
+          "Phương trình trạng thái khí lí tưởng",
+          "Áp suất và động năng phân tử"
+        ]
+      },
+      {
+        "name": "Chương 3: Từ trường",
+        "topics": [
+          "Từ trường và cảm ứng từ",
+          "Lực từ tác dụng lên dây dẫn",
+          "Từ thông và cảm ứng điện từ",
+          "Máy phát điện xoay chiều",
+          "Ứng dụng của hiện tượng cảm ứng điện từ",
+          "Điện từ trường và sóng điện từ"
+        ]
+      },
+      {
+        "name": "Chương 4: Vật lí hạt nhân và phóng xạ",
+        "topics": [
+          "Cấu trúc hạt nhân",
+          "Phản ứng hạt nhân và năng lượng liên kết",
+          "Hiện tượng phóng xạ",
+          "Công nghiệp hạt nhân"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hoá học 12",
+    "chapters": [
+      {
+        "name": "Chương 1: Ester – Lipid",
+        "topics": [
+          "Ester và lipid",
+          "Xà phòng và chất giặt rửa"
+        ]
+      },
+      {
+        "name": "Chương 2: Carbohydrate",
+        "topics": [
+          "Glucose và fructose",
+          "Saccharose và maltose",
+          "Tinh bột và cellulose"
+        ]
+      },
+      {
+        "name": "Chương 3: Hợp chất chứa nitrogen",
+        "topics": [
+          "Amine",
+          "Amino acid và peptide",
+          "Protein và enzyme"
+        ]
+      },
+      {
+        "name": "Chương 4: Polymer",
+        "topics": [
+          "Đại cương về polymer",
+          "Vật liệu polymer"
+        ]
+      },
+      {
+        "name": "Chương 5: Pin điện và điện phân",
+        "topics": [
+          "Thế điện cực và nguồn điện hoá học",
+          "Điện phân"
+        ]
+      },
+      {
+        "name": "Chương 6: Đại cương về kim loại",
+        "topics": [
+          "Cấu tạo và liên kết trong tinh thể kim loại",
+          "Tính chất vật lí và tính chất hoá học của kim loại",
+          "Kim loại trong tự nhiên và phương pháp tách kim loại",
+          "Hợp kim",
+          "Sự ăn mòn kim loại"
+        ]
+      },
+      {
+        "name": "Chương 7: Nguyên tố nhóm IA và IIA",
+        "topics": [
+          "Nguyên tố nhóm IA",
+          "Nguyên tố nhóm IIA"
+        ]
+      },
+      {
+        "name": "Chương 8: Kim loại chuyển tiếp và phức chất",
+        "topics": [
+          "Đại cương về kim loại chuyển tiếp dãy thứ nhất",
+          "Sơ lược về phức chất",
+          "Một số tính chất và ứng dụng của phức chất"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Toán 8",
+    "chapters": [
+      {
+        "name": "Chương I. Đa thức",
+        "topics": [
+          "Đơn thức",
+          "Đa thức",
+          "Phép cộng và phép trừ đa thức",
+          "Phép nhân đa thức",
+          "Phép chia đa thức cho đơn thức"
+        ]
+      },
+      {
+        "name": "Chương II. Hằng đẳng thức đáng nhớ và ứng dụng",
+        "topics": [
+          "Hiệu hai bình phương",
+          "Bình phương của một tổng hay một hiệu",
+          "Lập phương của một tổng, lập phương của một hiệu",
+          "Tổng và hiệu hai lập phương",
+          "Phân tích đa thức thành nhân tử"
+        ]
+      },
+      {
+        "name": "Chương III. Tứ giác",
+        "topics": [
+          "Tứ giác",
+          "Hình thang cân",
+          "Hình bình hành",
+          "Hình chữ nhật",
+          "Hình thoi và hình vuông"
+        ]
+      },
+      {
+        "name": "Chương IV. Định lí Thalès",
+        "topics": [
+          "Định lí Thalès trong tam giác",
+          "Đường trung bình của tam giác",
+          "Tính chất đường phân giác của tam giác"
+        ]
+      },
+      {
+        "name": "Chương V. Dữ liệu và biểu đồ",
+        "topics": [
+          "Thu thập và phân loại dữ liệu",
+          "Biểu diễn dữ liệu bằng bảng, biểu đồ",
+          "Phân tích số liệu thống kê dựa vào biểu đồ"
+        ]
+      },
+      {
+        "name": "Hoạt động thực hành trải nghiệm (tập một)",
+        "topics": [
+          "Công thức lãi kép",
+          "Tính toán trên đa thức với GeoGebra",
+          "Vẽ hình đơn giản với GeoGebra",
+          "Phân tích đặc điểm khí hậu Việt Nam"
+        ]
+      },
+      {
+        "name": "Chương VI. Phân thức đại số",
+        "topics": [
+          "Phân thức đại số",
+          "Điều kiện xác định của phân thức",
+          "Rút gọn phân thức",
+          "Quy đồng mẫu thức nhiều phân thức",
+          "Phép cộng và phép trừ phân thức",
+          "Phép nhân và phép chia phân thức"
+        ]
+      },
+      {
+        "name": "Chương VII. Phương trình bậc nhất và hàm số bậc nhất",
+        "topics": [
+          "Phương trình bậc nhất một ẩn",
+          "Giải bài toán bằng cách lập phương trình",
+          "Hàm số và mặt phẳng toạ độ",
+          "Đồ thị của hàm số",
+          "Hàm số bậc nhất",
+          "Hệ số góc của đường thẳng"
+        ]
+      },
+      {
+        "name": "Chương VIII. Mở đầu về tính xác suất của biến cố",
+        "topics": [
+          "Kết quả có thể và kết quả thuận lợi",
+          "Xác suất thực nghiệm của một biến cố",
+          "Xác suất của biến cố trong trường hợp cổ điển"
+        ]
+      },
+      {
+        "name": "Chương IX. Tam giác đồng dạng",
+        "topics": [
+          "Hai tam giác đồng dạng",
+          "Tỉ số đồng dạng của hai tam giác",
+          "Các trường hợp đồng dạng của hai tam giác",
+          "Định lí Pythagore",
+          "Định lí Pythagore đảo",
+          "Hình đồng dạng và hình đồng dạng phối cảnh"
+        ]
+      },
+      {
+        "name": "Chương X. Một số hình khối trong thực tiễn",
+        "topics": [
+          "Hình chóp tam giác đều",
+          "Hình chóp tứ giác đều",
+          "Diện tích xung quanh của hình chóp đều",
+          "Thể tích của hình chóp đều"
+        ]
+      },
+      {
+        "name": "Hoạt động thực hành trải nghiệm (tập hai)",
+        "topics": [
+          "Ứng dụng phương trình bậc nhất trong thực tiễn",
+          "Thực hành tính toán với phần mềm"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tiếng Anh 8",
+    "chapters": [
+      {
+        "name": "Our Communities (Unit 1–3)",
+        "topics": [
+          "Unit 1: Leisure time",
+          "Unit 2: Life in the countryside",
+          "Unit 3: Teenagers",
+          "Review 1"
+        ]
+      },
+      {
+        "name": "Our Heritage (Unit 4–6)",
+        "topics": [
+          "Unit 4: Ethnic groups of Viet Nam",
+          "Unit 5: Our customs and traditions",
+          "Unit 6: Lifestyles",
+          "Review 2"
+        ]
+      },
+      {
+        "name": "Our World (Unit 7–9)",
+        "topics": [
+          "Unit 7: Environmental protection",
+          "Unit 8: Shopping",
+          "Unit 9: Natural disasters",
+          "Review 3"
+        ]
+      },
+      {
+        "name": "Visions of the Future (Unit 10–12)",
+        "topics": [
+          "Unit 10: Communication in the future",
+          "Unit 11: Science and technology",
+          "Unit 12: Life on other planets",
+          "Review 4"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Khoa học tự nhiên 8",
+    "chapters": [
+      {
+        "name": "Mở đầu",
+        "topics": [
+          "Sử dụng một số hoá chất, thiết bị cơ bản trong phòng thí nghiệm"
+        ]
+      },
+      {
+        "name": "Chương I. Phản ứng hoá học",
+        "topics": [
+          "Phản ứng hoá học",
+          "Mol và tỉ khối chất khí",
+          "Dung dịch và nồng độ",
+          "Định luật bảo toàn khối lượng và phương trình hoá học",
+          "Tính theo phương trình hoá học",
+          "Tốc độ phản ứng và chất xúc tác"
+        ]
+      },
+      {
+        "name": "Chương II. Một số hợp chất thông dụng",
+        "topics": [
+          "Acid",
+          "Base và thang pH",
+          "Oxide",
+          "Muối",
+          "Phân bón hoá học"
+        ]
+      },
+      {
+        "name": "Chương III. Khối lượng riêng và áp suất",
+        "topics": [
+          "Khối lượng riêng",
+          "Thực hành xác định khối lượng riêng",
+          "Áp suất trên một bề mặt",
+          "Áp suất chất lỏng và áp suất khí quyển",
+          "Lực đẩy Archimedes"
+        ]
+      },
+      {
+        "name": "Chương IV. Tác dụng làm quay của lực",
+        "topics": [
+          "Tác dụng làm quay của lực và moment lực",
+          "Đòn bẩy và ứng dụng"
+        ]
+      },
+      {
+        "name": "Chương V. Điện",
+        "topics": [
+          "Hiện tượng nhiễm điện do cọ xát",
+          "Dòng điện và nguồn điện",
+          "Mạch điện đơn giản",
+          "Tác dụng của dòng điện",
+          "Cường độ dòng điện và hiệu điện thế",
+          "Thực hành đo cường độ dòng điện và hiệu điện thế"
+        ]
+      },
+      {
+        "name": "Chương VI. Nhiệt",
+        "topics": [
+          "Năng lượng nhiệt và nội năng",
+          "Thực hành đo năng lượng nhiệt bằng joulemeter",
+          "Sự truyền nhiệt",
+          "Sự nở vì nhiệt"
+        ]
+      },
+      {
+        "name": "Chương VII. Sinh học cơ thể người",
+        "topics": [
+          "Khái quát về cơ thể người",
+          "Hệ vận động ở người",
+          "Dinh dưỡng và tiêu hoá ở người",
+          "Máu và hệ tuần hoàn của cơ thể người",
+          "Hệ hô hấp ở người",
+          "Hệ bài tiết ở người",
+          "Điều hoà môi trường trong của cơ thể người",
+          "Hệ thần kinh và các giác quan ở người",
+          "Hệ nội tiết ở người",
+          "Da và điều hoà thân nhiệt ở người",
+          "Sinh sản ở người"
+        ]
+      },
+      {
+        "name": "Chương VIII. Sinh vật và môi trường",
+        "topics": [
+          "Môi trường và các nhân tố sinh thái",
+          "Quần thể sinh vật",
+          "Quần xã sinh vật",
+          "Hệ sinh thái",
+          "Sinh quyển",
+          "Cân bằng tự nhiên",
+          "Bảo vệ môi trường"
+        ]
+      }
+    ]
+  }
+]

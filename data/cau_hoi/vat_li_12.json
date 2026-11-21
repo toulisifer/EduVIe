@@ -1,0 +1,361 @@
+{
+  "_mon": "Vật lí 12",
+  "_nguon": "Soạn theo SGK Vật lí 12 — Kết nối tri thức với cuộc sống",
+  "_so_cau": 50,
+
+  "cau_hoi": [
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 1: Vật lí nhiệt", "chu_de": "Cấu trúc của chất và sự chuyển thể", "do_kho": "easy",
+      "cau_hoi": "Ở thể nào thì các phân tử sắp xếp trật tự và chỉ dao động quanh vị trí cân bằng cố định?",
+      "lua_chon": ["Thể rắn", "Thể lỏng", "Thể khí", "Cả ba thể"],
+      "dap_an": 0,
+      "giai_thich": "Ở thể rắn, lực liên kết giữa các phân tử rất mạnh nên chúng sắp xếp trật tự và chỉ dao động quanh vị trí cân bằng xác định."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 1: Vật lí nhiệt", "chu_de": "Cấu trúc của chất và sự chuyển thể", "do_kho": "easy",
+      "cau_hoi": "Quá trình chuyển từ thể lỏng sang thể khí ở bề mặt chất lỏng gọi là gì?",
+      "lua_chon": ["Nóng chảy", "Đông đặc", "Bay hơi", "Ngưng tụ"],
+      "dap_an": 2,
+      "giai_thich": "Bay hơi là sự chuyển thể từ lỏng sang khí xảy ra ở bề mặt chất lỏng, tại mọi nhiệt độ."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 1: Vật lí nhiệt", "chu_de": "Cấu trúc của chất và sự chuyển thể", "do_kho": "medium",
+      "cau_hoi": "Trong quá trình nóng chảy của chất rắn kết tinh, nhiệt độ của vật thay đổi thế nào?",
+      "lua_chon": ["Tăng đều", "Giảm dần", "Không đổi", "Tăng rồi giảm"],
+      "dap_an": 2,
+      "giai_thich": "Chất rắn kết tinh nóng chảy ở nhiệt độ xác định. Trong suốt quá trình nóng chảy, nhiệt lượng cung cấp dùng để phá vỡ liên kết nên nhiệt độ không đổi."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 1: Vật lí nhiệt", "chu_de": "Nội năng và định luật I nhiệt động lực học", "do_kho": "easy",
+      "cau_hoi": "Nội năng của một vật là gì?",
+      "lua_chon": ["Tổng động năng và thế năng của vật", "Tổng động năng và thế năng tương tác của các phân tử cấu tạo nên vật", "Nhiệt lượng vật nhận được", "Công vật thực hiện"],
+      "dap_an": 1,
+      "giai_thich": "Nội năng là tổng động năng chuyển động nhiệt và thế năng tương tác của các phân tử cấu tạo nên vật."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 1: Vật lí nhiệt", "chu_de": "Nội năng và định luật I nhiệt động lực học", "do_kho": "medium",
+      "cau_hoi": "Định luật I nhiệt động lực học được viết là:",
+      "lua_chon": ["$\\Delta U = A + Q$", "$\\Delta U = A - Q$", "$\\Delta U = Q - A$", "$\\Delta U = A \\cdot Q$"],
+      "dap_an": 0,
+      "giai_thich": "Độ biến thiên nội năng bằng tổng công và nhiệt lượng vật nhận được: $\\Delta U = A + Q$."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 1: Vật lí nhiệt", "chu_de": "Nội năng và định luật I nhiệt động lực học", "do_kho": "medium",
+      "cau_hoi": "Một khí nhận nhiệt lượng 200 J và thực hiện công 80 J lên môi trường. Độ biến thiên nội năng của khí là:",
+      "lua_chon": ["280 J", "120 J", "-120 J", "-280 J"],
+      "dap_an": 1,
+      "giai_thich": "Khí thực hiện công lên môi trường nên $A = -80$ J. Ta có $\\Delta U = A + Q = -80 + 200 = 120$ J."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 1: Vật lí nhiệt", "chu_de": "Nhiệt độ và thang nhiệt độ", "do_kho": "easy",
+      "cau_hoi": "Nhiệt độ 27 °C ứng với bao nhiêu kelvin?",
+      "lua_chon": ["246 K", "273 K", "300 K", "327 K"],
+      "dap_an": 2,
+      "giai_thich": "$T(K) = t(^\\circ C) + 273 = 27 + 273 = 300$ K."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 1: Vật lí nhiệt", "chu_de": "Nhiệt độ và thang nhiệt độ", "do_kho": "medium",
+      "cau_hoi": "Không độ tuyệt đối (0 K) ứng với nhiệt độ Celsius nào?",
+      "lua_chon": ["0 °C", "-100 °C", "-273 °C", "273 °C"],
+      "dap_an": 2,
+      "giai_thich": "0 K tương ứng khoảng $-273\\ ^\\circ$C, là nhiệt độ thấp nhất về lí thuyết, khi chuyển động nhiệt của phân tử gần như dừng lại."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 1: Vật lí nhiệt", "chu_de": "Nhiệt dung riêng", "do_kho": "easy",
+      "cau_hoi": "Công thức tính nhiệt lượng cần cung cấp để làm nóng một vật là:",
+      "lua_chon": ["$Q = mc\\Delta t$", "$Q = m\\lambda$", "$Q = mL$", "$Q = \\dfrac{m}{c\\Delta t}$"],
+      "dap_an": 0,
+      "giai_thich": "$Q = mc\\Delta t$, với $m$ là khối lượng, $c$ là nhiệt dung riêng và $\\Delta t$ là độ tăng nhiệt độ."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 1: Vật lí nhiệt", "chu_de": "Nhiệt dung riêng", "do_kho": "medium",
+      "cau_hoi": "Cần bao nhiêu nhiệt lượng để đun 2 kg nước từ 20 °C lên 100 °C? Biết nhiệt dung riêng của nước là 4200 J/(kg·K).",
+      "lua_chon": ["168 kJ", "336 kJ", "672 kJ", "840 kJ"],
+      "dap_an": 2,
+      "giai_thich": "$Q = mc\\Delta t = 2 \\cdot 4200 \\cdot (100 - 20) = 672\\,000$ J = 672 kJ."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 1: Vật lí nhiệt", "chu_de": "Nhiệt dung riêng", "do_kho": "medium",
+      "cau_hoi": "Đơn vị của nhiệt dung riêng là gì?",
+      "lua_chon": ["J/kg", "J/(kg·K)", "J·kg/K", "J/K"],
+      "dap_an": 1,
+      "giai_thich": "Nhiệt dung riêng cho biết nhiệt lượng cần để 1 kg chất tăng thêm 1 K, nên đơn vị là J/(kg·K)."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 1: Vật lí nhiệt", "chu_de": "Nhiệt nóng chảy riêng", "do_kho": "easy",
+      "cau_hoi": "Nhiệt lượng cần để làm nóng chảy hoàn toàn một vật rắn ở nhiệt độ nóng chảy được tính bằng:",
+      "lua_chon": ["$Q = mc\\Delta t$", "$Q = m\\lambda$", "$Q = mL$", "$Q = \\lambda \\Delta t$"],
+      "dap_an": 1,
+      "giai_thich": "$Q = m\\lambda$, với $\\lambda$ là nhiệt nóng chảy riêng của chất."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 1: Vật lí nhiệt", "chu_de": "Nhiệt nóng chảy riêng", "do_kho": "medium",
+      "cau_hoi": "Nhiệt nóng chảy riêng của nước đá là $3{,}34 \\cdot 10^5$ J/kg. Cần bao nhiêu nhiệt lượng để làm nóng chảy hoàn toàn 0,5 kg nước đá ở 0 °C?",
+      "lua_chon": ["$1{,}67 \\cdot 10^5$ J", "$3{,}34 \\cdot 10^5$ J", "$6{,}68 \\cdot 10^5$ J", "$0{,}67 \\cdot 10^5$ J"],
+      "dap_an": 0,
+      "giai_thich": "$Q = m\\lambda = 0{,}5 \\cdot 3{,}34 \\cdot 10^5 = 1{,}67 \\cdot 10^5$ J."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 1: Vật lí nhiệt", "chu_de": "Nhiệt hoá hơi riêng", "do_kho": "medium",
+      "cau_hoi": "Nhiệt hoá hơi riêng của một chất lỏng cho biết điều gì?",
+      "lua_chon": ["Nhiệt lượng để 1 kg chất lỏng tăng 1 K", "Nhiệt lượng để 1 kg chất lỏng hoá hơi hoàn toàn ở nhiệt độ sôi", "Nhiệt độ sôi của chất lỏng", "Nhiệt lượng để 1 kg chất rắn nóng chảy"],
+      "dap_an": 1,
+      "giai_thich": "Nhiệt hoá hơi riêng $L$ là nhiệt lượng cần để 1 kg chất lỏng hoá hơi hoàn toàn ở nhiệt độ sôi: $Q = mL$."
+    },
+
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 2: Khí lí tưởng", "chu_de": "Mô hình động học phân tử chất khí", "do_kho": "easy",
+      "cau_hoi": "Theo mô hình động học phân tử, các phân tử khí chuyển động như thế nào?",
+      "lua_chon": ["Đứng yên", "Dao động quanh vị trí cân bằng", "Hỗn loạn không ngừng về mọi phía", "Chuyển động theo quỹ đạo tròn"],
+      "dap_an": 2,
+      "giai_thich": "Các phân tử khí chuyển động hỗn loạn không ngừng, va chạm vào nhau và vào thành bình, gây ra áp suất."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 2: Khí lí tưởng", "chu_de": "Mô hình động học phân tử chất khí", "do_kho": "medium",
+      "cau_hoi": "Áp suất chất khí lên thành bình được giải thích là do đâu?",
+      "lua_chon": ["Trọng lượng của khí", "Va chạm của các phân tử khí vào thành bình", "Lực hút giữa các phân tử", "Nhiệt độ của bình"],
+      "dap_an": 1,
+      "giai_thich": "Các phân tử khí chuyển động hỗn loạn, liên tục va chạm vào thành bình, tạo ra lực ép lên thành bình — đó là áp suất khí."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 2: Khí lí tưởng", "chu_de": "Định luật Boyle", "do_kho": "easy",
+      "cau_hoi": "Định luật Boyle mô tả quá trình nào?",
+      "lua_chon": ["Đẳng nhiệt", "Đẳng tích", "Đẳng áp", "Đoạn nhiệt"],
+      "dap_an": 0,
+      "giai_thich": "Định luật Boyle áp dụng cho quá trình đẳng nhiệt: nhiệt độ không đổi, $pV$ = hằng số."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 2: Khí lí tưởng", "chu_de": "Định luật Boyle", "do_kho": "medium",
+      "cau_hoi": "Nén một lượng khí ở nhiệt độ không đổi từ thể tích 6 lít xuống 2 lít. Áp suất ban đầu là 1 atm. Áp suất sau khi nén là:",
+      "lua_chon": ["0,33 atm", "2 atm", "3 atm", "6 atm"],
+      "dap_an": 2,
+      "giai_thich": "Đẳng nhiệt: $p_1V_1 = p_2V_2 \\Rightarrow 1 \\cdot 6 = p_2 \\cdot 2 \\Rightarrow p_2 = 3$ atm."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 2: Khí lí tưởng", "chu_de": "Định luật Charles", "do_kho": "easy",
+      "cau_hoi": "Định luật Charles phát biểu về mối liên hệ giữa hai đại lượng nào khi áp suất không đổi?",
+      "lua_chon": ["Thể tích và nhiệt độ tuyệt đối", "Áp suất và thể tích", "Áp suất và nhiệt độ", "Khối lượng và thể tích"],
+      "dap_an": 0,
+      "giai_thich": "Ở áp suất không đổi, thể tích tỉ lệ thuận với nhiệt độ tuyệt đối: $\\dfrac{V}{T}$ = hằng số."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 2: Khí lí tưởng", "chu_de": "Định luật Charles", "do_kho": "medium",
+      "cau_hoi": "Một lượng khí ở 300 K có thể tích 3 lít. Giữ áp suất không đổi, nung tới 400 K thì thể tích bằng bao nhiêu?",
+      "lua_chon": ["2,25 lít", "3,5 lít", "4 lít", "4,5 lít"],
+      "dap_an": 2,
+      "giai_thich": "$\\dfrac{V_1}{T_1} = \\dfrac{V_2}{T_2} \\Rightarrow \\dfrac{3}{300} = \\dfrac{V_2}{400} \\Rightarrow V_2 = 4$ lít."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 2: Khí lí tưởng", "chu_de": "Phương trình trạng thái khí lí tưởng", "do_kho": "medium",
+      "cau_hoi": "Phương trình trạng thái khí lí tưởng cho một lượng khí xác định là:",
+      "lua_chon": ["$pV = $ hằng số", "$\\dfrac{pV}{T} = $ hằng số", "$\\dfrac{p}{V} = $ hằng số", "$pVT = $ hằng số"],
+      "dap_an": 1,
+      "giai_thich": "Với một lượng khí xác định: $\\dfrac{p_1V_1}{T_1} = \\dfrac{p_2V_2}{T_2}$, tức $\\dfrac{pV}{T}$ không đổi."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 2: Khí lí tưởng", "chu_de": "Phương trình trạng thái khí lí tưởng", "do_kho": "hard",
+      "cau_hoi": "Khí ở trạng thái 1: $p_1 = 2$ atm, $V_1 = 4$ lít, $T_1 = 300$ K. Sau biến đổi: $V_2 = 2$ lít, $T_2 = 450$ K. Áp suất $p_2$ bằng:",
+      "lua_chon": ["3 atm", "4 atm", "6 atm", "8 atm"],
+      "dap_an": 2,
+      "giai_thich": "$\\dfrac{p_1V_1}{T_1} = \\dfrac{p_2V_2}{T_2} \\Rightarrow \\dfrac{2 \\cdot 4}{300} = \\dfrac{p_2 \\cdot 2}{450} \\Rightarrow p_2 = 6$ atm."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 2: Khí lí tưởng", "chu_de": "Áp suất và động năng phân tử", "do_kho": "medium",
+      "cau_hoi": "Động năng trung bình của phân tử khí phụ thuộc vào đại lượng nào?",
+      "lua_chon": ["Áp suất khí", "Thể tích bình", "Nhiệt độ tuyệt đối", "Khối lượng bình"],
+      "dap_an": 2,
+      "giai_thich": "Động năng tịnh tiến trung bình của phân tử khí tỉ lệ thuận với nhiệt độ tuyệt đối $T$, không phụ thuộc loại khí."
+    },
+
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 3: Từ trường", "chu_de": "Từ trường và cảm ứng từ", "do_kho": "easy",
+      "cau_hoi": "Đơn vị của cảm ứng từ trong hệ SI là gì?",
+      "lua_chon": ["Tesla (T)", "Weber (Wb)", "Henry (H)", "Ampere (A)"],
+      "dap_an": 0,
+      "giai_thich": "Cảm ứng từ $B$ có đơn vị là tesla (T). Weber là đơn vị của từ thông."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 3: Từ trường", "chu_de": "Từ trường và cảm ứng từ", "do_kho": "easy",
+      "cau_hoi": "Từ trường tồn tại xung quanh vật nào?",
+      "lua_chon": ["Điện tích đứng yên", "Nam châm và dòng điện", "Mọi vật có khối lượng", "Vật nhiễm điện do cọ xát"],
+      "dap_an": 1,
+      "giai_thich": "Từ trường tồn tại xung quanh nam châm và xung quanh dòng điện (điện tích chuyển động)."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 3: Từ trường", "chu_de": "Lực từ tác dụng lên dây dẫn", "do_kho": "medium",
+      "cau_hoi": "Lực từ tác dụng lên đoạn dây dẫn mang dòng điện đặt vuông góc với từ trường đều được tính bằng:",
+      "lua_chon": ["$F = BIl$", "$F = \\dfrac{BI}{l}$", "$F = B^2Il$", "$F = \\dfrac{Bl}{I}$"],
+      "dap_an": 0,
+      "giai_thich": "$F = BIl\\sin\\alpha$. Khi dây vuông góc với từ trường thì $\\alpha = 90^\\circ$, $\\sin\\alpha = 1$, nên $F = BIl$."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 3: Từ trường", "chu_de": "Lực từ tác dụng lên dây dẫn", "do_kho": "medium",
+      "cau_hoi": "Đoạn dây dài 0,2 m mang dòng điện 5 A đặt vuông góc trong từ trường đều $B = 0{,}4$ T. Lực từ tác dụng lên dây là:",
+      "lua_chon": ["0,1 N", "0,4 N", "1 N", "4 N"],
+      "dap_an": 1,
+      "giai_thich": "$F = BIl = 0{,}4 \\cdot 5 \\cdot 0{,}2 = 0{,}4$ N."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 3: Từ trường", "chu_de": "Từ thông và cảm ứng điện từ", "do_kho": "easy",
+      "cau_hoi": "Từ thông qua một khung dây phẳng diện tích $S$ đặt trong từ trường đều $B$ được tính bằng:",
+      "lua_chon": ["$\\Phi = BS\\cos\\alpha$", "$\\Phi = BS\\sin\\alpha$", "$\\Phi = \\dfrac{B}{S}$", "$\\Phi = B + S$"],
+      "dap_an": 0,
+      "giai_thich": "$\\Phi = BS\\cos\\alpha$, với $\\alpha$ là góc giữa vector pháp tuyến của mặt phẳng khung và vector cảm ứng từ."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 3: Từ trường", "chu_de": "Từ thông và cảm ứng điện từ", "do_kho": "medium",
+      "cau_hoi": "Hiện tượng cảm ứng điện từ xuất hiện khi nào?",
+      "lua_chon": ["Từ thông qua mạch kín không đổi", "Từ thông qua mạch kín biến thiên", "Mạch có dòng điện không đổi", "Mạch hở đặt trong từ trường"],
+      "dap_an": 1,
+      "giai_thich": "Khi từ thông qua mạch kín biến thiên theo thời gian thì trong mạch xuất hiện dòng điện cảm ứng."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 3: Từ trường", "chu_de": "Từ thông và cảm ứng điện từ", "do_kho": "medium",
+      "cau_hoi": "Định luật Lenz cho biết điều gì về chiều dòng điện cảm ứng?",
+      "lua_chon": ["Cùng chiều với dòng điện ban đầu", "Chống lại nguyên nhân sinh ra nó", "Luôn theo chiều kim đồng hồ", "Không xác định được"],
+      "dap_an": 1,
+      "giai_thich": "Dòng điện cảm ứng có chiều sao cho từ trường do nó sinh ra chống lại sự biến thiên từ thông đã sinh ra nó."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 3: Từ trường", "chu_de": "Máy phát điện xoay chiều", "do_kho": "medium",
+      "cau_hoi": "Máy phát điện xoay chiều hoạt động dựa trên hiện tượng nào?",
+      "lua_chon": ["Nhiệt điện", "Quang điện", "Cảm ứng điện từ", "Tự cảm"],
+      "dap_an": 2,
+      "giai_thich": "Khi khung dây quay trong từ trường, từ thông qua khung biến thiên, sinh ra suất điện động cảm ứng — đó là nguyên lí máy phát điện xoay chiều."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 3: Từ trường", "chu_de": "Ứng dụng của hiện tượng cảm ứng điện từ", "do_kho": "easy",
+      "cau_hoi": "Thiết bị nào sau đây KHÔNG hoạt động dựa trên hiện tượng cảm ứng điện từ?",
+      "lua_chon": ["Máy biến áp", "Bếp từ", "Pin hoá học", "Micro điện động"],
+      "dap_an": 2,
+      "giai_thich": "Pin hoá học biến đổi năng lượng hoá học thành điện năng qua phản ứng oxi hoá khử, không liên quan tới cảm ứng điện từ."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 3: Từ trường", "chu_de": "Điện từ trường và sóng điện từ", "do_kho": "medium",
+      "cau_hoi": "Sóng điện từ truyền trong chân không với tốc độ bằng bao nhiêu?",
+      "lua_chon": ["$3 \\cdot 10^6$ m/s", "$3 \\cdot 10^8$ m/s", "$3 \\cdot 10^{10}$ m/s", "340 m/s"],
+      "dap_an": 1,
+      "giai_thich": "Sóng điện từ truyền trong chân không với tốc độ ánh sáng $c \\approx 3 \\cdot 10^8$ m/s."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 3: Từ trường", "chu_de": "Điện từ trường và sóng điện từ", "do_kho": "medium",
+      "cau_hoi": "Sóng điện từ là sóng gì?",
+      "lua_chon": ["Sóng dọc", "Sóng ngang", "Sóng cơ", "Sóng âm"],
+      "dap_an": 1,
+      "giai_thich": "Sóng điện từ là sóng ngang: vector cường độ điện trường và vector cảm ứng từ đều vuông góc với phương truyền sóng."
+    },
+
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 4: Vật lí hạt nhân và phóng xạ", "chu_de": "Cấu trúc hạt nhân", "do_kho": "easy",
+      "cau_hoi": "Hạt nhân nguyên tử được cấu tạo từ những hạt nào?",
+      "lua_chon": ["Proton và electron", "Proton và neutron", "Neutron và electron", "Chỉ proton"],
+      "dap_an": 1,
+      "giai_thich": "Hạt nhân gồm proton (mang điện dương) và neutron (không mang điện), gọi chung là nucleon."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 4: Vật lí hạt nhân và phóng xạ", "chu_de": "Cấu trúc hạt nhân", "do_kho": "medium",
+      "cau_hoi": "Hạt nhân $^{235}_{92}\\text{U}$ có bao nhiêu neutron?",
+      "lua_chon": ["92", "143", "235", "327"],
+      "dap_an": 1,
+      "giai_thich": "Số neutron $N = A - Z = 235 - 92 = 143$."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 4: Vật lí hạt nhân và phóng xạ", "chu_de": "Phản ứng hạt nhân và năng lượng liên kết", "do_kho": "medium",
+      "cau_hoi": "Năng lượng liên kết riêng của hạt nhân được tính bằng:",
+      "lua_chon": ["Năng lượng liên kết chia cho số nucleon", "Năng lượng liên kết nhân số nucleon", "Số nucleon chia năng lượng liên kết", "Năng lượng liên kết cộng số nucleon"],
+      "dap_an": 0,
+      "giai_thich": "Năng lượng liên kết riêng $= \\dfrac{W_{lk}}{A}$, cho biết mức độ bền vững của hạt nhân. Giá trị càng lớn thì hạt nhân càng bền."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 4: Vật lí hạt nhân và phóng xạ", "chu_de": "Phản ứng hạt nhân và năng lượng liên kết", "do_kho": "medium",
+      "cau_hoi": "Hệ thức liên hệ giữa khối lượng và năng lượng của Einstein là:",
+      "lua_chon": ["$E = mc$", "$E = mc^2$", "$E = \\dfrac{m}{c^2}$", "$E = m^2c$"],
+      "dap_an": 1,
+      "giai_thich": "$E = mc^2$, với $c$ là tốc độ ánh sáng trong chân không. Độ hụt khối chuyển thành năng lượng liên kết theo hệ thức này."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 4: Vật lí hạt nhân và phóng xạ", "chu_de": "Hiện tượng phóng xạ", "do_kho": "easy",
+      "cau_hoi": "Tia phóng xạ nào có khả năng đâm xuyên mạnh nhất?",
+      "lua_chon": ["Tia alpha", "Tia beta", "Tia gamma", "Cả ba như nhau"],
+      "dap_an": 2,
+      "giai_thich": "Tia gamma là sóng điện từ có bước sóng rất ngắn, đâm xuyên mạnh nhất; tia alpha đâm xuyên yếu nhất, bị chặn bởi tờ giấy."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 4: Vật lí hạt nhân và phóng xạ", "chu_de": "Hiện tượng phóng xạ", "do_kho": "medium",
+      "cau_hoi": "Chu kì bán rã của một chất phóng xạ là gì?",
+      "lua_chon": ["Thời gian để chất phân rã hoàn toàn", "Thời gian để một nửa số hạt nhân ban đầu bị phân rã", "Thời gian giữa hai lần phân rã", "Thời gian để khối lượng tăng gấp đôi"],
+      "dap_an": 1,
+      "giai_thich": "Chu kì bán rã $T$ là khoảng thời gian để một nửa số hạt nhân ban đầu của chất phóng xạ bị phân rã."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 4: Vật lí hạt nhân và phóng xạ", "chu_de": "Hiện tượng phóng xạ", "do_kho": "hard",
+      "cau_hoi": "Một chất phóng xạ có chu kì bán rã 8 ngày. Sau 24 ngày, phần trăm số hạt nhân còn lại so với ban đầu là:",
+      "lua_chon": ["50%", "25%", "12,5%", "33,3%"],
+      "dap_an": 2,
+      "giai_thich": "24 ngày = 3 chu kì bán rã. Số hạt nhân còn lại $= \\dfrac{N_0}{2^3} = \\dfrac{N_0}{8} = 12{,}5\\%\\,N_0$."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 4: Vật lí hạt nhân và phóng xạ", "chu_de": "Công nghiệp hạt nhân", "do_kho": "medium",
+      "cau_hoi": "Nhà máy điện hạt nhân hoạt động dựa trên phản ứng nào?",
+      "lua_chon": ["Phân hạch có điều khiển", "Nhiệt hạch", "Phóng xạ tự nhiên", "Phản ứng hoá học"],
+      "dap_an": 0,
+      "giai_thich": "Nhà máy điện hạt nhân dùng phản ứng phân hạch dây chuyền có điều khiển, thường với nhiên liệu uranium."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 4: Vật lí hạt nhân và phóng xạ", "chu_de": "Công nghiệp hạt nhân", "do_kho": "medium",
+      "cau_hoi": "Ứng dụng nào sau đây của phóng xạ được dùng trong y học?",
+      "lua_chon": ["Xác định tuổi cổ vật", "Chụp ảnh và xạ trị ung thư", "Sản xuất điện", "Làm phân bón"],
+      "dap_an": 1,
+      "giai_thich": "Trong y học, đồng vị phóng xạ được dùng để chẩn đoán hình ảnh và xạ trị tiêu diệt tế bào ung thư."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 1: Vật lí nhiệt", "chu_de": "Nhiệt dung riêng", "do_kho": "hard",
+      "cau_hoi": "Thả miếng đồng 0,5 kg ở 100 °C vào 1 kg nước ở 20 °C. Nhiệt dung riêng của đồng là 380 J/(kg·K), của nước là 4200 J/(kg·K). Nhiệt độ cân bằng xấp xỉ bao nhiêu?",
+      "lua_chon": ["23,4 °C", "28 °C", "35 °C", "60 °C"],
+      "dap_an": 0,
+      "giai_thich": "Phương trình cân bằng nhiệt: $0{,}5 \\cdot 380 \\cdot (100 - t) = 1 \\cdot 4200 \\cdot (t - 20)$. Giải ra $t \\approx 23{,}4\\ ^\\circ$C."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 2: Khí lí tưởng", "chu_de": "Định luật Boyle", "do_kho": "hard",
+      "cau_hoi": "Đồ thị biểu diễn định luật Boyle trong hệ toạ độ $(p, V)$ có dạng gì?",
+      "lua_chon": ["Đường thẳng qua gốc toạ độ", "Đường hypebol", "Đường parabol", "Đường tròn"],
+      "dap_an": 1,
+      "giai_thich": "Vì $pV$ = hằng số nên $p = \\dfrac{\\text{hằng số}}{V}$, đồ thị trong hệ $(p, V)$ là một nhánh hypebol."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 3: Từ trường", "chu_de": "Từ trường và cảm ứng từ", "do_kho": "medium",
+      "cau_hoi": "Quy tắc nào dùng để xác định chiều lực từ tác dụng lên dây dẫn mang dòng điện?",
+      "lua_chon": ["Quy tắc nắm tay phải", "Quy tắc bàn tay trái", "Quy tắc đinh ốc", "Quy tắc bàn tay phải"],
+      "dap_an": 1,
+      "giai_thich": "Quy tắc bàn tay trái: đặt bàn tay trái sao cho cảm ứng từ hướng vào lòng bàn tay, chiều từ cổ tay đến ngón giữa là chiều dòng điện, ngón cái choãi ra chỉ chiều lực từ."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 4: Vật lí hạt nhân và phóng xạ", "chu_de": "Cấu trúc hạt nhân", "do_kho": "medium",
+      "cau_hoi": "Lực nào giữ các nucleon liên kết với nhau trong hạt nhân?",
+      "lua_chon": ["Lực hấp dẫn", "Lực tĩnh điện", "Lực hạt nhân", "Lực từ"],
+      "dap_an": 2,
+      "giai_thich": "Lực hạt nhân là lực tương tác mạnh giữa các nucleon, có bán kính tác dụng rất ngắn nhưng mạnh hơn lực đẩy tĩnh điện giữa các proton."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 1: Vật lí nhiệt", "chu_de": "Nội năng và định luật I nhiệt động lực học", "do_kho": "hard",
+      "cau_hoi": "Trong quá trình đẳng tích, công mà khí thực hiện bằng bao nhiêu?",
+      "lua_chon": ["$A = p\\Delta V$", "$A = 0$", "$A = Q$", "$A = \\Delta U$"],
+      "dap_an": 1,
+      "giai_thich": "Đẳng tích nghĩa là $\\Delta V = 0$, nên công $A = p\\Delta V = 0$. Khi đó $\\Delta U = Q$: toàn bộ nhiệt lượng chuyển thành nội năng."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 2: Khí lí tưởng", "chu_de": "Áp suất và động năng phân tử", "do_kho": "hard",
+      "cau_hoi": "Khi tăng nhiệt độ tuyệt đối của khí lên gấp đôi (thể tích không đổi), áp suất khí thay đổi thế nào?",
+      "lua_chon": ["Giảm một nửa", "Không đổi", "Tăng gấp đôi", "Tăng gấp bốn"],
+      "dap_an": 2,
+      "giai_thich": "Quá trình đẳng tích: $\\dfrac{p}{T}$ = hằng số, nên $T$ tăng gấp đôi thì $p$ cũng tăng gấp đôi."
+    },
+    {
+      "mon": "Vật lí 12", "chuong": "Chương 3: Từ trường", "chu_de": "Máy phát điện xoay chiều", "do_kho": "hard",
+      "cau_hoi": "Khung dây có $N$ vòng quay đều trong từ trường đều với tần số góc $\\omega$. Suất điện động cực đại là:",
+      "lua_chon": ["$E_0 = NBS$", "$E_0 = NBS\\omega$", "$E_0 = \\dfrac{NBS}{\\omega}$", "$E_0 = BS\\omega$"],
+      "dap_an": 1,
+      "giai_thich": "Từ thông cực đại qua $N$ vòng là $NBS$, suất điện động cực đại $E_0 = NBS\\omega$."
+    }
+  ]
+}

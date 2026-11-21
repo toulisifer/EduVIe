@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VuongEdu — Tinh hoa tri thức</title>
+    <link id="appFavicon" rel="icon" type="image/png" href="/static/images/favicon-tab-light.png?v=32">
+    <link id="appAppleIcon" rel="apple-touch-icon" href="/static/images/favicon-tab-light.png?v=32">
+    <!-- Trang dùng font hệ thống (Segoe UI trên Windows, San Francisco trên macOS) nên
+         không cần tải font ngoài. Caveat và Great Vibes trước đây được tải về nhưng không
+         chỗ nào dùng tới, chỉ làm chậm lần mở đầu. -->
+
+    
+  <link rel="stylesheet" href="/static/css/ui.css?v=32">
+  <link rel="stylesheet" href="/static/css/app.css?v=32">
+  <link rel="stylesheet" href="/static/css/portrait.css?v=32">
+  <link rel="stylesheet" href="/static/css/nav.css?v=32">
+</head>
+<body>
+
+<!-- GÓC TRÊN BÊN PHẢI CỦA WEB: ĐĂNG NHẬP / TÊN USER + DROPDOWN XEM SỐ LIỆU, ĐĂNG XUẤT -->
+<div class="top-auth-container" id="topAuthContainer">
+    <!-- Nút Đăng Nhập khi chưa đăng nhập -->
+    <button type="button" class="top-login-btn" id="topLoginBtn" onclick="openAuthModal('login')">
+        <span class="top-btn-icon">👤</span>
+        <span class="top-btn-text">Đăng Nhập</span>
+    </button>
+
+    <!-- Thẻ hiện tên user sau khi đăng nhập xong -->
+    <div class="top-user-pill" id="topUserPill" style="display: none;" onclick="toggleUserDropdown(event)">
+        <div class="top-user-avatar" id="topUserAvatar">👤</div>
+        <span class="top-user-name" id="topUserName">Học sinh</span>
+        <span class="top-user-chevron">▾</span>
+
+        <!-- Dropdown khi click vào tên trên góc: Xem Số Liệu, Đăng Xuất -->
+        <div class="top-user-dropdown" id="topUserDropdown" onclick="event.stopPropagation()">
+            <div class="dropdown-header">
+                <div class="dropdown-user-title" id="dropdownUserTitle">Tài khoản học sinh</div>
+                <div class="dropdown-status-badge">🟢 Đang hoạt động</div>
+            </div>
+            <div class="dropdown-divider"></div>
+            <button type="button" class="dropdown-item" onclick="goToStatsFromDropdown(event)">
+                <span class="dropdown-item-icon">📊</span>
+                <span class="dropdown-item-text">Xem Số Liệu</span>
+            </button>
+            <button type="button" class="dropdown-item dropdown-item-danger" onclick="logoutFromDropdown(event)">
+                <span class="dropdown-item-icon">🚪</span>
+                <span class="dropdown-item-text">Đăng Xuất</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL POPUP ĐĂNG NHẬP & ĐĂNG KÝ -->
+<div class="auth-modal-overlay" id="authModalOverlay" onclick="handleModalOverlayClick(event)">
+    <div class="auth-modal-dialog" onclick="event.stopPropagation()">
+        <button type="button" class="auth-modal-close-btn" onclick="closeAuthModal()" title="Đóng" aria-label="Đóng">✕</button>
+
+        <div class="auth-box-panel">
+            <!-- Thông báo phản hồi -->
+            <div id="modalAuthAlertBox" class="auth-alert-banner" style="display: none;"></div>
+
+            <!-- 1. PHẦN ĐĂNG NHẬP -->
+            <div id="authLoginSection" class="auth-form-view">
+                <div class="auth-panel-header">
+                    <div class="auth-panel-icon">🔐</div>
+                    <h2 class="auth-panel-title">Đăng Nhập</h2>
+                    <p class="auth-panel-desc">Nhập tên tài khoản và mật khẩu của bạn để tiếp tục</p>
+                </div>
+
+                <form id="formLogin" onsubmit="handleLoginSubmit(event)" class="auth-form" autocomplete="on">
+                    <div class="auth-field">
+                        <label for="loginUsername" class="auth-field-label">Tên</label>
+                        <div class="auth-input-wrapper">
+                            <span class="auth-input-icon">👤</span>
+                            <input type="text" id="loginUsername" name="username" class="auth-input-control" placeholder="Nhập tên tài khoản..." required autocomplete="username">
+                        </div>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="loginPassword" class="auth-field-label">Mật Khẩu</label>
+                        <div class="auth-input-wrapper">
+                            <span class="auth-input-icon">🔒</span>
+                            <input type="password" id="loginPassword" name="password" class="auth-input-control" placeholder="Nhập mật khẩu..." required autocomplete="current-password">
+                            <button type="button" class="auth-eye-btn" onclick="togglePasswordVisibility('loginPassword', this)" title="Ẩn/Hiện mật khẩu" aria-label="Ẩn/Hiện mật khẩu">👁️</button>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="btnLoginSubmit" class="auth-btn-primary">
+                        <span>Tiếp Tục</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+
+                    <!-- Nút Đăng Kí ngay nhỏ nhỏ -->
+                    <div class="auth-switch-prompt">
+                        <span>Chưa có tài khoản?</span>
+                        <button type="button" class="auth-switch-link-small" onclick="switchAuthMode('register')">Đăng Kí ngay</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- 2. PHẦN ĐĂNG KÍ -->
+            <div id="authRegisterSection" class="auth-form-view" style="display: none;">
+                <div class="auth-panel-header">
+                    <div class="auth-panel-icon">✨</div>
+                    <h2 class="auth-panel-title">Đăng Kí Tài Khoản</h2>
+                    <p class="auth-panel-desc">Tạo tài khoản mới để tham gia cộng đồng học tập VuongEdu</p>
+                </div>
+
+                <form id="formRegister" onsubmit="handleRegisterSubmit(event)" class="auth-form" autocomplete="on">
+                    <div class="auth-field">
+                        <label for="regUsername" class="auth-field-label">Tên</label>
+                        <div class="auth-input-wrapper">
+                            <span class="auth-input-icon">👤</span>
+                            <input type="text" id="regUsername" name="username" class="auth-input-control" placeholder="Tên đăng nhập (ví dụ: nguyenvana)..." required autocomplete="username">
+                        </div>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="regPassword" class="auth-field-label">Mật Khẩu</label>
+                        <div class="auth-input-wrapper">
+                            <span class="auth-input-icon">🔒</span>
+                            <input type="password" id="regPassword" name="password" class="auth-input-control" placeholder="Tạo mật khẩu (tối thiểu 4 ký tự)..." required autocomplete="new-password">
+                            <button type="button" class="auth-eye-btn" onclick="togglePasswordVisibility('regPassword', this)" title="Ẩn/Hiện mật khẩu" aria-label="Ẩn/Hiện mật khẩu">👁️</button>
+                        </div>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="regConfirmPassword" class="auth-field-label">Mật Khẩu Xác Nhận</label>
+                        <div class="auth-input-wrapper">
+                            <span class="auth-input-icon">🔑</span>
+                            <input type="password" id="regConfirmPassword" name="confirm_password" class="auth-input-control" placeholder="Nhập lại mật khẩu để xác nhận..." required autocomplete="new-password">
+                            <button type="button" class="auth-eye-btn" onclick="togglePasswordVisibility('regConfirmPassword', this)" title="Ẩn/Hiện mật khẩu" aria-label="Ẩn/Hiện mật khẩu">👁️</button>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="btnRegisterSubmit" class="auth-btn-primary">
+                        <span>Tạo Tài Khoản</span>
+                        <span class="btn-arrow">✨</span>
+                    </button>
+
+                    <!-- Nút Đăng Nhập nhỏ nhỏ -->
+                    <div class="auth-switch-prompt">
+                        <span>Đã có tài khoản?</span>
+                        <button type="button" class="auth-switch-link-small" onclick="switchAuthMode('login')">Đăng Nhập ngay</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Phông nền chuyển tông màu nâu đậm Baroque ấm áp khi lướt tới khu vực Galileo Toán Học -->
+<div id="galileoAmbientBackdrop" class="galileo-ambient-backdrop" aria-hidden="true"></div>
+
+<!-- Phông nền chuyển tông màu đen sâu thẳm vũ trụ khi lướt tới khu vực Einstein Vật Lí -->
+<div id="physicsAmbientBackdrop" class="physics-ambient-backdrop" aria-hidden="true"></div>
+
+<!-- Nút tròn nổi chứa dấu ">" để mở lại thanh mục lục khi đã đóng sang trái -->
+<button type="button" class="sidebar-floating-open-btn" id="sidebarFloatingOpenBtn" onclick="toggleSidebarSlide(event)" title="Mở thanh mục lục sang phải" aria-label="Mở thanh mục lục sang phải">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</button>
+
+<aside class="sidebar">
+    <div class="brand">
+        <div class="brand-wrapper">
+            <a href="javascript:void(0)" onclick="switchTab('home', document.querySelector('.nav-item'))" class="brand-link" title="VuongEdu — Tinh hoa tri thức">
+                <span class="brand-wordmark"><span class="bw-1">Vuong</span><span class="bw-2">Edu</span><em class="bw-sub">Tinh hoa tri thức</em></span>
+            </a>
+            <button type="button" class="brand-toggle-btn" id="menuToggleBtn" onclick="toggleSidebarSlide(event)" title="Thu gọn thanh mục lục sang trái" aria-label="Thu gọn thanh mục lục sang trái">
+                <svg class="toggle-arrow-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <nav class="menu">
+        <div class="nav-group-label">Học tập</div>
+        <button class="nav-item active" onclick="switchTab('home', this)"><span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.2 10.4 12 3.4l8.8 7"/><path d="M5.4 9.2V20h13.2V9.2"/><path d="M9.6 20v-5.6h4.8V20"/></svg></span> <span class="nav-txt">Trang chủ</span></button>
+        <button class="nav-item" onclick="switchTab('mon-tu-chon', this)"><span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M15.4 8.6 13.4 13.4 8.6 15.4 10.6 10.6Z"/></svg></span> <span class="nav-txt">Môn học</span></button>
+        <button class="nav-item" onclick="switchTab('tai-lieu', this)"><span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.6A1.6 1.6 0 0 1 5.6 4H11v16H5.6A1.6 1.6 0 0 1 4 18.4Z"/><path d="M20 5.6A1.6 1.6 0 0 0 18.4 4H13v16h5.4A1.6 1.6 0 0 0 20 18.4Z"/><path d="M12 4.6v14.8"/></svg></span> <span class="nav-txt">Tài liệu</span></button>
+        <button class="nav-item" onclick="switchTab('chat', this)"><span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 11.4a8.3 8.3 0 0 1-8.8 8.3 9 9 0 0 1-3.6-.7L3.4 20.6l1.7-4.6A8.3 8.3 0 0 1 12 3.1a8.3 8.3 0 0 1 8.8 8.3Z"/><path d="M12 7.8l.85 2.15 2.15.85-2.15.85L12 13.8l-.85-2.15L9 10.8l2.15-.85Z"/></svg></span> <span class="nav-txt">Hỏi AI</span></button>
+        <button class="nav-item" onclick="switchTab('quizz', this)"><span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="5" width="14" height="15" rx="2.4"/><rect x="8.8" y="2.9" width="6.4" height="3.6" rx="1.2"/><path d="M8.9 13.1 11 15.2l4.1-4.3"/></svg></span> <span class="nav-txt">Luyện đề</span></button>
+        <button class="nav-item" onclick="switchTab('cham-bai', this)"><span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.2 13.4V18a2.4 2.4 0 0 1-2.4 2.4H6.8A2.4 2.4 0 0 1 4.4 18V7.2a2.4 2.4 0 0 1 2.4-2.4h4.7"/><path d="M17.3 3.5a2.1 2.1 0 0 1 3 3l-7.2 7.2-3.6 1 1-3.6Z"/></svg></span> <span class="nav-txt">Chấm bài</span></button>
+
+        <div class="nav-group-label">Theo dõi</div>
+        <button class="nav-item" onclick="switchTab('phan-tich', this)"><span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20.4h18"/><path d="M6.6 20.4v-6.2"/><path d="M12 20.4V6.4"/><path d="M17.4 20.4v-9.4"/></svg></span> <span class="nav-txt">Phân tích</span></button>
+        <button class="nav-item" onclick="switchTab('diem-so', this)"><span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><circle cx="12" cy="12" r="4.6"/><circle cx="12" cy="12" r="1.35" fill="currentColor" stroke="none"/></svg></span> <span class="nav-txt">Điểm số</span></button>
+        <button class="nav-item" onclick="switchTab('lo-trinh', this)"><span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6.6" cy="6.6" r="2.6"/><circle cx="17.4" cy="17.4" r="2.6"/><path d="M9.2 6.6h5.4A3.4 3.4 0 0 1 18 10a3.4 3.4 0 0 1-3.4 3.4H9.4A3.4 3.4 0 0 0 6 16.8v.6"/></svg></span> <span class="nav-txt">Lộ trình</span></button>
+        <button class="nav-item" onclick="switchTab('gia-su', this)"><span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.4" y="8.2" width="15.2" height="11.2" rx="3.2"/><path d="M12 8.2V5.4"/><circle cx="12" cy="4" r="1.5"/><path d="M9.3 12.8v1.8"/><path d="M14.7 12.8v1.8"/><path d="M2.6 12.6v2.8"/><path d="M21.4 12.6v2.8"/></svg></span> <span class="nav-txt">Gia sư AI</span></button>
+
+        <div class="nav-group-label">Khác</div>
+        <button class="nav-item" onclick="switchTab('lop-hoc', this)"><span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.6 9 12 4.6 21.4 9 12 13.4Z"/><path d="M6.6 11.1v4.4c0 1.45 2.42 2.6 5.4 2.6s5.4-1.15 5.4-2.6v-4.4"/></svg></span> <span class="nav-txt">Lớp học</span></button>
+        <button class="nav-item" onclick="switchTab('hoi-bai', this)"><span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.8"/><path d="M9.6 9.5a2.5 2.5 0 0 1 4.85.9c0 1.7-2.45 2.05-2.45 3.5"/><circle cx="12" cy="17.1" r="1.05" fill="currentColor" stroke="none"/></svg></span> <span class="nav-txt">Hỏi bài</span></button>
+        <button class="nav-item nav-admin-only" onclick="switchTab('quan-tri', this)" hidden><span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7.4h8.2"/><path d="M17.4 7.4H20"/><circle cx="14.8" cy="7.4" r="2.4"/><path d="M4 16.6h2.6"/><path d="M11.8 16.6H20"/><circle cx="9.2" cy="16.6" r="2.4"/></svg></span> <span class="nav-txt">Quản trị</span></button>
+    </nav>
+
+    <div class="sidebar-bottom">
+
+        <!-- Khung Gợi Ý Câu Hỏi Góc Trái Dưới (Random theo môn học khi F5) -->
+        <div class="sidebar-prompt-box">
+            <div class="prompt-box-header">
+                <span class="prompt-title">💡 Gợi Ý</span>
+                <button type="button" class="prompt-refresh-btn" onclick="refreshSuggestedPrompts()" title="Đổi câu hỏi khác (hoặc bấm F5)" aria-label="Đổi câu hỏi khác">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="prompt-list" id="sidebarPromptList">
+                <!-- 3 Câu hỏi gợi ý sẽ render tự động từ JS -->
+            </div>
+        </div>
+
+        <button class="theme-btn" onclick="toggleTheme()">
+            <span id="tIcon">🌙</span>
+            <span id="tLabel">Chế độ Tối</span>
+        </button>
+    </div>
+</aside>
+
+<main class="main-viewport">
+
+    <!-- 1. VIEW: HOME (POSTER TRÀN VIỀN APPLE + CHỮ KÝ + QUOTE) -->
+    <section id="view-home" class="view-section active">
+        <!-- Section 0: Chào Mừng VuongEdu (Full Slide riêng biệt, không dính màu nâu) -->
+        <div class="snap-slide hero-snap-slide" id="heroSnapSection">
+            <div class="hero-banner hero-home" data-aos="fade-down">
+                <div class="hero-home-text">
+                    <div class="hero-home-badge">
+                        <span>✨</span> <span>Vũ Trụ Tri Thức</span>
+                    </div>
+                    <h1>Chào Mừng <span id="welcomeUserName">Bạn</span> Đến Với VuongEdu</h1>
+                    <p>Khám phá tri thức qua lăng kính và lời nhắn gửi gắm từ những bộ óc thiên tài nhất mọi thời đại.</p>
+                </div>
+                <div class="hero-home-3d">
+                    <div id="globe3d-canvas-container"></div>
+                </div>
+            </div>
+
+            <!-- Nút cuộn xuống dạng chỉ báo chuyển trang mượt mà -->
+            <div class="hero-scroll-cue" onclick="scrollToSnapIndex(1)" title="Khám phá các phân môn">
+                <span>Khám phá 13 Danh Nhân & Vũ Trụ Môn Học</span>
+                <div class="cue-arrow-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="apple-showcase-list" id="homeShowcaseList"></div>
+    </section>
+
+    <!-- 2. VIEW: MÔN HỌC TỰ CHỌN -->
+    <section id="view-mon-tu-chon" class="view-section">
+        <div class="hero-banner">
+            <h1>Môn Học Tự Chọn 🧭</h1>
+            <p>Chọn phân môn bạn cần giải bài hoặc ôn tập để mở ngay trợ lý thông minh.</p>
+        </div>
+
+        <!-- CÁC Ô MỤC CHỌN TỪ LỚP 1 TỚI LỚP 12 -->
+        <div class="grade-filter-bar">
+            <button class="grade-box active" onclick="selectGrade(1, this)">Lớp 1</button>
+            <button class="grade-box" onclick="selectGrade(2, this)">Lớp 2</button>
+            <button class="grade-box" onclick="selectGrade(3, this)">Lớp 3</button>
+            <button class="grade-box" onclick="selectGrade(4, this)">Lớp 4</button>
+            <button class="grade-box" onclick="selectGrade(5, this)">Lớp 5</button>
+            <button class="grade-box" onclick="selectGrade(6, this)">Lớp 6</button>
+            <button class="grade-box" onclick="selectGrade(7, this)">Lớp 7</button>
+            <button class="grade-box" onclick="selectGrade(8, this)">Lớp 8</button>
+            <button class="grade-box" onclick="selectGrade(9, this)">Lớp 9</button>
+            <button class="grade-box" onclick="selectGrade(10, this)">Lớp 10</button>
+            <button class="grade-box" onclick="selectGrade(11, this)">Lớp 11</button>
+            <button class="grade-box" onclick="selectGrade(12, this)">Lớp 12</button>
+        </div>
+
+        <div class="subject-grid" id="lobbySubjects"></div>
+    </section>
+
+    <!-- 3. VIEW: TRA CỨU TÀI LIỆU -->
+    <section id="view-tai-lieu" class="view-section">
+        <div class="page-head">
+            <h2>📚 Thư viện tài liệu</h2>
+            <p>Sách giáo khoa và tài liệu do quản trị viên cung cấp. Mọi câu trả lời của AI đều trích dẫn từ đây.</p>
+        </div>
+        <div id="docAdminBox" class="panel" hidden>
+            <h3 class="panel-title">Tải lên tài liệu <span class="tag tag-admin">quản trị viên</span></h3>
+            <div class="form-grid">
+                <label class="field"><span>Môn học</span><select id="docSubject" class="ctl"></select></label>
+                <label class="field"><span>Chương</span><select id="docChapter" class="ctl"></select></label>
+                <label class="field"><span>Trang từ</span><input id="docFrom" class="ctl" type="number" min="1" value="1"></label>
+                <label class="field"><span>Đến trang (0 = hết)</span><input id="docTo" class="ctl" type="number" min="0" value="0"></label>
+            </div>
+            <label class="field"><span>Tệp (PDF / DOCX / TXT / MD)</span><input id="docFile" class="ctl" type="file" accept=".pdf,.docx,.txt,.md"></label>
+            <p class="hint">PDF scan sẽ được OCR bằng AI (~7 giây/trang). Nên nạp theo từng chương.</p>
+            <button class="btn btn-primary" onclick="uploadDocument()">Tải lên và xử lý</button>
+            <div id="docUploadStatus" class="status-line"></div>
+        </div>
+        <div id="docLibrary" class="lib-list"><div class="skeleton">Đang tải thư viện…</div></div>
+    </section>
+
+    <!-- 4. VIEW: CHATBOX -->
+    <section id="view-chat" class="view-section">
+        <div class="chat-container">
+            <div class="chat-header">
+                <span>💬 Trợ lý AI VuongEdu</span>
+                <label style="font-size:.85rem;color:var(--text-sub);display:flex;align-items:center;gap:6px">
+                    Môn
+                    <select id="chatSubject" class="ctl" style="width:auto;padding:4px 8px"
+                            onchange="window.__chatSubjectId = this.value ? +this.value : null"></select>
+                </label>
+                <span hidden id="chatSubjectBadge">Môn: Tự do</span>
+            </div>
+            <div class="chat-box" id="chatBox">
+                <div class="bubble assistant">Xin chào! Mình là VuongEdu. Bạn hãy đặt câu hỏi bài tập hoặc chọn một môn học từ danh mục để bắt đầu ôn tập nhé!</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="userInput" placeholder="Nhập câu hỏi bài học tại đây..." onkeydown="if(event.key==='Enter') sendMessage()">
+                <button id="sendBtn" onclick="sendMessage()">Gửi</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. VIEW: QUIZZ -->
+    <section id="view-quizz" class="view-section">
+        <div class="page-head">
+            <h2>📝 Luyện đề</h2>
+            <p>AI soạn đề bám sát tài liệu, chấm ngay và ghi lại từng câu để hệ thống hiểu bạn yếu chỗ nào.</p>
+        </div>
+
+        <div id="quizSetup">
+            <div class="panel panel-accent">
+                <h3 class="panel-title">🎯 Đề vừa sức</h3>
+                <p class="hint">Hệ thống tự chọn chủ đề đến hạn ôn / đang yếu / vừa sức, tôn trọng thứ tự kiến thức nền.</p>
+                <button class="btn btn-ghost" onclick="suggestQuiz()">Gợi ý cho tôi</button>
+                <div id="quizReco"></div>
+            </div>
+            <div class="panel">
+                <div class="form-grid">
+                    <label class="field"><span>Môn học</span><select id="quizSubject" class="ctl"></select></label>
+                    <label class="field"><span>Chương</span><select id="quizChapter" class="ctl"></select></label>
+                    <label class="field"><span>Độ khó</span><select id="quizDiff" class="ctl">
+                        <option value="easy">Dễ</option><option value="medium" selected>Trung bình</option><option value="hard">Khó</option>
+                    </select></label>
+                    <label class="field"><span>Số câu</span><input id="quizN" class="ctl" type="number" min="3" max="60" value="5"></label>
+                </div>
+                <label class="field"><span>Chủ đề (bỏ trống = cả chương)</span><div id="quizTopics" class="chip-group"></div></label>
+                <button class="btn btn-primary" onclick="createQuiz()">Tạo đề</button>
+                <div id="quizStatus" class="status-line"></div>
+            </div>
+            <div id="quizMistakes" class="panel"></div>
+            <div class="panel">
+                <h3 class="panel-title">🔑 Mở lại đề theo mã</h3>
+                <p class="hint">Có mã đề thì nhận đúng đề đó, từng câu y nguyên — để làm lại,
+                   hoặc để cả lớp cùng làm một đề rồi so đáp án. Bài làm vẫn tính riêng.</p>
+                <div class="form-grid">
+                    <label class="field"><span>Mã đề</span>
+                        <input id="quizCode" class="ctl" placeholder="M1-A036FD-02"
+                               onkeydown="if(event.key==='Enter')openQuizByCode()"></label>
+                </div>
+                <button class="btn btn-ghost" onclick="openQuizByCode()">Mở đề</button>
+                <div id="quizCodeStatus" class="status-line"></div>
+            </div>
+        </div>
+
+        <div id="quizPaper" hidden></div>
+        <div id="quizResult" hidden></div>
+        <div id="quizHistory" class="panel"></div>
+    </section>
+
+    <!-- 6. VIEW: PHÂN TÍCH ĐIỂM SỐ -->
+    <section id="view-diem-so" class="view-section">
+        <div class="page-head">
+            <h2>🎯 Sổ điểm</h2>
+            <p>Điểm nhập ở đây được lưu vào hệ thống và dùng cho phân tích, lộ trình và nhận xét của AI.</p>
+        </div>
+        <div class="panel">
+            <div class="form-grid">
+                <label class="field"><span>Môn học</span><select id="scSubject" class="ctl"></select></label>
+                <label class="field"><span>Loại điểm</span><select id="scKind" class="ctl">
+                    <option value="mieng">Miệng (hệ số 1)</option>
+                    <option value="15p" selected>15 phút (hệ số 1)</option>
+                    <option value="giua_ky">Giữa kỳ (hệ số 2)</option>
+                    <option value="cuoi_ky">Cuối kỳ (hệ số 3)</option>
+                </select></label>
+                <label class="field"><span>Điểm</span><input id="scValue" class="ctl" type="number" step="0.25" min="0" max="10" value="8"></label>
+                <label class="field"><span>Ngày</span><input id="scDate" class="ctl" type="date"></label>
+            </div>
+            <button class="btn btn-primary" onclick="addScore()">Lưu điểm</button>
+            <div id="scStatus" class="status-line"></div>
+        </div>
+        <div id="scSummary" class="stat-row"></div>
+        <div id="scChart" class="panel chart-panel" hidden><h3 class="panel-title">Xu hướng điểm</h3><div id="scChartBody"></div></div>
+        <div id="scList" class="panel"><div class="skeleton">Đang tải sổ điểm…</div></div>
+
+        <hr class="soft-sep">
+        <div class="grades-container">
+            <div class="chat-header">
+                <span>🧮 Tính nhanh điểm trung bình (không lưu)</span>
+                <button onclick="calcAllGrades()" style="padding: 6px 16px; border-radius: 980px; border: 1px solid var(--card-border); background: var(--btn-primary-bg); color: var(--btn-primary-text); font-weight: 600; cursor: pointer; transition: opacity 0.2s;">Tính lại điểm</button>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Môn học</th>
+                            <th>15p (1)</th>
+                            <th>15p (2)</th>
+                            <th>T.Trung</th>
+                            <th>Giữa kì (x2)</th>
+                            <th>Cuối kì (x3)</th>
+                            <th>ĐTB</th>
+                        </tr>
+                    </thead>
+                    <tbody id="gradeBody"></tbody>
+                </table>
+            </div>
+
+            <div class="grade-footer">
+                <div>ĐTB Toàn bộ: <strong id="finalAvg" style="color:var(--apple-blue); font-size:1.1rem;">--</strong></div>
+                <div>Xếp loại: <span id="academicRank" class="pill pill-rank">--</span></div>
+                <div id="lowestSubjectNotice" class="pill pill-alert">Đang tính...</div>
+            </div>
+    </section>
+
+    <!-- 7. VIEW: HỎI BÀI VÀ GÓP Ý (FLASK-WTF WEB FORM) -->
+    <section id="view-hoi-bai" class="view-section">
+        <div class="hero-banner">
+            <div class="hero-home-badge">
+                <span>📋</span> <span>Hỏi Bài & Đóng Góp</span>
+            </div>
+            <h1>Phiếu Gửi Thắc Mắc & Đóng Góp Ý Kiến</h1>
+            <p>Hãy giúp chúng tôi phát triển và cải thiện theo những ý kiến đóng góp của bạn !</p>
+        </div>
+
+        <div class="wtf-form-container">
+            
+
+            
+                <div class="submitted-preview-card">
+                    <div class="preview-title">
+                        <span>✅</span> <span>Phiếu giải đáp thắc mắc từ Trung Tâm VuongEdu:</span>
+                    </div>
+                    <div class="preview-grid">
+                        <div>Học sinh: <strong></strong></div>
+                        <div>Khối lớp: <strong>Lớp </strong></div>
+                        <div>Môn học: <strong></strong></div>
+                        <div>Email người nhận: <strong></strong></div>
+                    </div>
+
+                    
+                        <div class="email-delivery-banner delivery-successdelivery-notice">
+                            <span>📬ℹ️</span>
+                            <span></span>
+                        </div>
+                    
+
+                    
+                        <div class="letter-display-box">
+                            <div class="letter-header">
+                                <span>📜 Bản Sao Thư Phản Hồi Trực Tiếp Đến Email </span>
+                            </div>
+                            <pre class="letter-body"></pre>
+                        </div>
+                    
+                </div>
+            
+
+            <form method="POST" action="/" class="wtf-card-form" id="flaskWtfForm" onsubmit="handleWtfSubmit()">
+                
+
+                <div class="wtf-row-2">
+                    <div class="wtf-field">
+                        Họ và tên
+                        <input id="fb-name" class="wtf-input-control" placeholder="Ví dụ: Nguyễn Văn A">
+                        
+                            <span class="wtf-field-error"></span>
+                        
+                    </div>
+
+                    <div class="wtf-field">
+                        Email
+                        <input id="fb-email" type="email" class="wtf-input-control" placeholder="hocsinh@gmail.com">
+                        
+                            <span class="wtf-field-error"></span>
+                        
+                    </div>
+                </div>
+
+                <div class="wtf-row-2">
+                    <div class="wtf-field">
+                        Lớp
+                        <select id="fb-grade" class="wtf-select-control"><option>Lớp 12</option><option>Lớp 11</option><option>Lớp 10</option></select>
+                        
+                            <span class="wtf-field-error"></span>
+                        
+                    </div>
+
+                    <div class="wtf-field">
+                        Môn học
+                        <select id="fb-subject" class="wtf-select-control"></select>
+                        
+                            <span class="wtf-field-error"></span>
+                        
+                    </div>
+                </div>
+
+                <div class="wtf-field">
+                    Nội dung
+                    <textarea id="fb-question" class="wtf-textarea-control" rows="5" placeholder="Nhập thắc mắc hoặc góp ý của bạn…"></textarea>
+                    
+                        <span class="wtf-field-error"></span>
+                    
+                </div>
+
+                <div class="wtf-action-bar">
+                    <button type="submit" class="wtf-btn-primary">Gửi</button>
+                    <div class="wtf-security-indicator">
+                        <span class="security-dot"></span>
+                        <span>CSRF Token Protected (Bảo mật WTForms)</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- PHÂN TÍCH NĂNG LỰC -->
+    <section id="view-phan-tich" class="view-section">
+        <div class="page-head">
+            <h2>📊 Phân tích năng lực</h2>
+            <p>Mức nắm vững từng chủ đề, chủ đề cần củng cố, lịch ôn và dự đoán của mô hình học sâu.</p>
+        </div>
+        <div class="filter-bar">
+            <select id="anSubject" class="ctl" onchange="loadAnalytics()"></select>
+            <select id="anChapter" class="ctl" onchange="renderAnalytics()"></select>
+        </div>
+        <div id="anStats" class="stat-row"></div>
+        <div class="panel"><h3 class="panel-title">Bản đồ mức độ nắm vững</h3>
+            <p class="hint">🔴 dưới 50% · 🟡 50–75% · 🟢 trên 75%. Chủ đề dưới 3 câu chưa kết luận. Câu khó và kết quả gần đây có trọng số cao hơn.</p>
+            <div id="anHeatmap" class="heatmap"></div>
+        </div>
+        <div class="two-col">
+            <div class="panel"><h3 class="panel-title">🔴 Cần củng cố</h3><div id="anWeak"></div></div>
+            <div class="panel"><h3 class="panel-title">🟢 Đã nắm tốt</h3><div id="anGood"></div></div>
+        </div>
+        <div class="panel"><h3 class="panel-title">🔗 Nền tảng cần học trước</h3><div id="anPrereq"></div></div>
+        <div class="panel"><h3 class="panel-title">🔁 Lịch ôn tập</h3><div id="anReview"></div></div>
+        <div class="panel"><h3 class="panel-title">📈 Tiến bộ theo chủ đề</h3>
+            <select id="anProgressTopic" class="ctl" onchange="loadProgress()"></select>
+            <div id="anProgress"></div>
+        </div>
+        <div class="panel"><h3 class="panel-title">🧠 Dự đoán Deep Knowledge Tracing</h3><div id="anKT"></div></div>
+    </section>
+
+    <!-- LỘ TRÌNH -->
+    <section id="view-lo-trinh" class="view-section">
+        <div class="page-head">
+            <h2>🗺️ Lộ trình học tập</h2>
+            <p>AI đọc số liệu thật của bạn rồi lập kế hoạch theo ngày; bản multi-agent còn có bước phản biện và tự sửa.</p>
+        </div>
+        <div class="panel">
+            <div class="form-grid">
+                <label class="field"><span>Môn học</span><select id="plSubject" class="ctl"></select></label>
+                <label class="field"><span>Mục tiêu</span><input id="plGoal" class="ctl" placeholder="ví dụ: đạt 8 điểm kiểm tra chương 1"></label>
+                <label class="field"><span>Số ngày</span><input id="plDays" class="ctl" type="number" min="3" max="14" value="7"></label>
+                <label class="field"><span>Giờ học / ngày</span><input id="plHours" class="ctl" type="number" step="0.5" min="0.5" max="4" value="1"></label>
+            </div>
+            <div class="mode-group" id="plMode">
+                <label class="mode-card"><input type="radio" name="planmode" value="quick"><b>⚡ Nhanh</b><span>1 lượt gọi AI</span></label>
+                <label class="mode-card"><input type="radio" name="planmode" value="agent" checked><b>🤖 Agent</b><span>tự tra cứu dữ liệu</span></label>
+                <label class="mode-card"><input type="radio" name="planmode" value="multi"><b>🤖🤖🤖 Multi-agent</b><span>chẩn đoán → lập kế hoạch → phản biện</span></label>
+            </div>
+            <button class="btn btn-primary" onclick="createPlan()">Phân tích và lập kế hoạch</button>
+            <div id="plStatus" class="status-line"></div>
+            <div id="plTrace" class="tool-log" hidden></div>
+        </div>
+        <div id="plOutcome" class="stat-row"></div>
+        <div id="plBody"><div class="skeleton">Đang tải lộ trình…</div></div>
+    </section>
+
+    <!-- GIA SƯ AI -->
+    <section id="view-gia-su" class="view-section">
+        <div class="page-head">
+            <h2>🤖 Gia sư AI</h2>
+            <p>Khác với Hỏi AI (trả lời theo sách), gia sư tự tra cứu hồ sơ học tập của bạn bằng công cụ rồi mới trả lời.</p>
+        </div>
+        <div class="two-col two-col-wide">
+            <div class="chat-container tutor-chat">
+                <div class="chat-header"><span>🤖 Gia sư AI</span><span id="tutorSubjectBadge" style="font-size:.85rem;color:var(--text-sub)"></span></div>
+                <div class="chat-box" id="tutorBox">
+                    <div class="bubble assistant">Mình đọc được điểm số, kết quả quiz và lịch ôn của bạn. Hỏi mình bất cứ điều gì về việc học nhé!</div>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" id="tutorInput" placeholder="Em đang yếu nhất chỗ nào?" onkeydown="if(event.key==='Enter') sendTutor()">
+                    <button onclick="sendTutor()">Gửi</button>
+                </div>
+            </div>
+            <div class="panel">
+                <h3 class="panel-title">Gợi ý câu hỏi</h3>
+                <div class="suggest-list" id="tutorSuggest"></div>
+                <h3 class="panel-title" style="margin-top:18px">Công cụ gia sư dùng</h3>
+                <div id="tutorTools" class="tool-log"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHẤM BÀI -->
+    <section id="view-cham-bai" class="view-section">
+        <div class="page-head">
+            <h2>✍️ Chấm bài tự luận</h2>
+            <p>Chụp ảnh bài làm hoặc dán lời giải. AI chấm từng bước và chỉ ra <b>bước sai đầu tiên</b>.</p>
+        </div>
+        <div class="two-col">
+            <div class="panel">
+                <label class="field"><span>Môn học</span><select id="grSubject" class="ctl"></select></label>
+                <label class="field"><span>Chương (giúp AI chọn đúng chủ đề)</span><select id="grChapter" class="ctl"></select></label>
+                <label class="field"><span>Ảnh bài làm</span><input id="grFile" class="ctl" type="file" accept="image/*" onchange="previewWork()"></label>
+                <div id="grPreview" class="work-preview"></div>
+                <label class="field"><span>Đề bài (nếu ảnh không có)</span><input id="grProblem" class="ctl" placeholder="Tìm khoảng đồng biến của y = x³ − 3x² + 2"></label>
+                <label class="field"><span>Hoặc dán lời giải dạng chữ</span><textarea id="grText" class="ctl" rows="6" placeholder="Bước 1: y' = 3x² − 6x…"></textarea></label>
+                <button class="btn btn-primary" onclick="gradeWork()">Chấm bài</button>
+                <div id="grStatus" class="status-line"></div>
+            </div>
+            <div class="panel" id="grResultPanel"><h3 class="panel-title">Kết quả chấm</h3><div id="grResult" class="empty-note">Chưa có bài nào được chấm.</div></div>
+        </div>
+    </section>
+
+    <!-- LỚP HỌC -->
+    <section id="view-lop-hoc" class="view-section">
+        <div class="page-head">
+            <h2>🏫 Lớp học</h2>
+            <p>Giáo viên tạo lớp, giao đề và xem bản đồ năng lực cả lớp. Học sinh vào lớp bằng mã.</p>
+        </div>
+        <div id="clsTeacher" hidden>
+            <div class="panel">
+                <h3 class="panel-title">Tạo lớp <span class="tag tag-teacher">giáo viên</span></h3>
+                <div class="form-grid">
+                    <label class="field"><span>Tên lớp</span><input id="clsName" class="ctl" placeholder="12A1"></label>
+                    <label class="field"><span>Môn</span><select id="clsSubject" class="ctl"></select></label>
+                </div>
+                <button class="btn btn-primary" onclick="createClass()">Tạo lớp</button>
+            </div>
+            <div class="panel"><h3 class="panel-title">Lớp tôi dạy</h3><div id="clsTeaching"></div></div>
+            <div id="clsDetail"></div>
+        </div>
+        <div class="panel">
+            <h3 class="panel-title">Tham gia lớp</h3>
+            <div class="inline-form">
+                <input id="clsCode" class="ctl" placeholder="Mã lớp, ví dụ LOPT-11F2">
+                <button class="btn btn-ghost" onclick="joinClass()">Tham gia</button>
+            </div>
+            <div id="clsJoinStatus" class="status-line"></div>
+            <div id="clsJoined"></div>
+        </div>
+        <div class="panel"><h3 class="panel-title">📌 Đề được giao</h3><div id="clsAssignments"></div></div>
+        <div id="clsPaper" hidden></div>
+    </section>
+
+    <!-- QUẢN TRỊ -->
+    <section id="view-quan-tri" class="view-section">
+        <div class="page-head">
+            <h2>⚙️ Quản trị hệ thống</h2>
+            <p>Người dùng, tài liệu, thống kê chất lượng, mô hình học máy và nhật ký agent.</p>
+        </div>
+        <div class="tab-bar" id="adminTabs">
+            <button class="tab-btn active" onclick="adminTab('users', this)">👥 Người dùng</button>
+            <button class="tab-btn" onclick="adminTab('docs', this)">📚 Tài liệu</button>
+            <button class="tab-btn" onclick="adminTab('taxonomy', this)">📗 Môn học</button>
+            <button class="tab-btn" onclick="adminTab('bank', this)">🏦 Ngân hàng câu hỏi</button>
+            <button class="tab-btn" onclick="adminTab('stats', this)">📈 Thống kê</button>
+            <button class="tab-btn" onclick="adminTab('ml', this)">🧠 Mô hình ML</button>
+            <button class="tab-btn" onclick="adminTab('agent', this)">🤖 Agent</button>
+            <button class="tab-btn" onclick="adminTab('feedback', this)">📋 Góp ý</button>
+        </div>
+        <div id="adminBody"><div class="skeleton">Đang tải…</div></div>
+    </section>
+
+</main>
+
+<!-- THANH ĐIỀU HƯỚNG DẠNG CHẤM (FULLPAGE DOT NAVIGATION) -->
+<nav class="fullpage-dot-nav" id="fullpageDotNav" aria-label="Điều hướng các phân môn"></nav>
+
+
+
+<!-- Three.js CDN & 3D Interactive Knowledge Globe -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <script src="/static/js/ui.js?v=32"></script>
+  <script src="/static/js/app.js?v=32"></script>
+  <script src="/static/js/app2.js?v=32"></script>
+  <script src="/static/js/app3.js?v=32"></script>
+  <script src="/static/js/bank.js?v=32"></script>
+  <script src="/static/js/upload.js?v=32"></script>
+  <script src="/static/js/jobs.js?v=32"></script>
+  <script src="/static/js/math.js?v=32"></script>
+</body>
+</html>

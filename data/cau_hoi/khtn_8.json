@@ -1,0 +1,296 @@
+{
+  "_mon": "Khoa học tự nhiên 8",
+  "_nguon": "Soạn theo SGK Khoa học tự nhiên 8 — Kết nối tri thức với cuộc sống",
+  "_ghi_chu": "Bổ sung cho 13 câu đã có trong ngan_hang_cau_hoi.json",
+  "_so_cau": 37,
+
+  "cau_hoi": [
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Mở đầu", "chu_de": "Sử dụng một số hoá chất, thiết bị cơ bản trong phòng thí nghiệm", "do_kho": "easy",
+      "cau_hoi": "Khi pha loãng acid sulfuric đặc, cần thực hiện thế nào cho an toàn?",
+      "lua_chon": ["Rót nước vào acid", "Rót từ từ acid vào nước và khuấy đều", "Rót nhanh acid vào nước", "Trộn cùng lúc"],
+      "dap_an": 1,
+      "giai_thich": "Phải rót từ từ acid đặc vào nước và khuấy đều. Làm ngược lại sẽ sinh nhiệt mạnh, gây bắn acid rất nguy hiểm."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Mở đầu", "chu_de": "Sử dụng một số hoá chất, thiết bị cơ bản trong phòng thí nghiệm", "do_kho": "easy",
+      "cau_hoi": "Dụng cụ nào dùng để đo thể tích chất lỏng chính xác trong phòng thí nghiệm?",
+      "lua_chon": ["Cốc thuỷ tinh", "Ống đong", "Bình tam giác", "Đĩa petri"],
+      "dap_an": 1,
+      "giai_thich": "Ống đong có vạch chia nên đo thể tích chất lỏng chính xác hơn cốc hay bình tam giác."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương I. Phản ứng hoá học", "chu_de": "Phản ứng hoá học", "do_kho": "medium",
+      "cau_hoi": "Trong phản ứng hoá học, điều gì được bảo toàn?",
+      "lua_chon": ["Số phân tử", "Số nguyên tử mỗi nguyên tố", "Thể tích chất", "Số liên kết"],
+      "dap_an": 1,
+      "giai_thich": "Phản ứng hoá học chỉ sắp xếp lại các nguyên tử, số nguyên tử của mỗi nguyên tố không đổi — đó là cơ sở của định luật bảo toàn khối lượng."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương I. Phản ứng hoá học", "chu_de": "Mol và tỉ khối chất khí", "do_kho": "medium",
+      "cau_hoi": "Ở điều kiện chuẩn, 1 mol chất khí bất kì chiếm thể tích bao nhiêu lít?",
+      "lua_chon": ["22,4 L", "24,79 L", "18 L", "32 L"],
+      "dap_an": 1,
+      "giai_thich": "Theo SGK mới, ở điều kiện chuẩn (25 °C, 1 bar), 1 mol khí chiếm 24,79 lít."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương I. Phản ứng hoá học", "chu_de": "Mol và tỉ khối chất khí", "do_kho": "medium",
+      "cau_hoi": "Khí nào sau đây nhẹ hơn không khí?",
+      "lua_chon": ["CO2 (M = 44)", "O2 (M = 32)", "H2 (M = 2)", "SO2 (M = 64)"],
+      "dap_an": 2,
+      "giai_thich": "Khối lượng mol trung bình của không khí là 29. Khí có M nhỏ hơn 29 thì nhẹ hơn không khí, ở đây là H2."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương I. Phản ứng hoá học", "chu_de": "Dung dịch và nồng độ", "do_kho": "medium",
+      "cau_hoi": "Hoà tan 20 g muối vào 180 g nước. Nồng độ phần trăm của dung dịch là:",
+      "lua_chon": ["10%", "11,1%", "20%", "90%"],
+      "dap_an": 0,
+      "giai_thich": "Khối lượng dung dịch = 20 + 180 = 200 g. $C\\% = \\dfrac{20}{200} \\cdot 100\\% = 10\\%$."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương I. Phản ứng hoá học", "chu_de": "Dung dịch và nồng độ", "do_kho": "medium",
+      "cau_hoi": "Yếu tố nào làm tăng độ tan của hầu hết chất rắn trong nước?",
+      "lua_chon": ["Giảm nhiệt độ", "Tăng nhiệt độ", "Tăng áp suất", "Giảm khuấy trộn"],
+      "dap_an": 1,
+      "giai_thich": "Với đa số chất rắn, độ tan tăng khi nhiệt độ tăng. Riêng chất khí thì ngược lại."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương I. Phản ứng hoá học", "chu_de": "Tính theo phương trình hoá học", "do_kho": "hard",
+      "cau_hoi": "Cho 5,6 g Fe (M = 56) tác dụng hết với HCl. Thể tích khí H2 thu được ở điều kiện chuẩn (24,79 L/mol) là:",
+      "lua_chon": ["1,24 L", "2,479 L", "4,958 L", "24,79 L"],
+      "dap_an": 1,
+      "giai_thich": "$n_{Fe} = \\dfrac{5{,}6}{56} = 0{,}1$ mol. Fe + 2HCl → FeCl2 + H2, nên $n_{H_2} = 0{,}1$ mol, $V = 0{,}1 \\cdot 24{,}79 = 2{,}479$ L."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương I. Phản ứng hoá học", "chu_de": "Tốc độ phản ứng và chất xúc tác", "do_kho": "medium",
+      "cau_hoi": "Yếu tố nào sau đây KHÔNG ảnh hưởng đến tốc độ phản ứng?",
+      "lua_chon": ["Nhiệt độ", "Diện tích bề mặt tiếp xúc", "Màu sắc của chất", "Nồng độ"],
+      "dap_an": 2,
+      "giai_thich": "Màu sắc không ảnh hưởng tới tốc độ phản ứng. Các yếu tố ảnh hưởng gồm nhiệt độ, nồng độ, diện tích tiếp xúc, chất xúc tác."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương I. Phản ứng hoá học", "chu_de": "Tốc độ phản ứng và chất xúc tác", "do_kho": "medium",
+      "cau_hoi": "Chất xúc tác có đặc điểm gì?",
+      "lua_chon": ["Bị tiêu hao sau phản ứng", "Làm thay đổi tốc độ phản ứng nhưng không bị biến đổi sau phản ứng", "Làm tăng lượng sản phẩm", "Chỉ dùng được một lần"],
+      "dap_an": 1,
+      "giai_thich": "Chất xúc tác làm tăng tốc độ phản ứng và được giữ nguyên về lượng, chất sau khi phản ứng kết thúc."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương II. Một số hợp chất thông dụng", "chu_de": "Acid", "do_kho": "medium",
+      "cau_hoi": "Acid tác dụng với kim loại đứng trước hydrogen tạo ra sản phẩm nào?",
+      "lua_chon": ["Muối và nước", "Muối và khí hydrogen", "Base và nước", "Oxide và nước"],
+      "dap_an": 1,
+      "giai_thich": "Ví dụ: Zn + 2HCl → ZnCl2 + H2. Kim loại đứng trước H đẩy được hydrogen ra khỏi dung dịch acid."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương II. Một số hợp chất thông dụng", "chu_de": "Base và thang pH", "do_kho": "medium",
+      "cau_hoi": "Base tan trong nước còn gọi là gì?",
+      "lua_chon": ["Acid", "Kiềm", "Muối", "Oxide"],
+      "dap_an": 1,
+      "giai_thich": "Base tan trong nước gọi là kiềm, ví dụ NaOH, KOH, Ca(OH)2."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương II. Một số hợp chất thông dụng", "chu_de": "Oxide", "do_kho": "easy",
+      "cau_hoi": "Oxide là hợp chất của oxygen với mấy nguyên tố khác?",
+      "lua_chon": ["Một", "Hai", "Ba", "Nhiều hơn ba"],
+      "dap_an": 0,
+      "giai_thich": "Oxide là hợp chất của oxygen với MỘT nguyên tố khác, ví dụ CO2, Fe2O3, CaO."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương II. Một số hợp chất thông dụng", "chu_de": "Oxide", "do_kho": "medium",
+      "cau_hoi": "Oxide nào sau đây là oxide base?",
+      "lua_chon": ["CO2", "SO2", "CaO", "P2O5"],
+      "dap_an": 2,
+      "giai_thich": "CaO là oxide của kim loại, tác dụng với acid tạo muối và nước nên là oxide base. Ba chất còn lại là oxide acid."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương II. Một số hợp chất thông dụng", "chu_de": "Muối", "do_kho": "medium",
+      "cau_hoi": "Phản ứng nào sau đây tạo thành muối?",
+      "lua_chon": ["Acid tác dụng với base", "Nước bay hơi", "Kim loại nóng chảy", "Khí nở ra khi nóng"],
+      "dap_an": 0,
+      "giai_thich": "Phản ứng trung hoà giữa acid và base tạo ra muối và nước, ví dụ NaOH + HCl → NaCl + H2O."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương II. Một số hợp chất thông dụng", "chu_de": "Phân bón hoá học", "do_kho": "medium",
+      "cau_hoi": "Phân đạm cung cấp nguyên tố dinh dưỡng nào cho cây?",
+      "lua_chon": ["Nitrogen", "Phosphorus", "Potassium", "Calcium"],
+      "dap_an": 0,
+      "giai_thich": "Phân đạm cung cấp nitrogen, giúp cây phát triển thân lá. Phân lân cung cấp phosphorus, phân kali cung cấp potassium."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương III. Khối lượng riêng và áp suất", "chu_de": "Áp suất trên một bề mặt", "do_kho": "medium",
+      "cau_hoi": "Công thức tính áp suất trên một bề mặt là:",
+      "lua_chon": ["$p = F \\cdot S$", "$p = \\dfrac{F}{S}$", "$p = \\dfrac{S}{F}$", "$p = F + S$"],
+      "dap_an": 1,
+      "giai_thich": "$p = \\dfrac{F}{S}$ — áp suất bằng áp lực chia cho diện tích bị ép. Đơn vị là pascal (Pa)."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương III. Khối lượng riêng và áp suất", "chu_de": "Áp suất trên một bề mặt", "do_kho": "medium",
+      "cau_hoi": "Vì sao lưỡi dao được mài mỏng thì cắt dễ hơn?",
+      "lua_chon": ["Vì lực tác dụng lớn hơn", "Vì diện tích tiếp xúc nhỏ nên áp suất lớn", "Vì dao nhẹ hơn", "Vì dao cứng hơn"],
+      "dap_an": 1,
+      "giai_thich": "Cùng một áp lực, diện tích tiếp xúc càng nhỏ thì áp suất càng lớn, nên dao mỏng cắt dễ hơn."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương III. Khối lượng riêng và áp suất", "chu_de": "Thực hành xác định khối lượng riêng", "do_kho": "medium",
+      "cau_hoi": "Để xác định thể tích một vật rắn không thấm nước có hình dạng bất kì, ta dùng cách nào?",
+      "lua_chon": ["Đo chiều dài rồi tính", "Dùng bình chia độ, đo thể tích nước dâng lên", "Cân khối lượng", "Ước lượng bằng mắt"],
+      "dap_an": 1,
+      "giai_thich": "Thả vật vào bình chia độ có nước; phần nước dâng lên chính bằng thể tích vật."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương IV. Tác dụng làm quay của lực", "chu_de": "Tác dụng làm quay của lực và moment lực", "do_kho": "medium",
+      "cau_hoi": "Moment lực phụ thuộc vào những yếu tố nào?",
+      "lua_chon": ["Độ lớn lực và khối lượng vật", "Độ lớn lực và khoảng cách từ trục quay đến giá của lực", "Chỉ độ lớn lực", "Chỉ khoảng cách"],
+      "dap_an": 1,
+      "giai_thich": "$M = F \\cdot d$, với $d$ là cánh tay đòn — khoảng cách từ trục quay đến giá của lực."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương IV. Tác dụng làm quay của lực", "chu_de": "Đòn bẩy và ứng dụng", "do_kho": "medium",
+      "cau_hoi": "Dụng cụ nào sau đây hoạt động theo nguyên tắc đòn bẩy?",
+      "lua_chon": ["Kéo cắt giấy", "Ròng rọc cố định", "Mặt phẳng nghiêng", "Nhiệt kế"],
+      "dap_an": 0,
+      "giai_thich": "Kéo gồm hai đòn bẩy có chung trục quay ở đinh ốc giữa, giúp cắt dễ hơn."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương V. Điện", "chu_de": "Hiện tượng nhiễm điện do cọ xát", "do_kho": "easy",
+      "cau_hoi": "Hai vật nhiễm điện cùng loại khi đặt gần nhau sẽ:",
+      "lua_chon": ["Hút nhau", "Đẩy nhau", "Không tương tác", "Trung hoà điện tích"],
+      "dap_an": 1,
+      "giai_thich": "Hai vật nhiễm điện cùng loại thì đẩy nhau, khác loại thì hút nhau."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương V. Điện", "chu_de": "Mạch điện đơn giản", "do_kho": "medium",
+      "cau_hoi": "Trong mạch điện mắc nối tiếp, cường độ dòng điện qua các thiết bị có đặc điểm gì?",
+      "lua_chon": ["Bằng nhau ở mọi vị trí", "Khác nhau tuỳ thiết bị", "Tăng dần", "Giảm dần"],
+      "dap_an": 0,
+      "giai_thich": "Mạch nối tiếp chỉ có một đường đi cho dòng điện, nên cường độ dòng điện như nhau tại mọi điểm."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương V. Điện", "chu_de": "Tác dụng của dòng điện", "do_kho": "medium",
+      "cau_hoi": "Tác dụng nào của dòng điện được ứng dụng trong bàn là (bàn ủi)?",
+      "lua_chon": ["Tác dụng nhiệt", "Tác dụng từ", "Tác dụng hoá học", "Tác dụng sinh lí"],
+      "dap_an": 0,
+      "giai_thich": "Bàn là hoạt động nhờ tác dụng nhiệt: dòng điện qua dây điện trở làm nó nóng lên."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương V. Điện", "chu_de": "Cường độ dòng điện và hiệu điện thế", "do_kho": "easy",
+      "cau_hoi": "Dụng cụ nào dùng để đo cường độ dòng điện?",
+      "lua_chon": ["Vôn kế", "Ampe kế", "Nhiệt kế", "Lực kế"],
+      "dap_an": 1,
+      "giai_thich": "Ampe kế đo cường độ dòng điện, mắc nối tiếp vào mạch. Vôn kế đo hiệu điện thế, mắc song song."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương V. Điện", "chu_de": "Thực hành đo cường độ dòng điện và hiệu điện thế", "do_kho": "medium",
+      "cau_hoi": "Vôn kế được mắc thế nào vào đoạn mạch cần đo?",
+      "lua_chon": ["Nối tiếp", "Song song", "Tuỳ ý", "Không mắc vào mạch"],
+      "dap_an": 1,
+      "giai_thich": "Vôn kế có điện trở rất lớn, phải mắc song song với đoạn mạch cần đo hiệu điện thế."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương VI. Nhiệt", "chu_de": "Năng lượng nhiệt và nội năng", "do_kho": "medium",
+      "cau_hoi": "Nội năng của vật tăng khi nào?",
+      "lua_chon": ["Vật chuyển động nhanh hơn", "Vật được làm nóng lên", "Vật được nâng lên cao", "Vật bị nén lại thể tích"],
+      "dap_an": 1,
+      "giai_thich": "Nội năng liên quan tới chuyển động và tương tác của các phân tử bên trong vật; làm nóng vật thì nội năng tăng."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương VI. Nhiệt", "chu_de": "Sự nở vì nhiệt", "do_kho": "medium",
+      "cau_hoi": "Vì sao giữa hai đầu thanh ray đường sắt phải để khe hở?",
+      "lua_chon": ["Để tiết kiệm vật liệu", "Để ray nở ra khi trời nóng mà không bị cong vênh", "Để tàu chạy êm hơn", "Để thoát nước"],
+      "dap_an": 1,
+      "giai_thich": "Kim loại nở ra khi nóng lên. Khe hở cho phép thanh ray giãn nở mà không đẩy nhau gây cong vênh."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương VI. Nhiệt", "chu_de": "Thực hành đo năng lượng nhiệt bằng joulemeter", "do_kho": "medium",
+      "cau_hoi": "Joulemeter dùng để đo đại lượng nào?",
+      "lua_chon": ["Nhiệt độ", "Năng lượng nhiệt", "Khối lượng", "Áp suất"],
+      "dap_an": 1,
+      "giai_thich": "Joulemeter (nhiệt lượng kế điện tử) đo năng lượng nhiệt, đơn vị joule (J)."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương VII. Sinh học cơ thể người", "chu_de": "Khái quát về cơ thể người", "do_kho": "easy",
+      "cau_hoi": "Đơn vị cấu tạo cơ bản của cơ thể người là gì?",
+      "lua_chon": ["Mô", "Tế bào", "Cơ quan", "Hệ cơ quan"],
+      "dap_an": 1,
+      "giai_thich": "Tế bào là đơn vị cấu tạo và chức năng cơ bản. Nhiều tế bào tạo thành mô, mô tạo cơ quan, cơ quan tạo hệ cơ quan."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương VII. Sinh học cơ thể người", "chu_de": "Hệ vận động ở người", "do_kho": "medium",
+      "cau_hoi": "Hệ vận động của người gồm những thành phần nào?",
+      "lua_chon": ["Xương và cơ", "Tim và mạch máu", "Phổi và khí quản", "Dạ dày và ruột"],
+      "dap_an": 0,
+      "giai_thich": "Hệ vận động gồm bộ xương (nâng đỡ, bảo vệ) và hệ cơ (co dãn tạo chuyển động)."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương VII. Sinh học cơ thể người", "chu_de": "Dinh dưỡng và tiêu hoá ở người", "do_kho": "medium",
+      "cau_hoi": "Quá trình hấp thụ chất dinh dưỡng chủ yếu diễn ra ở đâu?",
+      "lua_chon": ["Dạ dày", "Ruột non", "Ruột già", "Thực quản"],
+      "dap_an": 1,
+      "giai_thich": "Ruột non có lông ruột và lông cực nhỏ làm tăng diện tích bề mặt, là nơi hấp thụ chất dinh dưỡng chủ yếu."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương VII. Sinh học cơ thể người", "chu_de": "Hệ bài tiết ở người", "do_kho": "medium",
+      "cau_hoi": "Cơ quan nào đóng vai trò chính trong hệ bài tiết nước tiểu?",
+      "lua_chon": ["Gan", "Thận", "Phổi", "Da"],
+      "dap_an": 1,
+      "giai_thich": "Thận lọc máu, tạo nước tiểu để loại bỏ chất thải và điều hoà cân bằng nước, muối khoáng."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương VII. Sinh học cơ thể người", "chu_de": "Hệ thần kinh và các giác quan ở người", "do_kho": "medium",
+      "cau_hoi": "Hệ thần kinh trung ương gồm những bộ phận nào?",
+      "lua_chon": ["Não và tuỷ sống", "Dây thần kinh và hạch thần kinh", "Não và dây thần kinh", "Tuỷ sống và hạch thần kinh"],
+      "dap_an": 0,
+      "giai_thich": "Hệ thần kinh trung ương gồm não bộ và tuỷ sống. Dây thần kinh và hạch thần kinh thuộc hệ thần kinh ngoại biên."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương VII. Sinh học cơ thể người", "chu_de": "Hệ nội tiết ở người", "do_kho": "medium",
+      "cau_hoi": "Hormone insulin do tuyến nào tiết ra và có tác dụng gì?",
+      "lua_chon": ["Tuyến giáp — tăng chuyển hoá", "Tuyến tụy — hạ đường huyết", "Tuyến yên — điều hoà sinh trưởng", "Tuyến thượng thận — tăng huyết áp"],
+      "dap_an": 1,
+      "giai_thich": "Insulin do tế bào beta của đảo tuỵ tiết ra, giúp hạ đường huyết. Thiếu insulin gây bệnh tiểu đường."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương VII. Sinh học cơ thể người", "chu_de": "Da và điều hoà thân nhiệt ở người", "do_kho": "medium",
+      "cau_hoi": "Khi trời nóng, cơ thể điều hoà thân nhiệt bằng cách nào?",
+      "lua_chon": ["Co mạch máu dưới da", "Giãn mạch máu dưới da và tăng tiết mồ hôi", "Run cơ", "Giảm tiết mồ hôi"],
+      "dap_an": 1,
+      "giai_thich": "Trời nóng, mạch máu dưới da giãn để toả nhiệt, đồng thời tuyến mồ hôi tăng tiết, mồ hôi bay hơi mang nhiệt đi."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương VII. Sinh học cơ thể người", "chu_de": "Điều hoà môi trường trong của cơ thể người", "do_kho": "hard",
+      "cau_hoi": "Môi trường trong của cơ thể gồm những thành phần nào?",
+      "lua_chon": ["Máu, nước mô và bạch huyết", "Không khí và nước", "Thức ăn và nước uống", "Da và niêm mạc"],
+      "dap_an": 0,
+      "giai_thich": "Môi trường trong gồm máu, nước mô và bạch huyết — nơi tế bào trao đổi chất, được duy trì ổn định nhờ cơ chế cân bằng nội môi."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương VIII. Sinh vật và môi trường", "chu_de": "Môi trường và các nhân tố sinh thái", "do_kho": "medium",
+      "cau_hoi": "Nhân tố sinh thái vô sinh bao gồm những yếu tố nào?",
+      "lua_chon": ["Ánh sáng, nhiệt độ, độ ẩm", "Động vật, thực vật", "Vi khuẩn, nấm", "Con người"],
+      "dap_an": 0,
+      "giai_thich": "Nhân tố vô sinh là các yếu tố không sống như ánh sáng, nhiệt độ, độ ẩm, đất, nước. Sinh vật thuộc nhân tố hữu sinh."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương VIII. Sinh vật và môi trường", "chu_de": "Hệ sinh thái", "do_kho": "medium",
+      "cau_hoi": "Trong chuỗi thức ăn, sinh vật sản xuất thường là nhóm nào?",
+      "lua_chon": ["Thực vật", "Động vật ăn cỏ", "Động vật ăn thịt", "Vi sinh vật phân giải"],
+      "dap_an": 0,
+      "giai_thich": "Thực vật tự tổng hợp chất hữu cơ nhờ quang hợp nên là sinh vật sản xuất, mở đầu chuỗi thức ăn."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương VIII. Sinh vật và môi trường", "chu_de": "Cân bằng tự nhiên", "do_kho": "medium",
+      "cau_hoi": "Cân bằng tự nhiên trong quần xã được duy trì chủ yếu nhờ yếu tố nào?",
+      "lua_chon": ["Sự thay đổi thời tiết", "Khống chế sinh học giữa các loài", "Hoạt động của con người", "Sự di cư"],
+      "dap_an": 1,
+      "giai_thich": "Khống chế sinh học — quan hệ giữa vật ăn thịt và con mồi, vật kí sinh và vật chủ — giữ số lượng cá thể dao động quanh mức ổn định."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8", "chuong": "Chương VIII. Sinh vật và môi trường", "chu_de": "Bảo vệ môi trường", "do_kho": "easy",
+      "cau_hoi": "Biện pháp nào sau đây giúp bảo vệ môi trường?",
+      "lua_chon": ["Đốt rác thải nhựa", "Phân loại rác tại nguồn", "Xả nước thải chưa xử lí ra sông", "Phá rừng làm nương"],
+      "dap_an": 1,
+      "giai_thich": "Phân loại rác tại nguồn giúp tái chế hiệu quả, giảm lượng rác chôn lấp. Ba lựa chọn còn lại đều gây hại."
+    }
+  ]
+}

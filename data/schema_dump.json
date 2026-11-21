@@ -1,0 +1,1151 @@
+{
+ "agent_lessons": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "user_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "lesson",
+    "type": "TEXT",
+    "pk": false,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "evidence",
+    "type": "TEXT",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "source_plan_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "active",
+    "type": "BOOLEAN",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "created_at",
+    "type": "DATETIME",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   }
+  ],
+  "fks": [
+   {
+    "col": "user_id",
+    "ref": "users.id"
+   }
+  ],
+  "rows": 2
+ },
+ "agent_runs": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "user_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "mode",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "plan_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "n_tool_calls",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "critic_score",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "critic_approved",
+    "type": "BOOLEAN",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "violations",
+    "type": "JSON",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "duration_s",
+    "type": "FLOAT",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "created_at",
+    "type": "DATETIME",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   }
+  ],
+  "fks": [
+   {
+    "col": "user_id",
+    "ref": "users.id"
+   },
+   {
+    "col": "plan_id",
+    "ref": "study_plans.id"
+   }
+  ],
+  "rows": 6
+ },
+ "answers": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "attempt_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "question_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "user_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "topic_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "difficulty",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "selected",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "is_correct",
+    "type": "BOOLEAN",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "answered_at",
+    "type": "DATETIME",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   }
+  ],
+  "fks": [
+   {
+    "col": "attempt_id",
+    "ref": "attempts.id"
+   },
+   {
+    "col": "question_id",
+    "ref": "questions.id"
+   },
+   {
+    "col": "user_id",
+    "ref": "users.id"
+   },
+   {
+    "col": "topic_id",
+    "ref": "topics.id"
+   }
+  ],
+  "rows": 65
+ },
+ "assignment_submissions": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "assignment_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "user_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "attempt_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "score",
+    "type": "FLOAT",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "submitted_at",
+    "type": "DATETIME",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   }
+  ],
+  "fks": [
+   {
+    "col": "assignment_id",
+    "ref": "assignments.id"
+   },
+   {
+    "col": "user_id",
+    "ref": "users.id"
+   },
+   {
+    "col": "attempt_id",
+    "ref": "attempts.id"
+   }
+  ],
+  "rows": 0
+ },
+ "assignments": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "class_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "quiz_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "title",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "due",
+    "type": "DATETIME",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "created_at",
+    "type": "DATETIME",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   }
+  ],
+  "fks": [
+   {
+    "col": "class_id",
+    "ref": "classrooms.id"
+   },
+   {
+    "col": "quiz_id",
+    "ref": "quizzes.id"
+   }
+  ],
+  "rows": 0
+ },
+ "attempts": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "quiz_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "user_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "score",
+    "type": "FLOAT",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "submitted_at",
+    "type": "DATETIME",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   }
+  ],
+  "fks": [
+   {
+    "col": "quiz_id",
+    "ref": "quizzes.id"
+   },
+   {
+    "col": "user_id",
+    "ref": "users.id"
+   }
+  ],
+  "rows": 13
+ },
+ "chapters": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "subject_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "name",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "order",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   }
+  ],
+  "fks": [
+   {
+    "col": "subject_id",
+    "ref": "subjects.id"
+   }
+  ],
+  "rows": 18
+ },
+ "chat_messages": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "user_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "role",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "content",
+    "type": "TEXT",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "citations",
+    "type": "JSON",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "created_at",
+    "type": "DATETIME",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   }
+  ],
+  "fks": [
+   {
+    "col": "user_id",
+    "ref": "users.id"
+   }
+  ],
+  "rows": 18
+ },
+ "class_members": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "class_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "user_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "joined_at",
+    "type": "DATETIME",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   }
+  ],
+  "fks": [
+   {
+    "col": "class_id",
+    "ref": "classrooms.id"
+   },
+   {
+    "col": "user_id",
+    "ref": "users.id"
+   }
+  ],
+  "rows": 4
+ },
+ "classrooms": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "name",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "code",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "teacher_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "subject_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "created_at",
+    "type": "DATETIME",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   }
+  ],
+  "fks": [
+   {
+    "col": "teacher_id",
+    "ref": "users.id"
+   },
+   {
+    "col": "subject_id",
+    "ref": "subjects.id"
+   }
+  ],
+  "rows": 1
+ },
+ "documents": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "user_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "subject_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "chapter_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "filename",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "path",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "n_chunks",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "status",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "error",
+    "type": "TEXT",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "created_at",
+    "type": "DATETIME",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   }
+  ],
+  "fks": [
+   {
+    "col": "user_id",
+    "ref": "users.id"
+   },
+   {
+    "col": "subject_id",
+    "ref": "subjects.id"
+   },
+   {
+    "col": "chapter_id",
+    "ref": "chapters.id"
+   }
+  ],
+  "rows": 21
+ },
+ "plan_items": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "plan_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "day",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "topic_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "kind",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "title",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "detail",
+    "type": "TEXT",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "done",
+    "type": "BOOLEAN",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   }
+  ],
+  "fks": [
+   {
+    "col": "plan_id",
+    "ref": "study_plans.id"
+   },
+   {
+    "col": "topic_id",
+    "ref": "topics.id"
+   }
+  ],
+  "rows": 107
+ },
+ "questions": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "quiz_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "topic_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "difficulty",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "content",
+    "type": "TEXT",
+    "pk": false,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "options",
+    "type": "JSON",
+    "pk": false,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "correct",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "explanation",
+    "type": "TEXT",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "flagged",
+    "type": "BOOLEAN",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   }
+  ],
+  "fks": [
+   {
+    "col": "quiz_id",
+    "ref": "quizzes.id"
+   },
+   {
+    "col": "topic_id",
+    "ref": "topics.id"
+   }
+  ],
+  "rows": 75
+ },
+ "quizzes": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "user_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "subject_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "difficulty",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "created_at",
+    "type": "DATETIME",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   }
+  ],
+  "fks": [
+   {
+    "col": "user_id",
+    "ref": "users.id"
+   },
+   {
+    "col": "subject_id",
+    "ref": "subjects.id"
+   }
+  ],
+  "rows": 15
+ },
+ "scores": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "user_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "subject_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "kind",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "value",
+    "type": "FLOAT",
+    "pk": false,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "weight",
+    "type": "FLOAT",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "date",
+    "type": "DATETIME",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   }
+  ],
+  "fks": [
+   {
+    "col": "user_id",
+    "ref": "users.id"
+   },
+   {
+    "col": "subject_id",
+    "ref": "subjects.id"
+   }
+  ],
+  "rows": 4
+ },
+ "study_plans": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "user_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "subject_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "goal",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "days",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "summary",
+    "type": "TEXT",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "evidence",
+    "type": "TEXT",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "created_at",
+    "type": "DATETIME",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "snapshot",
+    "type": "JSON",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   }
+  ],
+  "fks": [
+   {
+    "col": "user_id",
+    "ref": "users.id"
+   },
+   {
+    "col": "subject_id",
+    "ref": "subjects.id"
+   }
+  ],
+  "rows": 11
+ },
+ "subjects": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "name",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": false,
+    "default": "None"
+   }
+  ],
+  "fks": [],
+  "rows": 3
+ },
+ "topics": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "chapter_id",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "name",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": false,
+    "default": "None"
+   }
+  ],
+  "fks": [
+   {
+    "col": "chapter_id",
+    "ref": "chapters.id"
+   }
+  ],
+  "rows": 63
+ },
+ "users": {
+  "cols": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "pk": true,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "username",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": false,
+    "default": "None"
+   },
+   {
+    "name": "goal",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "created_at",
+    "type": "DATETIME",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   },
+   {
+    "name": "password_hash",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": true,
+    "default": "''"
+   },
+   {
+    "name": "role",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": true,
+    "default": "'user'"
+   },
+   {
+    "name": "email",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": true,
+    "default": "''"
+   },
+   {
+    "name": "recovery_hash",
+    "type": "VARCHAR",
+    "pk": false,
+    "nullable": true,
+    "default": "''"
+   },
+   {
+    "name": "reset_fails",
+    "type": "INTEGER",
+    "pk": false,
+    "nullable": true,
+    "default": "0"
+   },
+   {
+    "name": "reset_locked_until",
+    "type": "DATETIME",
+    "pk": false,
+    "nullable": true,
+    "default": "None"
+   }
+  ],
+  "fks": [],
+  "rows": 13
+ }
+}

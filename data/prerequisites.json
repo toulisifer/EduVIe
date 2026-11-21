@@ -1,0 +1,296 @@
+{
+  "Cực trị của hàm số": [
+    "Tính đơn điệu của hàm số"
+  ],
+  "Giá trị lớn nhất và nhỏ nhất": [
+    "Tính đơn điệu của hàm số",
+    "Cực trị của hàm số"
+  ],
+  "Khảo sát và vẽ đồ thị hàm số": [
+    "Tính đơn điệu của hàm số",
+    "Cực trị của hàm số",
+    "Đường tiệm cận"
+  ],
+  "Ứng dụng đạo hàm vào thực tiễn": [
+    "Giá trị lớn nhất và nhỏ nhất",
+    "Giải bài toán bằng cách lập phương trình"
+  ],
+  "Hệ trục toạ độ trong không gian": [
+    "Vectơ trong không gian",
+    "Hàm số và mặt phẳng toạ độ"
+  ],
+  "Biểu thức toạ độ của các phép toán vectơ": [
+    "Hệ trục toạ độ trong không gian"
+  ],
+  "Phương sai và độ lệch chuẩn": [
+    "Khoảng biến thiên và khoảng tứ phân vị"
+  ],
+  "Tích phân": [
+    "Nguyên hàm"
+  ],
+  "Ứng dụng hình học của tích phân": [
+    "Tích phân"
+  ],
+  "Phương trình đường thẳng trong không gian": [
+    "Phương trình mặt phẳng"
+  ],
+  "Công thức tính góc trong không gian": [
+    "Phương trình mặt phẳng",
+    "Phương trình đường thẳng trong không gian"
+  ],
+  "Phương trình mặt cầu": [
+    "Hệ trục toạ độ trong không gian",
+    "Định lí Pythagore"
+  ],
+  "Công thức xác suất toàn phần và công thức Bayes": [
+    "Xác suất có điều kiện"
+  ],
+  "Nội năng và định luật I nhiệt động lực học": [
+    "Cấu trúc của chất và sự chuyển thể",
+    "Năng lượng nhiệt và nội năng"
+  ],
+  "Nhiệt dung riêng": [
+    "Nội năng và định luật I nhiệt động lực học",
+    "Nhiệt độ và thang nhiệt độ",
+    "Sự truyền nhiệt"
+  ],
+  "Nhiệt nóng chảy riêng": [
+    "Nhiệt dung riêng"
+  ],
+  "Nhiệt hoá hơi riêng": [
+    "Nhiệt dung riêng"
+  ],
+  "Định luật Boyle": [
+    "Mô hình động học phân tử chất khí"
+  ],
+  "Định luật Charles": [
+    "Mô hình động học phân tử chất khí"
+  ],
+  "Phương trình trạng thái khí lí tưởng": [
+    "Định luật Boyle",
+    "Định luật Charles"
+  ],
+  "Lực từ tác dụng lên dây dẫn": [
+    "Từ trường và cảm ứng từ"
+  ],
+  "Từ thông và cảm ứng điện từ": [
+    "Từ trường và cảm ứng từ"
+  ],
+  "Máy phát điện xoay chiều": [
+    "Từ thông và cảm ứng điện từ"
+  ],
+  "Phản ứng hạt nhân và năng lượng liên kết": [
+    "Cấu trúc hạt nhân"
+  ],
+  "Hiện tượng phóng xạ": [
+    "Cấu trúc hạt nhân"
+  ],
+  "Xà phòng và chất giặt rửa": [
+    "Ester và lipid"
+  ],
+  "Saccharose và maltose": [
+    "Glucose và fructose"
+  ],
+  "Tinh bột và cellulose": [
+    "Glucose và fructose"
+  ],
+  "Amino acid và peptide": [
+    "Amine"
+  ],
+  "Protein và enzyme": [
+    "Amino acid và peptide"
+  ],
+  "Vật liệu polymer": [
+    "Đại cương về polymer"
+  ],
+  "Điện phân": [
+    "Thế điện cực và nguồn điện hoá học",
+    "Dòng điện và nguồn điện"
+  ],
+  "Tính chất vật lí và tính chất hoá học của kim loại": [
+    "Cấu tạo và liên kết trong tinh thể kim loại",
+    "Acid",
+    "Muối"
+  ],
+  "Sự ăn mòn kim loại": [
+    "Tính chất vật lí và tính chất hoá học của kim loại",
+    "Thế điện cực và nguồn điện hoá học",
+    "Oxide"
+  ],
+  "Sơ lược về phức chất": [
+    "Đại cương về kim loại chuyển tiếp dãy thứ nhất"
+  ],
+  "Đa thức": [
+    "Đơn thức"
+  ],
+  "Phép cộng và phép trừ đa thức": [
+    "Đa thức"
+  ],
+  "Phép nhân đa thức": [
+    "Đa thức"
+  ],
+  "Phép chia đa thức cho đơn thức": [
+    "Đơn thức",
+    "Phép nhân đa thức"
+  ],
+  "Hiệu hai bình phương": [
+    "Phép nhân đa thức"
+  ],
+  "Bình phương của một tổng hay một hiệu": [
+    "Phép nhân đa thức"
+  ],
+  "Lập phương của một tổng, lập phương của một hiệu": [
+    "Bình phương của một tổng hay một hiệu"
+  ],
+  "Tổng và hiệu hai lập phương": [
+    "Lập phương của một tổng, lập phương của một hiệu"
+  ],
+  "Phân tích đa thức thành nhân tử": [
+    "Hiệu hai bình phương",
+    "Bình phương của một tổng hay một hiệu",
+    "Phép chia đa thức cho đơn thức"
+  ],
+  "Hình thang cân": [
+    "Tứ giác"
+  ],
+  "Hình bình hành": [
+    "Tứ giác"
+  ],
+  "Hình chữ nhật": [
+    "Hình bình hành"
+  ],
+  "Hình thoi và hình vuông": [
+    "Hình bình hành",
+    "Hình chữ nhật"
+  ],
+  "Đường trung bình của tam giác": [
+    "Định lí Thalès trong tam giác"
+  ],
+  "Tính chất đường phân giác của tam giác": [
+    "Định lí Thalès trong tam giác"
+  ],
+  "Biểu diễn dữ liệu bằng bảng, biểu đồ": [
+    "Thu thập và phân loại dữ liệu"
+  ],
+  "Phân tích số liệu thống kê dựa vào biểu đồ": [
+    "Biểu diễn dữ liệu bằng bảng, biểu đồ"
+  ],
+  "Phân tích đặc điểm khí hậu Việt Nam": [
+    "Phân tích số liệu thống kê dựa vào biểu đồ"
+  ],
+  "Tính toán trên đa thức với GeoGebra": [
+    "Phép nhân đa thức"
+  ],
+  "Vẽ hình đơn giản với GeoGebra": [
+    "Tứ giác"
+  ],
+  "Phân thức đại số": [
+    "Đa thức",
+    "Phép chia đa thức cho đơn thức"
+  ],
+  "Điều kiện xác định của phân thức": [
+    "Phân thức đại số"
+  ],
+  "Rút gọn phân thức": [
+    "Phân thức đại số",
+    "Phân tích đa thức thành nhân tử"
+  ],
+  "Quy đồng mẫu thức nhiều phân thức": [
+    "Rút gọn phân thức"
+  ],
+  "Phép cộng và phép trừ phân thức": [
+    "Quy đồng mẫu thức nhiều phân thức"
+  ],
+  "Phép nhân và phép chia phân thức": [
+    "Rút gọn phân thức"
+  ],
+  "Phương trình bậc nhất một ẩn": [
+    "Phép cộng và phép trừ đa thức"
+  ],
+  "Giải bài toán bằng cách lập phương trình": [
+    "Phương trình bậc nhất một ẩn"
+  ],
+  "Ứng dụng phương trình bậc nhất trong thực tiễn": [
+    "Giải bài toán bằng cách lập phương trình"
+  ],
+  "Đồ thị của hàm số": [
+    "Hàm số và mặt phẳng toạ độ"
+  ],
+  "Hàm số bậc nhất": [
+    "Đồ thị của hàm số"
+  ],
+  "Hệ số góc của đường thẳng": [
+    "Hàm số bậc nhất"
+  ],
+  "Xác suất thực nghiệm của một biến cố": [
+    "Kết quả có thể và kết quả thuận lợi"
+  ],
+  "Xác suất của biến cố trong trường hợp cổ điển": [
+    "Kết quả có thể và kết quả thuận lợi"
+  ],
+  "Tỉ số đồng dạng của hai tam giác": [
+    "Hai tam giác đồng dạng"
+  ],
+  "Các trường hợp đồng dạng của hai tam giác": [
+    "Hai tam giác đồng dạng",
+    "Định lí Thalès trong tam giác"
+  ],
+  "Định lí Pythagore đảo": [
+    "Định lí Pythagore"
+  ],
+  "Hình đồng dạng và hình đồng dạng phối cảnh": [
+    "Hai tam giác đồng dạng"
+  ],
+  "Diện tích xung quanh của hình chóp đều": [
+    "Hình chóp tam giác đều",
+    "Hình chóp tứ giác đều"
+  ],
+  "Thể tích của hình chóp đều": [
+    "Hình chóp tam giác đều",
+    "Hình chóp tứ giác đều"
+  ],
+  "Tính đơn điệu của hàm số": [
+    "Hàm số bậc nhất",
+    "Hệ số góc của đường thẳng"
+  ],
+  "Đường tiệm cận": [
+    "Phân thức đại số",
+    "Điều kiện xác định của phân thức"
+  ],
+  "Nguyên hàm": [
+    "Phép nhân đa thức"
+  ],
+  "Khoảng biến thiên và khoảng tứ phân vị": [
+    "Phân tích số liệu thống kê dựa vào biểu đồ"
+  ],
+  "Xác suất có điều kiện": [
+    "Xác suất của biến cố trong trường hợp cổ điển"
+  ],
+  "Vectơ trong không gian": [
+    "Hình bình hành"
+  ],
+  "Phương trình mặt phẳng": [
+    "Biểu thức toạ độ của các phép toán vectơ"
+  ],
+  "Mô hình động học phân tử chất khí": [
+    "Sự nở vì nhiệt"
+  ],
+  "Từ trường và cảm ứng từ": [
+    "Tác dụng của dòng điện"
+  ],
+  "Thế điện cực và nguồn điện hoá học": [
+    "Dòng điện và nguồn điện"
+  ],
+  "Ester và lipid": [
+    "Acid"
+  ],
+  "Đại cương về polymer": [
+    "Phản ứng hoá học"
+  ],
+  "Glucose và fructose": [
+    "Phản ứng hoá học"
+  ],
+  "Amine": [
+    "Base và thang pH"
+  ]
+}

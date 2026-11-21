@@ -1,0 +1,107 @@
+{
+  "_mon": "Toán 8",
+  "_nguon": "Soạn theo SGK Toán 8 — Kết nối tri thức với cuộc sống",
+  "_ghi_chu": "Bổ sung cho 36 câu Toán 8 đã có trong ngan_hang_cau_hoi.json",
+  "_so_cau": 14,
+
+  "cau_hoi": [
+    {
+      "mon": "Toán 8", "chuong": "Chương V. Dữ liệu và biểu đồ", "chu_de": "Thu thập và phân loại dữ liệu", "do_kho": "easy",
+      "cau_hoi": "Dữ liệu nào sau đây là dữ liệu định lượng?",
+      "lua_chon": ["Màu sắc yêu thích", "Chiều cao của học sinh", "Môn học yêu thích", "Giới tính"],
+      "dap_an": 1,
+      "giai_thich": "Dữ liệu định lượng là dữ liệu đo đếm được bằng số, như chiều cao. Ba loại còn lại là dữ liệu định tính."
+    },
+    {
+      "mon": "Toán 8", "chuong": "Chương V. Dữ liệu và biểu đồ", "chu_de": "Biểu diễn dữ liệu bằng bảng, biểu đồ", "do_kho": "medium",
+      "cau_hoi": "Loại biểu đồ nào thích hợp nhất để biểu diễn tỉ lệ phần trăm các thành phần trong một tổng thể?",
+      "lua_chon": ["Biểu đồ cột", "Biểu đồ đoạn thẳng", "Biểu đồ hình quạt tròn", "Biểu đồ tranh"],
+      "dap_an": 2,
+      "giai_thich": "Biểu đồ hình quạt tròn thể hiện rõ tỉ lệ các phần so với tổng thể, tổng các phần luôn là 100%."
+    },
+    {
+      "mon": "Toán 8", "chuong": "Chương V. Dữ liệu và biểu đồ", "chu_de": "Phân tích số liệu thống kê dựa vào biểu đồ", "do_kho": "medium",
+      "cau_hoi": "Biểu đồ đoạn thẳng thường dùng để biểu diễn điều gì?",
+      "lua_chon": ["Tỉ lệ phần trăm", "Sự thay đổi của một đại lượng theo thời gian", "So sánh hai tổng thể", "Phân loại dữ liệu"],
+      "dap_an": 1,
+      "giai_thich": "Biểu đồ đoạn thẳng thể hiện xu hướng tăng giảm của một đại lượng theo thời gian."
+    },
+    {
+      "mon": "Toán 8", "chuong": "Chương VI. Phân thức đại số", "chu_de": "Phép cộng và phép trừ phân thức", "do_kho": "medium",
+      "cau_hoi": "Tính $\\dfrac{3}{x} + \\dfrac{2}{x}$ (với $x \\neq 0$).",
+      "lua_chon": ["$\\dfrac{5}{x}$", "$\\dfrac{5}{2x}$", "$\\dfrac{6}{x}$", "$\\dfrac{5}{x^2}$"],
+      "dap_an": 0,
+      "giai_thich": "Hai phân thức cùng mẫu thì cộng tử, giữ nguyên mẫu: $\\dfrac{3+2}{x} = \\dfrac{5}{x}$."
+    },
+    {
+      "mon": "Toán 8", "chuong": "Chương VI. Phân thức đại số", "chu_de": "Phép nhân và phép chia phân thức", "do_kho": "medium",
+      "cau_hoi": "Tính $\\dfrac{x}{2} \\cdot \\dfrac{4}{x^2}$ (với $x \\neq 0$).",
+      "lua_chon": ["$\\dfrac{2}{x}$", "$\\dfrac{4}{x}$", "$\\dfrac{2}{x^2}$", "$2x$"],
+      "dap_an": 0,
+      "giai_thich": "$\\dfrac{x}{2} \\cdot \\dfrac{4}{x^2} = \\dfrac{4x}{2x^2} = \\dfrac{2}{x}$."
+    },
+    {
+      "mon": "Toán 8", "chuong": "Chương VII. Phương trình bậc nhất và hàm số bậc nhất", "chu_de": "Giải bài toán bằng cách lập phương trình", "do_kho": "hard",
+      "cau_hoi": "Một mảnh vườn hình chữ nhật có chiều dài hơn chiều rộng 4 m, chu vi 36 m. Chiều rộng là:",
+      "lua_chon": ["5 m", "7 m", "9 m", "11 m"],
+      "dap_an": 1,
+      "giai_thich": "Gọi chiều rộng là $x$, chiều dài là $x + 4$. Chu vi: $2(x + x + 4) = 36 \\Rightarrow 2x + 4 = 18 \\Rightarrow x = 7$ m."
+    },
+    {
+      "mon": "Toán 8", "chuong": "Chương VII. Phương trình bậc nhất và hàm số bậc nhất", "chu_de": "Hàm số và mặt phẳng toạ độ", "do_kho": "easy",
+      "cau_hoi": "Điểm $M(-3; 4)$ nằm ở góc phần tư thứ mấy?",
+      "lua_chon": ["Thứ nhất", "Thứ hai", "Thứ ba", "Thứ tư"],
+      "dap_an": 1,
+      "giai_thich": "Hoành độ âm, tung độ dương nên điểm nằm ở góc phần tư thứ hai."
+    },
+    {
+      "mon": "Toán 8", "chuong": "Chương VII. Phương trình bậc nhất và hàm số bậc nhất", "chu_de": "Đồ thị của hàm số", "do_kho": "medium",
+      "cau_hoi": "Đồ thị hàm số $y = 2x$ đi qua điểm nào sau đây?",
+      "lua_chon": ["$(1; 1)$", "$(1; 2)$", "$(2; 1)$", "$(0; 2)$"],
+      "dap_an": 1,
+      "giai_thich": "Thay $x = 1$ vào $y = 2x$ được $y = 2$, nên đồ thị đi qua $(1; 2)$."
+    },
+    {
+      "mon": "Toán 8", "chuong": "Chương VIII. Mở đầu về tính xác suất của biến cố", "chu_de": "Kết quả có thể và kết quả thuận lợi", "do_kho": "easy",
+      "cau_hoi": "Gieo một con xúc xắc sáu mặt. Có bao nhiêu kết quả có thể xảy ra?",
+      "lua_chon": ["1", "3", "6", "12"],
+      "dap_an": 2,
+      "giai_thich": "Xúc xắc có sáu mặt nên có 6 kết quả có thể, mỗi mặt là một kết quả."
+    },
+    {
+      "mon": "Toán 8", "chuong": "Chương VIII. Mở đầu về tính xác suất của biến cố", "chu_de": "Xác suất của biến cố trong trường hợp cổ điển", "do_kho": "medium",
+      "cau_hoi": "Gieo một con xúc xắc cân đối. Xác suất xuất hiện mặt có số chấm chẵn là:",
+      "lua_chon": ["$\\dfrac{1}{6}$", "$\\dfrac{1}{3}$", "$\\dfrac{1}{2}$", "$\\dfrac{2}{3}$"],
+      "dap_an": 2,
+      "giai_thich": "Kết quả thuận lợi là {2; 4; 6}, có 3 trong 6 kết quả, nên xác suất $= \\dfrac{3}{6} = \\dfrac{1}{2}$."
+    },
+    {
+      "mon": "Toán 8", "chuong": "Chương VIII. Mở đầu về tính xác suất của biến cố", "chu_de": "Xác suất thực nghiệm của một biến cố", "do_kho": "medium",
+      "cau_hoi": "Tung một đồng xu 100 lần, mặt ngửa xuất hiện 46 lần. Xác suất thực nghiệm của biến cố \"xuất hiện mặt ngửa\" là:",
+      "lua_chon": ["0,46", "0,5", "0,54", "46"],
+      "dap_an": 0,
+      "giai_thich": "Xác suất thực nghiệm = số lần biến cố xảy ra chia tổng số lần thử = $\\dfrac{46}{100} = 0{,}46$."
+    },
+    {
+      "mon": "Toán 8", "chuong": "Chương IX. Tam giác đồng dạng", "chu_de": "Các trường hợp đồng dạng của hai tam giác", "do_kho": "medium",
+      "cau_hoi": "Trường hợp nào sau đây KHÔNG đủ để kết luận hai tam giác đồng dạng?",
+      "lua_chon": ["Hai góc tương ứng bằng nhau", "Ba cạnh tương ứng tỉ lệ", "Hai cạnh tỉ lệ và góc xen giữa bằng nhau", "Hai cạnh tương ứng tỉ lệ"],
+      "dap_an": 3,
+      "giai_thich": "Chỉ hai cạnh tỉ lệ mà không có điều kiện về góc xen giữa thì chưa đủ kết luận đồng dạng."
+    },
+    {
+      "mon": "Toán 8", "chuong": "Chương IX. Tam giác đồng dạng", "chu_de": "Tỉ số đồng dạng của hai tam giác", "do_kho": "hard",
+      "cau_hoi": "Hai tam giác đồng dạng với tỉ số đồng dạng $k = 2$. Tỉ số diện tích của chúng là:",
+      "lua_chon": ["2", "4", "$\\dfrac{1}{2}$", "8"],
+      "dap_an": 1,
+      "giai_thich": "Tỉ số diện tích hai tam giác đồng dạng bằng bình phương tỉ số đồng dạng: $k^2 = 2^2 = 4$."
+    },
+    {
+      "mon": "Toán 8", "chuong": "Chương X. Một số hình khối trong thực tiễn", "chu_de": "Diện tích xung quanh của hình chóp đều", "do_kho": "medium",
+      "cau_hoi": "Diện tích xung quanh hình chóp đều được tính bằng công thức nào?",
+      "lua_chon": ["$S_{xq} = p \\cdot d$ (p là nửa chu vi đáy, d là trung đoạn)", "$S_{xq} = S_{đáy} \\cdot h$", "$S_{xq} = \\dfrac{1}{3} S_{đáy} \\cdot h$", "$S_{xq} = 2p \\cdot d$"],
+      "dap_an": 0,
+      "giai_thich": "Diện tích xung quanh bằng nửa chu vi đáy nhân trung đoạn (chiều cao mặt bên): $S_{xq} = p \\cdot d$."
+    }
+  ]
+}

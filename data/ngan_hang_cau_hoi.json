@@ -1,0 +1,567 @@
+{
+  "_mo_ta": "Ngân hàng câu hỏi soạn sẵn. Mỗi câu nằm trong tệp này, mở ra đọc được toàn bộ, không do AI sinh lúc chạy. Nạp vào CSDL bằng: python -m scripts.nap_tu_file",
+  "_cach_dung": "mon = tên môn đúng như trong CSDL; chuong = tên chương; chu_de = tên chủ đề; dap_an = chỉ số 0-3 của lựa chọn đúng",
+  "_nguon": "Soạn theo SGK Kết nối tri thức với cuộc sống",
+
+  "cau_hoi": [
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương I. Đa thức",
+      "chu_de": "Đơn thức",
+      "do_kho": "easy",
+      "cau_hoi": "Trong các biểu thức sau, biểu thức nào là đơn thức?",
+      "lua_chon": ["$x^2 - 2x$", "$-5x^2y$", "$x + 2y - z$", "$\\dfrac{3}{x}$"],
+      "dap_an": 1,
+      "giai_thich": "Đơn thức là biểu thức chỉ gồm một số, một biến, hoặc tích của những số và biến. $-5x^2y$ là tích của số $-5$ với các biến, nên là đơn thức. Ba biểu thức còn lại có phép cộng, phép trừ hoặc biến ở mẫu."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương I. Đa thức",
+      "chu_de": "Đơn thức",
+      "do_kho": "easy",
+      "cau_hoi": "Thu gọn đơn thức $3x^2y \\cdot 2xy^3$ ta được kết quả nào?",
+      "lua_chon": ["$5x^3y^4$", "$6x^2y^3$", "$6x^3y^4$", "$6x^3y^3$"],
+      "dap_an": 2,
+      "giai_thich": "Nhân hệ số với nhau: $3 \\cdot 2 = 6$. Nhân các luỹ thừa cùng biến: $x^2 \\cdot x = x^3$ và $y \\cdot y^3 = y^4$. Kết quả là $6x^3y^4$."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương I. Đa thức",
+      "chu_de": "Đơn thức",
+      "do_kho": "medium",
+      "cau_hoi": "Bậc của đơn thức $-7x^3y^2z$ là bao nhiêu?",
+      "lua_chon": ["3", "5", "6", "7"],
+      "dap_an": 2,
+      "giai_thich": "Bậc của đơn thức là tổng số mũ của tất cả các biến: $3 + 2 + 1 = 6$. Hệ số $-7$ không tính vào bậc."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương I. Đa thức",
+      "chu_de": "Đa thức",
+      "do_kho": "easy",
+      "cau_hoi": "Đa thức $5x^2y - 3xy + 7$ có mấy hạng tử?",
+      "lua_chon": ["1", "2", "3", "4"],
+      "dap_an": 2,
+      "giai_thich": "Các hạng tử được ngăn cách bởi dấu cộng hoặc trừ: $5x^2y$, $-3xy$ và $7$. Vậy đa thức có 3 hạng tử."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương I. Đa thức",
+      "chu_de": "Đa thức",
+      "do_kho": "medium",
+      "cau_hoi": "Thu gọn đa thức $4x^2y + 3xy - 2x^2y - xy$ ta được:",
+      "lua_chon": ["$2x^2y + 2xy$", "$6x^2y + 4xy$", "$2x^2y + 4xy$", "$6x^2y + 2xy$"],
+      "dap_an": 0,
+      "giai_thich": "Nhóm các hạng tử đồng dạng: $(4x^2y - 2x^2y) + (3xy - xy) = 2x^2y + 2xy$."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương I. Đa thức",
+      "chu_de": "Phép cộng và phép trừ đa thức",
+      "do_kho": "medium",
+      "cau_hoi": "Cho $A = 3x^2 + 2x - 1$ và $B = x^2 - 2x + 4$. Tính $A - B$.",
+      "lua_chon": ["$2x^2 + 4x - 5$", "$4x^2 - 5$", "$2x^2 - 5$", "$2x^2 + 4x + 3$"],
+      "dap_an": 0,
+      "giai_thich": "$A - B = (3x^2 + 2x - 1) - (x^2 - 2x + 4) = 3x^2 + 2x - 1 - x^2 + 2x - 4 = 2x^2 + 4x - 5$. Chú ý đổi dấu tất cả hạng tử của $B$ khi phá ngoặc."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương I. Đa thức",
+      "chu_de": "Phép nhân đa thức",
+      "do_kho": "medium",
+      "cau_hoi": "Kết quả của phép nhân $(x + 3)(x - 2)$ là:",
+      "lua_chon": ["$x^2 - 6$", "$x^2 + x - 6$", "$x^2 + 5x - 6$", "$x^2 - x - 6$"],
+      "dap_an": 1,
+      "giai_thich": "$(x + 3)(x - 2) = x \\cdot x - 2x + 3x - 6 = x^2 + x - 6$."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương I. Đa thức",
+      "chu_de": "Phép chia đa thức cho đơn thức",
+      "do_kho": "medium",
+      "cau_hoi": "Thực hiện phép chia $(6x^3y^2 - 9x^2y) : 3xy$ ta được:",
+      "lua_chon": ["$2x^2y - 3x$", "$2x^2y - 3xy$", "$2x^2 - 3x$", "$2xy - 3x$"],
+      "dap_an": 0,
+      "giai_thich": "Chia từng hạng tử cho $3xy$: $6x^3y^2 : 3xy = 2x^2y$ và $-9x^2y : 3xy = -3x$. Kết quả là $2x^2y - 3x$."
+    },
+
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương II. Hằng đẳng thức đáng nhớ và ứng dụng",
+      "chu_de": "Hiệu hai bình phương",
+      "do_kho": "easy",
+      "cau_hoi": "Hằng đẳng thức hiệu hai bình phương được viết là:",
+      "lua_chon": ["$A^2 - B^2 = (A - B)^2$", "$A^2 - B^2 = (A + B)(A - B)$", "$A^2 - B^2 = (A + B)^2$", "$A^2 - B^2 = A^2 - 2AB + B^2$"],
+      "dap_an": 1,
+      "giai_thich": "Hiệu hai bình phương bằng tích của tổng với hiệu: $A^2 - B^2 = (A + B)(A - B)$."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương II. Hằng đẳng thức đáng nhớ và ứng dụng",
+      "chu_de": "Hiệu hai bình phương",
+      "do_kho": "medium",
+      "cau_hoi": "Tính nhanh $2023^2 - 2022^2$.",
+      "lua_chon": ["1", "2045", "4045", "2023"],
+      "dap_an": 2,
+      "giai_thich": "Áp dụng $A^2 - B^2 = (A + B)(A - B)$: $2023^2 - 2022^2 = (2023 + 2022)(2023 - 2022) = 4045 \\cdot 1 = 4045$."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương II. Hằng đẳng thức đáng nhớ và ứng dụng",
+      "chu_de": "Bình phương của một tổng hay một hiệu",
+      "do_kho": "easy",
+      "cau_hoi": "Khai triển $(x + 3)^2$ ta được:",
+      "lua_chon": ["$x^2 + 9$", "$x^2 + 3x + 9$", "$x^2 + 6x + 9$", "$x^2 + 6x + 3$"],
+      "dap_an": 2,
+      "giai_thich": "Áp dụng $(A + B)^2 = A^2 + 2AB + B^2$ với $A = x$, $B = 3$: $x^2 + 2 \\cdot x \\cdot 3 + 3^2 = x^2 + 6x + 9$. Lỗi hay gặp là quên hạng tử $2AB$ ở giữa."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương II. Hằng đẳng thức đáng nhớ và ứng dụng",
+      "chu_de": "Bình phương của một tổng hay một hiệu",
+      "do_kho": "medium",
+      "cau_hoi": "Biểu thức $x^2 - 10x + 25$ viết được dưới dạng bình phương nào?",
+      "lua_chon": ["$(x - 5)^2$", "$(x + 5)^2$", "$(x - 25)^2$", "$(x - 10)^2$"],
+      "dap_an": 0,
+      "giai_thich": "Nhận dạng $A^2 - 2AB + B^2$ với $A = x$, $B = 5$: $x^2 - 2 \\cdot x \\cdot 5 + 5^2 = (x - 5)^2$."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương II. Hằng đẳng thức đáng nhớ và ứng dụng",
+      "chu_de": "Lập phương của một tổng, lập phương của một hiệu",
+      "do_kho": "easy",
+      "cau_hoi": "Hằng đẳng thức lập phương của một tổng là:",
+      "lua_chon": ["$(A + B)^3 = A^3 + B^3$", "$(A + B)^3 = A^3 + 3A^2B + 3AB^2 + B^3$", "$(A + B)^3 = A^3 + 3AB + B^3$", "$(A + B)^3 = A^3 + 2A^2B + 2AB^2 + B^3$"],
+      "dap_an": 1,
+      "giai_thich": "$(A + B)^3 = A^3 + 3A^2B + 3AB^2 + B^3$. Hai hạng tử giữa có hệ số 3, thường bị bỏ sót."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương II. Hằng đẳng thức đáng nhớ và ứng dụng",
+      "chu_de": "Tổng và hiệu hai lập phương",
+      "do_kho": "medium",
+      "cau_hoi": "Phân tích $x^3 + 8$ thành nhân tử ta được:",
+      "lua_chon": ["$(x + 2)(x^2 - 2x + 4)$", "$(x + 2)(x^2 + 2x + 4)$", "$(x + 2)^3$", "$(x - 2)(x^2 + 2x + 4)$"],
+      "dap_an": 0,
+      "giai_thich": "Áp dụng $A^3 + B^3 = (A + B)(A^2 - AB + B^2)$ với $A = x$, $B = 2$: $(x + 2)(x^2 - 2x + 4)$."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương II. Hằng đẳng thức đáng nhớ và ứng dụng",
+      "chu_de": "Phân tích đa thức thành nhân tử",
+      "do_kho": "medium",
+      "cau_hoi": "Phân tích $x^2 - 4x$ thành nhân tử ta được:",
+      "lua_chon": ["$x(x - 4)$", "$(x - 2)^2$", "$x(x + 4)$", "$(x - 4)(x + 4)$"],
+      "dap_an": 0,
+      "giai_thich": "Đặt nhân tử chung $x$ ra ngoài: $x^2 - 4x = x(x - 4)$."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương II. Hằng đẳng thức đáng nhớ và ứng dụng",
+      "chu_de": "Phân tích đa thức thành nhân tử",
+      "do_kho": "hard",
+      "cau_hoi": "Phân tích $x^2 + 4x + 4 - y^2$ thành nhân tử ta được:",
+      "lua_chon": ["$(x + 2 - y)(x + 2 + y)$", "$(x + 2)(x + 2 - y)$", "$(x - y)(x + y + 4)$", "$(x + 2 - y)^2$"],
+      "dap_an": 0,
+      "giai_thich": "Nhóm ba hạng tử đầu thành bình phương: $(x^2 + 4x + 4) - y^2 = (x + 2)^2 - y^2$. Rồi dùng hiệu hai bình phương: $(x + 2 - y)(x + 2 + y)$."
+    },
+
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương III. Tứ giác",
+      "chu_de": "Tứ giác",
+      "do_kho": "easy",
+      "cau_hoi": "Tổng bốn góc của một tứ giác bằng bao nhiêu độ?",
+      "lua_chon": ["$180^\\circ$", "$270^\\circ$", "$360^\\circ$", "$540^\\circ$"],
+      "dap_an": 2,
+      "giai_thich": "Chia tứ giác thành hai tam giác bằng một đường chéo, mỗi tam giác có tổng ba góc là $180^\\circ$, nên tổng bốn góc tứ giác là $2 \\cdot 180^\\circ = 360^\\circ$."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương III. Tứ giác",
+      "chu_de": "Hình thang cân",
+      "do_kho": "medium",
+      "cau_hoi": "Dấu hiệu nào sau đây KHÔNG dùng để nhận biết hình thang cân?",
+      "lua_chon": ["Hình thang có hai góc kề một đáy bằng nhau", "Hình thang có hai đường chéo bằng nhau", "Hình thang có hai cạnh bên bằng nhau", "Hình thang cân có hai đáy song song"],
+      "dap_an": 2,
+      "giai_thich": "Hình thang có hai cạnh bên bằng nhau chưa chắc là hình thang cân — hình bình hành cũng có hai cạnh bên bằng nhau mà không phải hình thang cân."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương III. Tứ giác",
+      "chu_de": "Hình bình hành",
+      "do_kho": "easy",
+      "cau_hoi": "Tính chất nào sau đây ĐÚNG với mọi hình bình hành?",
+      "lua_chon": ["Hai đường chéo bằng nhau", "Hai đường chéo vuông góc", "Hai đường chéo cắt nhau tại trung điểm mỗi đường", "Bốn cạnh bằng nhau"],
+      "dap_an": 2,
+      "giai_thich": "Trong hình bình hành, hai đường chéo cắt nhau tại trung điểm của mỗi đường. Đường chéo bằng nhau là của hình chữ nhật, vuông góc là của hình thoi."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương III. Tứ giác",
+      "chu_de": "Hình chữ nhật",
+      "do_kho": "medium",
+      "cau_hoi": "Hình bình hành cần thêm điều kiện nào để trở thành hình chữ nhật?",
+      "lua_chon": ["Có một góc vuông", "Có hai cạnh kề bằng nhau", "Có hai đường chéo vuông góc", "Có một đường chéo là phân giác của một góc"],
+      "dap_an": 0,
+      "giai_thich": "Hình bình hành có một góc vuông thì cả bốn góc đều vuông, nên là hình chữ nhật. Ba điều kiện còn lại cho hình thoi."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương III. Tứ giác",
+      "chu_de": "Hình thoi và hình vuông",
+      "do_kho": "medium",
+      "cau_hoi": "Hình vuông là hình:",
+      "lua_chon": ["Vừa là hình chữ nhật, vừa là hình thoi", "Chỉ là hình chữ nhật", "Chỉ là hình thoi", "Chỉ là hình bình hành"],
+      "dap_an": 0,
+      "giai_thich": "Hình vuông có bốn góc vuông nên là hình chữ nhật, đồng thời có bốn cạnh bằng nhau nên là hình thoi."
+    },
+
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương IV. Định lí Thalès",
+      "chu_de": "Định lí Thalès trong tam giác",
+      "do_kho": "easy",
+      "cau_hoi": "Cho tam giác $ABC$, đường thẳng $MN$ song song với $BC$ ($M$ thuộc $AB$, $N$ thuộc $AC$). Theo định lí Thalès ta có:",
+      "lua_chon": ["$\\dfrac{AM}{MB} = \\dfrac{AN}{NC}$", "$\\dfrac{AM}{AB} = \\dfrac{NC}{AC}$", "$\\dfrac{AM}{MB} = \\dfrac{NC}{AN}$", "$AM \\cdot AN = MB \\cdot NC$"],
+      "dap_an": 0,
+      "giai_thich": "Đường thẳng song song với một cạnh của tam giác định ra trên hai cạnh còn lại những đoạn thẳng tương ứng tỉ lệ: $\\dfrac{AM}{MB} = \\dfrac{AN}{NC}$."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương IV. Định lí Thalès",
+      "chu_de": "Đường trung bình của tam giác",
+      "do_kho": "medium",
+      "cau_hoi": "Đường trung bình của tam giác có tính chất nào?",
+      "lua_chon": ["Song song với cạnh thứ ba và bằng cạnh đó", "Song song với cạnh thứ ba và bằng nửa cạnh đó", "Vuông góc với cạnh thứ ba", "Bằng nửa chu vi tam giác"],
+      "dap_an": 1,
+      "giai_thich": "Đường trung bình của tam giác song song với cạnh thứ ba và có độ dài bằng nửa cạnh ấy."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương IV. Định lí Thalès",
+      "chu_de": "Tính chất đường phân giác của tam giác",
+      "do_kho": "medium",
+      "cau_hoi": "Trong tam giác $ABC$, $AD$ là phân giác góc $A$ ($D$ thuộc $BC$). Hệ thức nào đúng?",
+      "lua_chon": ["$\\dfrac{DB}{DC} = \\dfrac{AB}{AC}$", "$\\dfrac{DB}{DC} = \\dfrac{AC}{AB}$", "$DB \\cdot DC = AB \\cdot AC$", "$DB + DC = AB + AC$"],
+      "dap_an": 0,
+      "giai_thich": "Đường phân giác của một góc trong tam giác chia cạnh đối diện thành hai đoạn tỉ lệ với hai cạnh kề hai đoạn ấy: $\\dfrac{DB}{DC} = \\dfrac{AB}{AC}$."
+    },
+
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương VI. Phân thức đại số",
+      "chu_de": "Phân thức đại số",
+      "do_kho": "easy",
+      "cau_hoi": "Cách viết nào sau đây KHÔNG phải là một phân thức đại số?",
+      "lua_chon": ["$\\dfrac{6y^3z}{x^2}$", "$\\dfrac{xy + z}{-3}$", "$\\dfrac{y + z}{0}$", "$x^3 - xy$"],
+      "dap_an": 2,
+      "giai_thich": "Phân thức đại số có dạng $\\dfrac{A}{B}$ với $B$ khác đa thức $0$. Mẫu bằng $0$ nên $\\dfrac{y + z}{0}$ không phải phân thức."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương VI. Phân thức đại số",
+      "chu_de": "Điều kiện xác định của phân thức",
+      "do_kho": "medium",
+      "cau_hoi": "Điều kiện xác định của phân thức $\\dfrac{2x + 1}{x - 3}$ là:",
+      "lua_chon": ["$x \\neq 0$", "$x \\neq 3$", "$x \\neq -3$", "$x \\neq -\\dfrac{1}{2}$"],
+      "dap_an": 1,
+      "giai_thich": "Phân thức xác định khi mẫu khác $0$: $x - 3 \\neq 0$, tức là $x \\neq 3$."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương VI. Phân thức đại số",
+      "chu_de": "Rút gọn phân thức",
+      "do_kho": "medium",
+      "cau_hoi": "Rút gọn phân thức $\\dfrac{x^2 - 4}{x + 2}$ (với $x \\neq -2$) ta được:",
+      "lua_chon": ["$x - 2$", "$x + 2$", "$x^2 - 2$", "$\\dfrac{x - 2}{2}$"],
+      "dap_an": 0,
+      "giai_thich": "Phân tích tử thành nhân tử: $x^2 - 4 = (x - 2)(x + 2)$. Rút gọn với mẫu $x + 2$ được $x - 2$."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương VI. Phân thức đại số",
+      "chu_de": "Quy đồng mẫu thức nhiều phân thức",
+      "do_kho": "hard",
+      "cau_hoi": "Mẫu thức chung đơn giản nhất của $\\dfrac{x}{x^2 - 1}$ và $\\dfrac{1}{x^2 + 2x + 1}$ là:",
+      "lua_chon": ["$(x - 1)(x + 1)$", "$(x - 1)(x + 1)^2$", "$(x^2 - 1)(x^2 + 2x + 1)$", "$(x + 1)^2$"],
+      "dap_an": 1,
+      "giai_thich": "Phân tích hai mẫu: $x^2 - 1 = (x - 1)(x + 1)$ và $x^2 + 2x + 1 = (x + 1)^2$. Mẫu chung lấy mỗi nhân tử với số mũ lớn nhất: $(x - 1)(x + 1)^2$."
+    },
+
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương VII. Phương trình bậc nhất và hàm số bậc nhất",
+      "chu_de": "Phương trình bậc nhất một ẩn",
+      "do_kho": "easy",
+      "cau_hoi": "Nghiệm của phương trình $3x - 6 = 0$ là:",
+      "lua_chon": ["$x = -2$", "$x = 2$", "$x = 3$", "$x = 6$"],
+      "dap_an": 1,
+      "giai_thich": "$3x - 6 = 0 \\Rightarrow 3x = 6 \\Rightarrow x = 2$."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương VII. Phương trình bậc nhất và hàm số bậc nhất",
+      "chu_de": "Hàm số bậc nhất",
+      "do_kho": "easy",
+      "cau_hoi": "Hàm số nào sau đây là hàm số bậc nhất?",
+      "lua_chon": ["$y = x^2 + 1$", "$y = \\dfrac{2}{x}$", "$y = 3x - 5$", "$y = 7$"],
+      "dap_an": 2,
+      "giai_thich": "Hàm số bậc nhất có dạng $y = ax + b$ với $a \\neq 0$. Chỉ $y = 3x - 5$ thoả mãn ($a = 3$)."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương VII. Phương trình bậc nhất và hàm số bậc nhất",
+      "chu_de": "Hệ số góc của đường thẳng",
+      "do_kho": "medium",
+      "cau_hoi": "Hệ số góc của đường thẳng $y = -2x + 5$ là:",
+      "lua_chon": ["$5$", "$-2$", "$2$", "$-5$"],
+      "dap_an": 1,
+      "giai_thich": "Đường thẳng $y = ax + b$ có hệ số góc là $a$. Ở đây $a = -2$."
+    },
+
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương IX. Tam giác đồng dạng",
+      "chu_de": "Hai tam giác đồng dạng",
+      "do_kho": "easy",
+      "cau_hoi": "Hai tam giác đồng dạng khi nào?",
+      "lua_chon": ["Có các góc tương ứng bằng nhau và các cạnh tương ứng tỉ lệ", "Có diện tích bằng nhau", "Có chu vi bằng nhau", "Có một cặp cạnh bằng nhau"],
+      "dap_an": 0,
+      "giai_thich": "Hai tam giác đồng dạng là hai tam giác có các góc tương ứng bằng nhau và các cạnh tương ứng tỉ lệ."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương IX. Tam giác đồng dạng",
+      "chu_de": "Định lí Pythagore",
+      "do_kho": "easy",
+      "cau_hoi": "Tam giác vuông có hai cạnh góc vuông là 3 cm và 4 cm. Cạnh huyền dài bao nhiêu?",
+      "lua_chon": ["5 cm", "6 cm", "7 cm", "12 cm"],
+      "dap_an": 0,
+      "giai_thich": "Theo định lí Pythagore: cạnh huyền $= \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$ cm."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương IX. Tam giác đồng dạng",
+      "chu_de": "Định lí Pythagore đảo",
+      "do_kho": "medium",
+      "cau_hoi": "Tam giác có ba cạnh 6 cm, 8 cm, 10 cm là tam giác gì?",
+      "lua_chon": ["Tam giác đều", "Tam giác vuông", "Tam giác tù", "Tam giác nhọn"],
+      "dap_an": 1,
+      "giai_thich": "Kiểm tra: $6^2 + 8^2 = 36 + 64 = 100 = 10^2$. Theo định lí Pythagore đảo, tam giác này vuông."
+    },
+
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương X. Một số hình khối trong thực tiễn",
+      "chu_de": "Hình chóp tam giác đều",
+      "do_kho": "easy",
+      "cau_hoi": "Hình chóp tam giác đều có mặt đáy là hình gì?",
+      "lua_chon": ["Tam giác vuông", "Tam giác đều", "Hình vuông", "Hình chữ nhật"],
+      "dap_an": 1,
+      "giai_thich": "Hình chóp tam giác đều có mặt đáy là tam giác đều và các mặt bên là những tam giác cân bằng nhau."
+    },
+    {
+      "mon": "Toán 8",
+      "chuong": "Chương X. Một số hình khối trong thực tiễn",
+      "chu_de": "Thể tích của hình chóp đều",
+      "do_kho": "medium",
+      "cau_hoi": "Công thức tính thể tích hình chóp đều là:",
+      "lua_chon": ["$V = S \\cdot h$", "$V = \\dfrac{1}{2} S \\cdot h$", "$V = \\dfrac{1}{3} S \\cdot h$", "$V = \\dfrac{2}{3} S \\cdot h$"],
+      "dap_an": 2,
+      "giai_thich": "Thể tích hình chóp bằng một phần ba tích của diện tích đáy với chiều cao: $V = \\dfrac{1}{3} S \\cdot h$."
+    },
+
+    {
+      "mon": "Khoa học tự nhiên 8",
+      "chuong": "Chương I. Phản ứng hoá học",
+      "chu_de": "Phản ứng hoá học",
+      "do_kho": "easy",
+      "cau_hoi": "Dấu hiệu nào sau đây KHÔNG chứng tỏ có phản ứng hoá học xảy ra?",
+      "lua_chon": ["Có chất khí thoát ra", "Có chất kết tủa tạo thành", "Chất rắn bị nghiền nhỏ", "Có sự thay đổi màu sắc"],
+      "dap_an": 2,
+      "giai_thich": "Nghiền nhỏ chỉ làm thay đổi kích thước hạt, chất vẫn là chất cũ nên đó là biến đổi vật lí, không phải phản ứng hoá học."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8",
+      "chuong": "Chương I. Phản ứng hoá học",
+      "chu_de": "Định luật bảo toàn khối lượng và phương trình hoá học",
+      "do_kho": "medium",
+      "cau_hoi": "Đốt cháy hoàn toàn 2,4 g magnesium trong oxygen thu được 4,0 g magnesium oxide. Khối lượng oxygen đã phản ứng là:",
+      "lua_chon": ["1,6 g", "2,4 g", "4,0 g", "6,4 g"],
+      "dap_an": 0,
+      "giai_thich": "Theo định luật bảo toàn khối lượng: khối lượng oxygen = 4,0 − 2,4 = 1,6 g."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8",
+      "chuong": "Chương I. Phản ứng hoá học",
+      "chu_de": "Mol và tỉ khối chất khí",
+      "do_kho": "medium",
+      "cau_hoi": "Số mol của 16 g khí oxygen (O2, M = 32 g/mol) là bao nhiêu?",
+      "lua_chon": ["0,25 mol", "0,5 mol", "1 mol", "2 mol"],
+      "dap_an": 1,
+      "giai_thich": "$n = \\dfrac{m}{M} = \\dfrac{16}{32} = 0{,}5$ mol."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8",
+      "chuong": "Chương II. Một số hợp chất thông dụng",
+      "chu_de": "Acid",
+      "do_kho": "easy",
+      "cau_hoi": "Điểm chung của các acid như HCl, HNO3, H2SO4 khi tan trong nước là gì?",
+      "lua_chon": ["Tạo ra ion OH−", "Tạo ra ion H+", "Không dẫn điện", "Làm quỳ tím hoá xanh"],
+      "dap_an": 1,
+      "giai_thich": "Acid là hợp chất mà khi tan trong nước tạo ra ion H+. Chính ion này làm quỳ tím hoá đỏ."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8",
+      "chuong": "Chương II. Một số hợp chất thông dụng",
+      "chu_de": "Base và thang pH",
+      "do_kho": "easy",
+      "cau_hoi": "Dung dịch có pH = 3 thuộc loại nào?",
+      "lua_chon": ["Acid", "Base", "Trung tính", "Không xác định"],
+      "dap_an": 0,
+      "giai_thich": "pH nhỏ hơn 7 là môi trường acid, bằng 7 là trung tính, lớn hơn 7 là base."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8",
+      "chuong": "Chương III. Khối lượng riêng và áp suất",
+      "chu_de": "Khối lượng riêng",
+      "do_kho": "medium",
+      "cau_hoi": "Một vật có khối lượng 270 g và thể tích 100 cm³. Khối lượng riêng của vật là:",
+      "lua_chon": ["2,7 g/cm³", "0,37 g/cm³", "27 g/cm³", "270 g/cm³"],
+      "dap_an": 0,
+      "giai_thich": "$D = \\dfrac{m}{V} = \\dfrac{270}{100} = 2{,}7$ g/cm³ — đây là khối lượng riêng của nhôm."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8",
+      "chuong": "Chương III. Khối lượng riêng và áp suất",
+      "chu_de": "Áp suất chất lỏng và áp suất khí quyển",
+      "do_kho": "medium",
+      "cau_hoi": "Áp suất chất lỏng tác dụng lên một vật phụ thuộc vào yếu tố nào?",
+      "lua_chon": ["Chỉ khối lượng vật", "Độ sâu và khối lượng riêng chất lỏng", "Hình dạng bình chứa", "Diện tích đáy bình"],
+      "dap_an": 1,
+      "giai_thich": "Áp suất chất lỏng tính theo $p = d \\cdot h$, phụ thuộc trọng lượng riêng chất lỏng và độ sâu, không phụ thuộc hình dạng bình."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8",
+      "chuong": "Chương III. Khối lượng riêng và áp suất",
+      "chu_de": "Lực đẩy Archimedes",
+      "do_kho": "medium",
+      "cau_hoi": "Lực đẩy Archimedes tác dụng lên vật nhúng trong chất lỏng có độ lớn bằng:",
+      "lua_chon": ["Trọng lượng của vật", "Trọng lượng phần chất lỏng bị vật chiếm chỗ", "Khối lượng của vật", "Thể tích của vật"],
+      "dap_an": 1,
+      "giai_thich": "Lực đẩy Archimedes có độ lớn bằng trọng lượng phần chất lỏng mà vật chiếm chỗ: $F_A = d \\cdot V$."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8",
+      "chuong": "Chương V. Điện",
+      "chu_de": "Dòng điện và nguồn điện",
+      "do_kho": "easy",
+      "cau_hoi": "Dòng điện trong kim loại là dòng chuyển dời có hướng của hạt nào?",
+      "lua_chon": ["Proton", "Neutron", "Electron tự do", "Ion dương"],
+      "dap_an": 2,
+      "giai_thich": "Trong kim loại, các electron tự do chuyển dời có hướng tạo thành dòng điện."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8",
+      "chuong": "Chương VI. Nhiệt",
+      "chu_de": "Sự truyền nhiệt",
+      "do_kho": "easy",
+      "cau_hoi": "Hình thức truyền nhiệt chủ yếu trong chất rắn là gì?",
+      "lua_chon": ["Dẫn nhiệt", "Đối lưu", "Bức xạ nhiệt", "Bay hơi"],
+      "dap_an": 0,
+      "giai_thich": "Chất rắn truyền nhiệt chủ yếu bằng dẫn nhiệt. Đối lưu xảy ra ở chất lỏng và chất khí."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8",
+      "chuong": "Chương VII. Sinh học cơ thể người",
+      "chu_de": "Máu và hệ tuần hoàn của cơ thể người",
+      "do_kho": "easy",
+      "cau_hoi": "Hệ tuần hoàn của người gồm những bộ phận chính nào?",
+      "lua_chon": ["Tim và hệ mạch", "Phổi và khí quản", "Dạ dày và ruột", "Thận và bàng quang"],
+      "dap_an": 0,
+      "giai_thich": "Hệ tuần hoàn gồm tim và hệ mạch (động mạch, tĩnh mạch, mao mạch), vận chuyển máu đi khắp cơ thể."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8",
+      "chuong": "Chương VII. Sinh học cơ thể người",
+      "chu_de": "Hệ hô hấp ở người",
+      "do_kho": "easy",
+      "cau_hoi": "Nơi diễn ra trao đổi khí giữa phổi và máu là:",
+      "lua_chon": ["Khí quản", "Phế quản", "Phế nang", "Thanh quản"],
+      "dap_an": 2,
+      "giai_thich": "Phế nang là nơi oxygen khuếch tán vào máu và carbon dioxide từ máu khuếch tán ra ngoài."
+    },
+    {
+      "mon": "Khoa học tự nhiên 8",
+      "chuong": "Chương VIII. Sinh vật và môi trường",
+      "chu_de": "Quần thể sinh vật",
+      "do_kho": "medium",
+      "cau_hoi": "Tập hợp nào sau đây là một quần thể sinh vật?",
+      "lua_chon": ["Các con cá trong một hồ", "Các cây thông trong một rừng thông", "Các sinh vật trong một khu rừng", "Các loài chim trong vườn quốc gia"],
+      "dap_an": 1,
+      "giai_thich": "Quần thể là tập hợp cá thể CÙNG MỘT LOÀI, sống trong cùng khu vực và thời gian. Cá trong hồ gồm nhiều loài nên không phải quần thể."
+    },
+
+    {
+      "mon": "Toán 12",
+      "chuong": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+      "chu_de": "Tính đơn điệu của hàm số",
+      "do_kho": "easy",
+      "cau_hoi": "Hàm số $y = f(x)$ đồng biến trên khoảng $K$ khi nào?",
+      "lua_chon": ["$f'(x) \\leq 0$ với mọi $x \\in K$", "$f'(x) \\geq 0$ với mọi $x \\in K$ và chỉ bằng 0 tại hữu hạn điểm", "$f'(x) = 0$ với mọi $x \\in K$", "$f(x) > 0$ với mọi $x \\in K$"],
+      "dap_an": 1,
+      "giai_thich": "Hàm số đồng biến trên $K$ khi đạo hàm không âm trên $K$ và chỉ bằng 0 tại hữu hạn điểm."
+    },
+    {
+      "mon": "Toán 12",
+      "chuong": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+      "chu_de": "Cực trị của hàm số",
+      "do_kho": "medium",
+      "cau_hoi": "Hàm số $y = x^3 - 3x$ đạt cực đại tại điểm nào?",
+      "lua_chon": ["$x = -1$", "$x = 0$", "$x = 1$", "$x = 3$"],
+      "dap_an": 0,
+      "giai_thich": "$y' = 3x^2 - 3 = 0 \\Rightarrow x = \\pm 1$. Xét dấu $y'$: đổi từ dương sang âm tại $x = -1$ nên hàm đạt cực đại tại đó."
+    },
+    {
+      "mon": "Toán 12",
+      "chuong": "Chương 1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+      "chu_de": "Đường tiệm cận",
+      "do_kho": "medium",
+      "cau_hoi": "Đồ thị hàm số $y = \\dfrac{2x + 1}{x - 1}$ có tiệm cận ngang là đường thẳng nào?",
+      "lua_chon": ["$y = 1$", "$y = 2$", "$x = 1$", "$y = -1$"],
+      "dap_an": 1,
+      "giai_thich": "$\\lim_{x \\to \\pm\\infty} \\dfrac{2x + 1}{x - 1} = 2$, nên tiệm cận ngang là $y = 2$. Còn $x = 1$ là tiệm cận đứng."
+    },
+    {
+      "mon": "Toán 12",
+      "chuong": "Chương 4: Nguyên hàm và tích phân",
+      "chu_de": "Nguyên hàm",
+      "do_kho": "easy",
+      "cau_hoi": "Nguyên hàm của hàm số $f(x) = 2x$ là:",
+      "lua_chon": ["$x^2 + C$", "$2x^2 + C$", "$2 + C$", "$\\dfrac{x^2}{2} + C$"],
+      "dap_an": 0,
+      "giai_thich": "$\\int 2x\\,dx = 2 \\cdot \\dfrac{x^2}{2} + C = x^2 + C$. Kiểm tra lại bằng cách lấy đạo hàm: $(x^2 + C)' = 2x$."
+    },
+    {
+      "mon": "Toán 12",
+      "chuong": "Chương 4: Nguyên hàm và tích phân",
+      "chu_de": "Tích phân",
+      "do_kho": "medium",
+      "cau_hoi": "Tính $\\int_{0}^{2} 3x^2\\,dx$.",
+      "lua_chon": ["4", "6", "8", "12"],
+      "dap_an": 2,
+      "giai_thich": "$\\int_{0}^{2} 3x^2\\,dx = x^3 \\Big|_{0}^{2} = 2^3 - 0^3 = 8$."
+    },
+    {
+      "mon": "Toán 12",
+      "chuong": "Chương 6: Xác suất có điều kiện",
+      "chu_de": "Xác suất có điều kiện",
+      "do_kho": "medium",
+      "cau_hoi": "Công thức tính xác suất có điều kiện $P(A|B)$ là:",
+      "lua_chon": ["$P(A) \\cdot P(B)$", "$\\dfrac{P(A \\cap B)}{P(B)}$", "$\\dfrac{P(B)}{P(A)}$", "$P(A) + P(B)$"],
+      "dap_an": 1,
+      "giai_thich": "Xác suất của $A$ với điều kiện $B$ đã xảy ra: $P(A|B) = \\dfrac{P(A \\cap B)}{P(B)}$, với $P(B) > 0$."
+    }
+  ]
+}

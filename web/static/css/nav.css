@@ -1,0 +1,138 @@
+/* ===========================================================================
+   VuongEdu — thanh điều hướng bên trái.
+
+   Trước đây mỗi mục dùng một emoji. Emoji do hệ điều hành vẽ nên mỗi cái một
+   phong cách, một độ dày nét, một bảng màu — xếp cạnh nhau thành rời rạc, và
+   trên Windows / Android / iOS lại ra ba kiểu khác nhau. Nay dùng SVG vẽ nét
+   cùng một lưới 24px, cùng độ dày 1.8, màu lấy theo currentColor nên tự đổi
+   theo giao diện sáng/tối.
+
+   Mỗi biểu tượng nằm trong một "viên gạch" bo góc: đó là phần nền mà khi trỏ
+   vào sẽ sáng lên và nhô lên, còn mục đang mở thì đổ màu nhấn kèm quầng sáng.
+   =========================================================================== */
+
+:root, [data-theme="light"] {
+  --ico-bg: linear-gradient(160deg, #eef2fe 0%, #dde5f8 100%);
+  --ico-br: rgba(79, 70, 229, .16);
+  --ico-fg: #4a5578;
+  --ico-hi: rgba(255, 255, 255, .85);          /* vệt sáng mép trên, tạo khối */
+  --ico-sh: rgba(39, 45, 92, .13);
+  --ico-bg-hover: linear-gradient(160deg, #ffffff 0%, #e7edfc 100%);
+  /* Hàng đang mở đã được tô màu nhấn, nên viên gạch phải SÁNG hơn hàng thì mới
+     nổi lên. Dùng màu nhấn ở đây sẽ chìm vào nền, chữ và hình đọc không ra. */
+  --ico-fill: rgba(255, 255, 255, .22);
+  --ico-glow: rgba(23, 20, 80, .28);
+}
+
+[data-theme="dark"] {
+  --ico-bg: linear-gradient(160deg, rgba(56, 189, 248, .10) 0%, rgba(13, 23, 38, .9) 100%);
+  --ico-br: rgba(78, 140, 220, .22);
+  --ico-fg: #9fb3cd;
+  --ico-hi: rgba(255, 255, 255, .10);
+  --ico-sh: rgba(0, 0, 0, .45);
+  --ico-bg-hover: linear-gradient(160deg, rgba(56, 189, 248, .22) 0%, rgba(17, 32, 52, .95) 100%);
+  /* Giao diện tối: hàng đang mở có nền TRẮNG, nên viên gạch tô màu nhấn mới nổi. */
+  --ico-fill: linear-gradient(155deg, #38bdf8 0%, #0284c7 100%);
+  --ico-glow: rgba(2, 132, 199, .38);
+}
+
+/* ---------- mục điều hướng ---------- */
+.nav-item {
+  position: relative;
+  gap: 11px;
+  padding: 6px 10px;
+  overflow: hidden;                 /* giữ vệt sáng chạy ngang nằm trong bo góc */
+}
+
+/* ---------- viên gạch sau biểu tượng ---------- */
+.nav-ico {
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  color: var(--ico-fg);
+  background: var(--ico-bg);
+  border: 1px solid var(--ico-br);
+  box-shadow: inset 0 1px 0 var(--ico-hi), 0 2px 5px var(--ico-sh);
+  transition: transform .2s cubic-bezier(.2, .8, .2, 1), background .2s ease,
+              box-shadow .2s ease, color .2s ease, border-color .2s ease;
+}
+.nav-ico svg { width: 18px; height: 18px; display: block; }
+
+.nav-txt {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ---------- trỏ vào: viên gạch nhô lên và sáng ---------- */
+.nav-item:hover .nav-ico {
+  transform: translateY(-2px);
+  background: var(--ico-bg-hover);
+  border-color: color-mix(in srgb, var(--apple-blue) 38%, transparent);
+  color: var(--apple-blue);
+  box-shadow: inset 0 1px 0 var(--ico-hi), 0 5px 12px var(--ico-sh);
+}
+.nav-item:active .nav-ico { transform: translateY(0); transition-duration: .08s; }
+
+/* vệt sáng quét ngang khi trỏ vào — chỉ một lần, không lặp để khỏi gây rối mắt */
+.nav-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, transparent 35%,
+              color-mix(in srgb, var(--apple-blue) 12%, transparent) 50%, transparent 65%);
+  transform: translateX(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+.nav-item:hover::after { animation: nav-quet .65s ease forwards; }
+@keyframes nav-quet {
+  from { transform: translateX(-100%); opacity: 1; }
+  to   { transform: translateX(100%);  opacity: 0; }
+}
+
+/* ---------- mục đang mở ---------- */
+.nav-item.active .nav-ico {
+  background: var(--ico-fill);
+  border-color: rgba(255, 255, 255, .28);
+  color: #fff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .38),
+              0 4px 12px var(--ico-glow);
+}
+.nav-item.active:hover .nav-ico { transform: translateY(-2px); }
+
+/* ---------- ai tắt hiệu ứng chuyển động thì bỏ hết phần động ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .nav-ico, .nav-item::before, .nav-txt { transition: none; }
+  .nav-item:hover .nav-ico { transform: none; }
+  .nav-item:hover::after { animation: none; }
+}
+
+/* ---------- hai giao diện đặc biệt: thanh bên đổi tông, viên gạch theo tông đó ---------- */
+body.theme-galileo-active {                 /* nền nâu ấm, nhấn màu đồng */
+  --ico-bg: linear-gradient(160deg, rgba(212, 163, 115, .14) 0%, rgba(26, 13, 7, .9) 100%);
+  --ico-br: rgba(212, 163, 115, .26);
+  --ico-fg: #e4c9a8;
+  --ico-hi: rgba(253, 240, 213, .12);
+  --ico-sh: rgba(10, 5, 2, .6);
+  --ico-bg-hover: linear-gradient(160deg, rgba(212, 163, 115, .3) 0%, rgba(38, 21, 11, .95) 100%);
+  --ico-fill: linear-gradient(155deg, #d4a373 0%, #a9713d 100%);
+  --ico-glow: rgba(169, 113, 61, .45);
+}
+
+body.theme-einstein-active {                /* nền gần như đen, nhấn trắng */
+  --ico-bg: linear-gradient(160deg, rgba(255, 255, 255, .09) 0%, rgba(14, 14, 18, .92) 100%);
+  --ico-br: rgba(255, 255, 255, .16);
+  --ico-fg: #d6d8de;
+  --ico-hi: rgba(255, 255, 255, .12);
+  --ico-sh: rgba(0, 0, 0, .75);
+  --ico-bg-hover: linear-gradient(160deg, rgba(255, 255, 255, .2) 0%, rgba(26, 26, 32, .95) 100%);
+  --ico-fill: linear-gradient(155deg, #f4f4f6 0%, #c9cbd2 100%);
+  --ico-glow: rgba(0, 0, 0, .7);
+}
+body.theme-einstein-active .nav-item.active .nav-ico { color: #15151a; }   /* gạch sáng -> hình tối */

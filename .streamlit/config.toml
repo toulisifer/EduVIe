@@ -1,0 +1,9 @@
+[browser]
+gatherUsageStats = false
+serverAddress = "localhost"
+
+[server]
+headless = true
+
+[theme]
+primaryColor = "#4F8BF9"
